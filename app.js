@@ -523,7 +523,7 @@ function s1Page() {
 
 function applyPage() {
   const zh = `<div class="prose">
-    <p>中一級課外活動報名，須以學校 <strong>MKPC Google 帳戶</strong>登入報名系統提交。每個帳戶只可遞交一份表格；報名期內可修改後再儲存。本網頁僅供說明，並不收集個人資料。</p>
+    <p>中一級課外活動報名，須以學校 <strong>MKPC Google 帳戶</strong>登入系統提交：<a href="https://attendance-of-ex.web.app/eca-registration/?lang=zh" rel="noopener" target="_blank">https://attendance-of-ex.web.app/eca-registration/?lang=zh</a>。每個帳戶只可遞交一份表格；報名期內可修改後再儲存。本網頁僅供說明，並不收集個人資料。</p>
     <h2>步驟</h2>
     <ol>
       <li>請先細閱「<a href="#/s1">課外活動須知</a>」，並核對班別、學號及姓名。各組時間及地點載於「<a href="#/clubs">課外活動</a>」。</li>
@@ -538,7 +538,7 @@ function applyPage() {
     <p>學生發展部（課外活動）。學校網站：<a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a>。</p>
   </div>`;
   const en = `<div class="prose">
-    <p>Secondary 1 students shall submit their extracurricular activity applications through the designated system, using a school <strong>MKPC Google account</strong>. Each account may submit one form only. Amendments may be saved during the application period. This webpage is for information only and does not collect personal data.</p>
+    <p>Secondary 1 students shall submit their extracurricular activity applications, using a school <strong>MKPC Google account</strong>, at <a href="https://attendance-of-ex.web.app/eca-registration/?lang=en" rel="noopener" target="_blank">https://attendance-of-ex.web.app/eca-registration/?lang=en</a>. Each account may submit one form only. Amendments may be saved during the application period. This webpage is for information only and does not collect personal data.</p>
     <h2>Procedure</h2>
     <ol>
       <li>Students shall first read the <a href="#/s1">ECA notes</a> and verify their class, student number and name. Times and venues are set out under <a href="#/clubs">clubs</a>.</li>
