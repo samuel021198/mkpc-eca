@@ -63,7 +63,7 @@ const I18N = {
     back: "返回目錄",
     source: "時間表由總表自動產生，請勿另存一份清單。",
     weekTable: "一週總表",
-    s1Remark: "標「中一可選」者，總表列為中一級可參加。報名請以中一同學專區為準。",
+    s1Remark: "標「中一可選」者與中一報名表可選活動相同。星期二科創無須選報。",
     s1tt: "中一級報名時間表",
     s1ttLead: "下表與報名系統可選活動相同。星期一、三、四、五每日填三個志願。星期二為科創活動，稍後由老師安排，無須選報。標「面試」者僅已獲選拔同學可選。一般時間 16:00–17:30。",
     s1ttInterview: "面試",
@@ -119,7 +119,7 @@ const I18N = {
     back: "Back to directory",
     source: "This timetable is generated from the master sheet. Do not keep a second copy.",
     weekTable: "Week overview",
-    s1Remark: "“Open to S1” marks clubs listed as open to Secondary 1 on the master sheet. Sign-up follows the S1 area.",
+    s1Remark: "“Open to S1” matches the Secondary 1 application form. Tuesday InnoTech need not be chosen.",
     s1tt: "S1 application timetable",
     s1ttLead: "This table matches the activities on the application form. Enter three preferences for Monday, Wednesday, Thursday and Friday. Tuesday is InnoTech, to be arranged by teachers later; students need not choose a Tuesday activity. Items marked Trial are only for students already selected. Usual time is 16:00–17:30.",
     s1ttInterview: "Trial",
@@ -332,7 +332,7 @@ function clubCard(c) {
       <div class="meta">
         <span class="badge">${escapeHtml(catLabel(c.category))}</span>
         ${daysText(c)}
-        ${c.s1 ? ` · ${L.s1Badge}` : ""}
+        ${isS1Open(c) ? ` · ${L.s1Badge}` : ""}
       </div>
       ${blurb(c) ? `<p class="meta">${escapeHtml(blurb(c))}</p>` : ""}
     </div>
@@ -389,7 +389,7 @@ function clubPage(id) {
   return `${nav("clubs")}<main>
     <a class="back" href="#/clubs">${L.back}</a>
     <h1>${escapeHtml(clubName(c))}</h1>
-    <p class="lead">${escapeHtml(lang() === "en" ? c.nameZh : c.nameEn)} · ${escapeHtml(catLabel(c.category))}${c.s1 ? " · " + L.s1Badge : ""}</p>
+    <p class="lead">${escapeHtml(lang() === "en" ? c.nameZh : c.nameEn)} · ${escapeHtml(catLabel(c.category))}${isS1Open(c) ? " · " + L.s1Badge : ""}</p>
     ${coverHtml}
     <div class="prose">
       <h2>${L.whenWhere}</h2>
@@ -454,7 +454,7 @@ function timetablePage(params) {
   const list = rows
     .map(({ c, where }) => {
       const head = c.category !== last ? ((last = c.category), `<h3 class="tt-cat">${escapeHtml(catLabel(c.category))}</h3>`) : "";
-      return `${head}<a class="tt-row" href="#/club/${encodeId(c.id)}"><span><strong>${escapeHtml(clubName(c))}</strong><span class="meta">${escapeHtml(where)}</span></span>${c.s1 ? `<span class="badge">${L.s1Badge}</span>` : ""}</a>`;
+      return `${head}<a class="tt-row" href="#/club/${encodeId(c.id)}"><span><strong>${escapeHtml(clubName(c))}</strong><span class="meta">${escapeHtml(where)}</span></span>${isS1Open(c) ? `<span class="badge">${L.s1Badge}</span>` : ""}</a>`;
     })
     .join("");
   return `${nav("timetable")}<main>
@@ -475,7 +475,7 @@ function timetablePage(params) {
           const cell = dayEntries(d, cat)
             .map(
               ({ c, where }) =>
-                `<a href="#/club/${encodeId(c.id)}">${escapeHtml(clubName(c))}${c.s1 ? ` <span class="badge">${L.s1Badge}</span>` : ""}<span class="meta">${escapeHtml(where)}</span></a>`
+                `<a href="#/club/${encodeId(c.id)}">${escapeHtml(clubName(c))}${isS1Open(c) ? ` <span class="badge">${L.s1Badge}</span>` : ""}<span class="meta">${escapeHtml(where)}</span></a>`
             )
             .join("");
           return `<td>${cell || "—"}</td>`;
@@ -492,6 +492,26 @@ function timetablePage(params) {
 
 function s1Form() {
   return window.ECA_S1_FORM || { dayOrder: [], days: {}, activities: {}, interview: [], needLevel: [], clubAlias: {}, cat: {} };
+}
+
+function s1OpenIds() {
+  const f = s1Form();
+  const extra = { 男女子排球: ["女子排球", "男子排球"] };
+  const ids = new Set();
+  for (const day of f.dayOrder || []) {
+    for (const row of f.activities[day] || []) {
+      const id = row[3] || row[0];
+      for (const name of extra[id] || [f.clubAlias[id] || id]) {
+        const club = findClub(name);
+        if (club) ids.add(club.id);
+      }
+    }
+  }
+  return ids;
+}
+
+function isS1Open(c) {
+  return s1OpenIds().has(c.id);
 }
 
 function s1FormClub(id) {
