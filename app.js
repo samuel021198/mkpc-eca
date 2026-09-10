@@ -63,6 +63,10 @@ const I18N = {
     back: "返回目錄",
     source: "時間表由總表自動產生，請勿另存一份清單。",
     weekTable: "一週總表",
+    s1tt: "中一級課外活動時間表",
+    s1ttLead: "下表僅列中一可選組別，方便對照志願。一般時間為 16:00–17:30。報名時星期一、三、四、五每日須填三個志願；星期二仍須出席。完整時間表見「時間表」。",
+    s1ttPref: "填志願",
+    s1ttAttend: "出席",
     count: (n) => `共 ${n} 組`,
   },
   en: {
@@ -114,6 +118,10 @@ const I18N = {
     back: "Back to directory",
     source: "This timetable is generated from the master sheet. Do not keep a second copy.",
     weekTable: "Week overview",
+    s1tt: "S1 ECA timetable",
+    s1ttLead: "The table lists clubs open to S1, to help with preferences. Usual time is 16:00–17:30. Enter three preferences for Monday, Wednesday, Thursday and Friday. Tuesday remains a compulsory ECA day. See Timetable for the full list.",
+    s1ttPref: "preferences",
+    s1ttAttend: "attend",
     count: (n) => `${n} clubs`,
   },
 };
@@ -413,9 +421,10 @@ function sessionBits(c, s) {
   return [s.venue, show ? lab : "", clock === "16:00–17:30" ? "" : clock].filter(Boolean).join(" · ");
 }
 
-function dayEntries(day, cat) {
+function dayEntries(day, cat, onlyS1) {
   const rows = [];
   for (const c of ECA.clubs) {
+    if (onlyS1 && !c.s1) continue;
     if (cat && c.category !== cat) continue;
     const ss = c.sessions.filter((s) => s.day === day);
     if (!ss.length) continue;
@@ -481,12 +490,55 @@ function timetablePage(params) {
   </main>`;
 }
 
+function s1DayHead(d) {
+  const L = t();
+  const tag = d === "tue" ? L.s1ttAttend : L.s1ttPref;
+  return `${DAY[d][lang()]}（${tag}）`;
+}
+
+function s1ClubLink(c, where) {
+  return `<a href="#/club/${encodeId(c.id)}">${escapeHtml(clubName(c))}<span class="meta">${escapeHtml(where)}</span></a>`;
+}
+
+function s1TimetableHtml() {
+  const L = t();
+  const days = ["mon", "tue", "wed", "thu", "fri"];
+  const stack = days
+    .map((d) => {
+      const rows = dayEntries(d, "", true);
+      const list = rows
+        .map(
+          ({ c, where }) =>
+            `<a class="tt-row" href="#/club/${encodeId(c.id)}"><span><strong>${escapeHtml(clubName(c))}</strong><span class="meta">${escapeHtml(where)}</span></span></a>`
+        )
+        .join("");
+      return `<h3 class="tt-cat">${escapeHtml(s1DayHead(d))}</h3><div class="tt-list">${list || `<p class="empty">—</p>`}</div>`;
+    })
+    .join("");
+  const wide = `<div class="tt-wide s1-tt-wide"><table>
+    <thead><tr>${days.map((d) => `<th>${escapeHtml(s1DayHead(d))}</th>`).join("")}</tr></thead>
+    <tbody><tr>${days
+      .map((d) => {
+        const cell = dayEntries(d, "", true)
+          .map(({ c, where }) => s1ClubLink(c, where))
+          .join("");
+        return `<td>${cell || "—"}</td>`;
+      })
+      .join("")}</tr></tbody>
+  </table></div>`;
+  return `<h2>${L.s1tt}</h2>
+    <p>${L.s1ttLead} <a href="#/timetable">${L.timetable}</a></p>
+    ${wide}
+    <div class="s1-tt-stack">${stack}</div>`;
+}
+
 function s1Page() {
   const zh = `<div class="prose">
     <h2>參加安排</h2>
     <p>中一級同學須於<strong>星期一至五</strong>出席課外活動。</p>
     <h2>時間</h2>
     <p>一般課外活動為課後 <strong>16:00–17:30</strong>。校隊訓練時間以負責老師安排為準，或會超過 17:30，最遲至 <strong>19:00</strong>。場地請參閱各組時間表；外借場地（例如田徑、足球、欖球）以當日負責老師指示為準。</p>
+    ${s1TimetableHtml()}
     <h2>活動類別</h2>
     <ul>
       <li>學術：辯論、語文班、集誦、Drama Club、Newspaper Club、腦力攻防戰、社會服務團、MKPC On Air 等</li>
@@ -505,6 +557,7 @@ function s1Page() {
     <p>All Secondary 1 students shall attend extracurricular activities from <strong>Monday to Friday</strong>.</p>
     <h2>Time</h2>
     <p>Regular sessions are held after school from <strong>16:00 to 17:30</strong>. School-team training shall follow the arrangement of the teacher-in-charge and may extend beyond 17:30, until <strong>19:00</strong> at the latest. Venues are set out in the timetable. Off-campus venues (for example athletics, football and rugby) shall follow the instructions of the teacher-in-charge on the day.</p>
+    ${s1TimetableHtml()}
     <h2>Categories</h2>
     <ul>
       <li>Academic: debate, language classes, choral speaking, Drama Club, Newspaper Club, Mind Challenge, Social Service Group, MKPC On Air, and others</li>

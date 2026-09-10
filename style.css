@@ -301,6 +301,8 @@ footer span, footer a { position: relative; color: #eee; }
 .tt-wide td { min-width: 148px; }
 .tt-wide td a { display: block; margin: 0 0 10px; text-decoration: none; font-weight: 700; }
 .tt-wide td a .meta { display: block; font-weight: 400; }
+.s1-tt-wide table { min-width: 760px; }
+.s1-tt-stack { display: none; }
 @media (max-width: 900px) {
   .grid { grid-template-columns: 1fr 1fr; }
 }
@@ -503,6 +505,8 @@ main.np { max-width: 1120px; background: #fff; padding-top: 20px; }
   .hl { flex-direction: column; align-items: flex-start; gap: 4px; }
   .hl time { min-width: 0; }
   .prose { padding: 8px 14px 16px; }
+  .s1-tt-wide { display: none; }
+  .s1-tt-stack { display: block; }
   .cover.hero { height: 140px; }
   .cal-cell { min-height: 56px; }
   .tabbar {
