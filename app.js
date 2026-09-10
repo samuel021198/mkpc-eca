@@ -1,0 +1,906 @@
+if (window.ECA?.clubs) {
+  const hide = new Set(["增益班", "WebSems"]);
+  ECA.clubs = ECA.clubs.filter((c) => !hide.has(c.id) && !hide.has(c.nameZh) && !hide.has(c.nameEn));
+}
+
+const DAY = {
+  mon: { zh: "星期一", en: "Mon" },
+  tue: { zh: "星期二", en: "Tue" },
+  wed: { zh: "星期三", en: "Wed" },
+  thu: { zh: "星期四", en: "Thu" },
+  fri: { zh: "星期五", en: "Fri" },
+  sat: { zh: "星期六", en: "Sat" },
+};
+const DAY_ORDER = ["mon", "tue", "wed", "thu", "fri", "sat"];
+
+const I18N = {
+  zh: {
+    school: "萬鈞伯裘書院",
+    title: "課外活動",
+    clubs: "課外活動",
+    news: "最新消息",
+    noNews: "本期暫無刊登。",
+    backNews: "返回最新消息",
+    newsTrial: "選拔",
+    paperDept: "學生發展部",
+    paperMore: "各版消息",
+    paperTick: "頭條",
+    timetable: "時間表",
+    s1zone: "中一同學專區",
+    s1guide: "課外活動須知",
+    apply: "課外活動報名",
+    contact: "聯絡我們",
+    teams: "校隊專區",
+    calTitle: "比賽月曆",
+    resultsTitle: "學界比賽賽況",
+    noFixture: "本月未有已公布的校隊比賽。",
+    pendingResult: "暫未公布",
+    win: "勝",
+    lose: "負",
+    draw: "和",
+    tabHome: "首頁",
+    tabClubs: "組別",
+    tabTime: "時間表",
+    tabS1: "中一",
+    lang: "English",
+    homeLead: "發掘潛能、團隊、溝通與協作。2026–2027 課外活動總覽。",
+    cats: "活動類別",
+    week: "本週重點",
+    noticeLabel: "通告",
+    notice: "中一級逢星期一至四必須出席課外活動。本週選拔日期見下方「本週重點」。",
+    noWeek: "本週沒有已公布的選拔。可按校徽回首頁，或到課外活動瀏覽所有組別。",
+    search: "搜尋組別",
+    allCat: "所有類別",
+    allDay: "所有星期",
+    noResult: "沒有符合的組別。",
+    introSoon: "簡介即將更新。",
+    teachers: "負責老師",
+    whenWhere: "時間及地點",
+    noSession: "時間地點待總表更新。",
+    photos: "相片",
+    noPhoto: "各組專屬相片尚未繳交，封面暫用校園精選照片。",
+    s1Badge: "中一可選",
+    back: "返回目錄",
+    source: "時間表由總表自動產生，請勿另存一份清單。",
+    weekTable: "一週總表",
+    count: (n) => `共 ${n} 組`,
+  },
+  en: {
+    school: "Man Kwan Pak Kau College",
+    title: "Extracurricular Activities",
+    clubs: "Extracurricular Activities",
+    news: "News",
+    noNews: "Nothing in this edition.",
+    backNews: "Back to news",
+    newsTrial: "Trial",
+    paperDept: "Student Affairs",
+    paperMore: "More stories",
+    paperTick: "Headlines",
+    timetable: "Timetable",
+    s1zone: "S1 area",
+    s1guide: "ECA notes",
+    apply: "ECA sign-up",
+    contact: "Contact",
+    teams: "School teams",
+    calTitle: "Match calendar",
+    resultsTitle: "Inter-school results",
+    noFixture: "No published matches this month.",
+    pendingResult: "Not yet published",
+    win: "W",
+    lose: "L",
+    draw: "D",
+    tabHome: "Home",
+    tabClubs: "Clubs",
+    tabTime: "Times",
+    tabS1: "S1",
+    lang: "中文",
+    homeLead: "Discover potential, teamwork, and collaboration. 2026–2027 ECA overview.",
+    cats: "Categories",
+    week: "This week",
+    noticeLabel: "Notice",
+    notice: "S1 students must attend ECA Monday to Thursday. Selection dates are listed under This week.",
+    noWeek: "No published selections this week. Browse all clubs in the directory.",
+    search: "Search clubs",
+    allCat: "All categories",
+    allDay: "All days",
+    noResult: "No clubs match.",
+    introSoon: "Introduction coming soon.",
+    teachers: "Teacher-in-charge",
+    whenWhere: "Time & venue",
+    noSession: "Schedule not yet on the master sheet.",
+    photos: "Photos",
+    noPhoto: "Club photo folders are still empty; category covers use school archive photos.",
+    s1Badge: "Open to S1",
+    back: "Back to directory",
+    source: "This timetable is generated from the master sheet. Do not keep a second copy.",
+    weekTable: "Week overview",
+    count: (n) => `${n} clubs`,
+  },
+};
+
+function lang() {
+  return localStorage.getItem("eca-lang") === "en" ? "en" : "zh";
+}
+function t() {
+  return I18N[lang()];
+}
+function catLabel(id) {
+  const c = ECA.categories.find((x) => x.id === id);
+  return c ? (lang() === "en" ? c.en : c.zh) : id;
+}
+function clubName(c) {
+  return lang() === "en" ? c.nameEn : c.nameZh;
+}
+function teacherLabel(name) {
+  const n = String(name).trim();
+  return /老師$/.test(n) ? n : n + "老師";
+}
+function teachersText(c) {
+  return (c.teachers || []).map(teacherLabel).join("、");
+}
+function daysText(c) {
+  const ds = [...new Set(c.sessions.map((s) => s.day))];
+  return ds.map((d) => DAY[d][lang()]).join("、") || "—";
+}
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/"/g, "&quot;");
+}
+function encodeId(id) {
+  return encodeURIComponent(id);
+}
+
+function parseRoute() {
+  const raw = (location.hash || "#/").replace(/^#/, "");
+  const [path, query] = raw.split("?");
+  const parts = (path || "/").split("/").filter(Boolean);
+  const params = new URLSearchParams(query || "");
+  if (parts[0] === "club") return { page: "club", id: decodeURIComponent(parts.slice(1).join("/") || "") };
+  if (parts[0] === "clubs") return { page: "clubs", params };
+  if (parts[0] === "news" && parts[1]) return { page: "story", id: decodeURIComponent(parts.slice(1).join("/")) };
+  if (parts[0] === "news") return { page: "news" };
+  if (parts[0] === "timetable") return { page: "timetable", params };
+  if (parts[0] === "teams") return { page: "teams", params };
+  if (parts[0] === "s1") return { page: "s1" };
+  if (parts[0] === "apply") return { page: "apply" };
+  if (parts[0] === "contact") return { page: "contact" };
+  return { page: "home" };
+}
+
+function weekHighlights() {
+  const now = new Date();
+  const day = (now.getDay() + 6) % 7;
+  const start = new Date(now);
+  start.setDate(now.getDate() - day);
+  start.setHours(0, 0, 0, 0);
+  const end = new Date(start);
+  end.setDate(start.getDate() + 7);
+  return (ECA.highlights || []).filter((h) => {
+    const d = new Date(h.date + "T00:00:00");
+    return d >= start && d < end;
+  });
+}
+
+function nav(page) {
+  const L = t();
+  const on = (id) =>
+    page === id || (id === "clubs" && page === "club") || (id === "news" && page === "story")
+      ? ' aria-current="page"'
+      : "";
+  const item = (href, key, id) => `<a href="${href}"${on(id)}>${L[key]}</a>`;
+  const tab = (href, key, id) => `<a href="${href}"${on(id)}><span>${L[key]}</span></a>`;
+  const zoneOn = page === "s1" || page === "apply";
+  const zone = (label) => `<div class="nav-drop${zoneOn ? " is-on" : ""}">
+      <span class="nav-drop-lab" tabindex="0" aria-haspopup="true">${label}</span>
+      <div class="nav-drop-menu">
+        <a href="#/s1"${page === "s1" ? ' aria-current="page"' : ""}>${L.s1guide}</a>
+        <a href="#/apply"${page === "apply" ? ' aria-current="page"' : ""}>${L.apply}</a>
+      </div>
+    </div>`;
+  return `<header class="${page === "home" ? "is-overlay" : ""}">
+    <div class="topbar">
+      <a class="brand" href="#/">
+        <img src="img/logo.png" alt="" />
+        <span class="brand-text">
+          <span class="brand-zh">萬鈞伯裘書院</span>
+          <span class="brand-en">MAN KWAN PAK KAU COLLEGE</span>
+        </span>
+      </a>
+      <nav class="nav-desk">
+        ${item("#/news", "news", "news")}
+        ${item("#/clubs", "clubs", "clubs")}
+        ${item("#/timetable", "timetable", "timetable")}
+        ${item("#/teams", "teams", "teams")}
+        ${zone(L.s1zone)}
+        ${item("#/contact", "contact", "contact")}
+      </nav>
+      <div class="top-tools">
+        <button class="lang" type="button" id="langBtn">${L.lang}</button>
+        <img class="motto" src="img/motto.jpg" alt="人人可教 All Are Educable" />
+      </div>
+    </div>
+  </header>
+  <nav class="tabbar" aria-label="${L.title}">
+    ${tab("#/", "tabHome", "home")}
+    ${tab("#/clubs", "tabClubs", "clubs")}
+    ${tab("#/timetable", "tabTime", "timetable")}
+    ${tab("#/teams", "teams", "teams")}
+    ${zone(L.tabS1)}
+  </nav>`;
+}
+
+function cover(c) {
+  const bg = c.cover ? ` style="background-image:url('${encodeURI(c.cover)}')"` : "";
+  return `<div class="cover ${escapeHtml(c.category)}"${bg} aria-hidden="true"></div>`;
+}
+
+function sessionTime(c, s) {
+  if ((c.id === "女子排球" || c.nameZh === "女子排球") && s.day === "sat") return "10:00–13:00";
+  return s.time || "16:00–17:30";
+}
+
+function cleanIntro(raw) {
+  raw = String(raw || "")
+    .replace(/\(about 80 words\)/gi, "")
+    .replace(/Teacher in charge/gi, "")
+    .replace(/\(約100字\)/g, "")
+    .replace(/負責老師/g, "")
+    .trim();
+  return raw.length < 8 ? "" : raw;
+}
+
+function blurb(c) {
+  const raw = cleanIntro(lang() === "en" ? c.introEn || c.introZh : c.introZh || c.introEn);
+  if (!raw) return c.teachers.length ? teachersText(c) : "";
+  const line = raw.split("\n").map((s) => s.trim()).find(Boolean) || raw;
+  return line.length > 72 ? line.slice(0, 72) + "…" : line;
+}
+
+function clubFromHighlight(h) {
+  const name = String(h.titleZh || "").replace(/\s*選拔\s*$/, "").trim();
+  const key = { 跳舞: "舞蹈組", 游泳: "游泳隊" }[name] || name;
+  const exact = ECA.clubs.find((x) => x.id === key || x.nameZh === key);
+  if (exact) return exact;
+  const hits = ECA.clubs.filter((x) => x.nameZh.includes(key));
+  return hits.length === 1 ? hits[0] : null;
+}
+function highlightHref(h) {
+  const exact = clubFromHighlight(h);
+  if (exact) return `#/club/${encodeId(exact.id)}`;
+  const name = String(h.titleZh || "").replace(/\s*選拔\s*$/, "").trim();
+  return `#/clubs?q=${encodeURIComponent(name)}`;
+}
+
+function home() {
+  const L = t();
+  const hls = weekHighlights();
+  return `${nav("home")}
+    <section class="hero" style="background-image:url('img/hero.jpg')">
+      <div class="hero-inner">
+        <h1>${L.title}</h1>
+        <p>${L.homeLead}</p>
+      </div>
+    </section>
+    <div class="hero-bar" role="status">
+      <strong>${L.noticeLabel}</strong>
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>${L.notice}</span>
+          <span aria-hidden="true">${L.notice}</span>
+        </div>
+      </div>
+    </div>
+    <main>
+    <h2>${L.cats}</h2>
+    <div class="grid">
+      ${ECA.categories
+        .map((c) => {
+          const n = ECA.clubs.filter((x) => x.category === c.id).length;
+          return `<a class="cat ${c.id}" href="#/clubs?cat=${c.id}"><span>${lang() === "en" ? c.en : c.zh}</span><small>${L.count(n)}</small></a>`;
+        })
+        .join("")}
+    </div>
+    <h2 style="margin-top:36px">${L.week}</h2>
+    ${
+      hls.length
+        ? `<div class="list">${hls
+            .map(
+              (h) =>
+                `<a class="hl" href="${highlightHref(h)}"><time>${h.date}</time><span>${escapeHtml(lang() === "en" ? h.titleEn : h.titleZh)}</span></a>`
+            )
+            .join("")}</div>`
+        : `<p class="empty">${L.noWeek}</p>`
+    }
+  </main>`;
+}
+
+function clubCard(c) {
+  const L = t();
+  return `<a class="card" href="#/club/${encodeId(c.id)}">
+    ${cover(c)}
+    <div class="body">
+      <h3>${escapeHtml(clubName(c))}</h3>
+      <div class="meta">
+        <span class="badge">${escapeHtml(catLabel(c.category))}</span>
+        ${daysText(c)}
+        ${c.s1 ? ` · ${L.s1Badge}` : ""}
+      </div>
+      ${blurb(c) ? `<p class="meta">${escapeHtml(blurb(c))}</p>` : ""}
+    </div>
+  </a>`;
+}
+
+function clubsPage(params) {
+  const L = t();
+  params = params || new URLSearchParams();
+  const cat = params.get("cat") || "";
+  const day = params.get("day") || "";
+  const q = (params.get("q") || "").trim().toLowerCase();
+  let rows = ECA.clubs;
+  if (cat) rows = rows.filter((c) => c.category === cat);
+  if (day) rows = rows.filter((c) => c.sessions.some((s) => s.day === day));
+  if (q) {
+    rows = rows.filter((c) =>
+      [c.nameZh, c.nameEn, c.teachers.join(" "), catLabel(c.category), c.introZh, c.introEn].join(" ").toLowerCase().includes(q)
+    );
+  }
+  return `${nav("clubs")}<main>
+    <h1>${cat ? escapeHtml(catLabel(cat)) : L.clubs}</h1>
+    <p class="lead">${L.count(rows.length)}</p>
+    <div class="filters">
+      <input id="q" type="search" placeholder="${L.search}" value="${escapeHtml(params.get("q") || "")}" />
+      <select id="cat">${["", ...ECA.categories.map((c) => c.id)]
+        .map((id) => `<option value="${id}" ${cat === id ? "selected" : ""}>${id ? catLabel(id) : L.allCat}</option>`)
+        .join("")}</select>
+      <select id="day">${["", ...DAY_ORDER]
+        .map((d) => `<option value="${d}" ${day === d ? "selected" : ""}>${d ? DAY[d][lang()] : L.allDay}</option>`)
+        .join("")}</select>
+    </div>
+    <div class="cards">${rows.map(clubCard).join("") || `<p class="empty">${L.noResult}</p>`}</div>
+  </main>`;
+}
+
+function clubPage(id) {
+  const L = t();
+  const c = ECA.clubs.find((x) => x.id === id);
+  if (!c) return `${nav("clubs")}<main><p>${L.noResult}</p></main>`;
+  const sess = c.sessions
+    .map((s) => {
+      const extra = s.label && s.label !== c.nameZh ? ` · ${escapeHtml(s.label)}` : "";
+      return `<li>${DAY[s.day][lang()]} · ${escapeHtml(s.venue)}${extra} · ${sessionTime(c, s)}</li>`;
+    })
+    .join("");
+  const intro = cleanIntro(lang() === "en" ? c.introEn || c.introZh : c.introZh || c.introEn);
+  const coverHtml = c.cover
+    ? `<div class="cover ${escapeHtml(c.category)} hero zoom" data-full="${encodeURI(c.cover)}" style="background-image:url('${encodeURI(c.cover)}')"></div>`
+    : `<div class="cover ${escapeHtml(c.category)} hero" aria-hidden="true"></div>`;
+  const gallery = (c.photos || [])
+    .map((p) => `<img src="${encodeURI(p)}" alt="${escapeHtml(clubName(c))}" data-full="${encodeURI(p)}" />`)
+    .join("");
+  return `${nav("clubs")}<main>
+    <a class="back" href="#/clubs">${L.back}</a>
+    <h1>${escapeHtml(clubName(c))}</h1>
+    <p class="lead">${escapeHtml(lang() === "en" ? c.nameZh : c.nameEn)} · ${escapeHtml(catLabel(c.category))}${c.s1 ? " · " + L.s1Badge : ""}</p>
+    ${coverHtml}
+    <div class="prose">
+      <h2>${L.whenWhere}</h2>
+      ${sess ? `<ul>${sess}</ul><p>${lang() === "en" ? ECA.timeNoteEn : ECA.timeNoteZh}</p>` : `<p>${L.noSession}</p>`}
+      <h2>${L.teachers}</h2>
+      <p>${c.teachers.length ? escapeHtml(teachersText(c)) : "—"}</p>
+      <h2>${lang() === "en" ? "Introduction" : "簡介"}</h2>
+      <p>${intro ? escapeHtml(intro).replace(/\n/g, "<br>") : L.introSoon}</p>
+      ${gallery ? `<h2>${L.photos}</h2><div class="gallery">${gallery}</div>` : ""}
+    </div>
+  </main>`;
+}
+
+function todayKey() {
+  return DAY_ORDER[(new Date().getDay() + 6) % 7] || "mon";
+}
+
+function sessionBits(c, s) {
+  const lab = s.label || "";
+  const show =
+    lab &&
+    lab !== c.nameZh &&
+    lab !== c.id &&
+    !lab.includes(c.nameZh) &&
+    !c.nameZh.includes(lab) &&
+    !/^男女/.test(lab);
+  const clock = sessionTime(c, s);
+  return [s.venue, show ? lab : "", clock === "16:00–17:30" ? "" : clock].filter(Boolean).join(" · ");
+}
+
+function dayEntries(day, cat) {
+  const rows = [];
+  for (const c of ECA.clubs) {
+    if (cat && c.category !== cat) continue;
+    const ss = c.sessions.filter((s) => s.day === day);
+    if (!ss.length) continue;
+    const where = [...new Set(ss.map((s) => sessionBits(c, s)))].join("、");
+    rows.push({ c, where });
+  }
+  rows.sort(
+    (a, b) =>
+      a.c.category.localeCompare(b.c.category) ||
+      clubName(a.c).localeCompare(clubName(b.c), lang() === "en" ? "en" : "zh-Hant")
+  );
+  return rows;
+}
+
+function timetablePage(params) {
+  const L = t();
+  params = params || new URLSearchParams();
+  const day = DAY_ORDER.includes(params.get("day")) ? params.get("day") : todayKey();
+  const cat = params.get("cat") || "";
+  const rows = dayEntries(day, cat);
+  const qs = (d) => {
+    const p = new URLSearchParams();
+    p.set("day", d);
+    if (cat) p.set("cat", cat);
+    return "#/timetable?" + p.toString();
+  };
+  let last = "";
+  const list = rows
+    .map(({ c, where }) => {
+      const head = c.category !== last ? ((last = c.category), `<h3 class="tt-cat">${escapeHtml(catLabel(c.category))}</h3>`) : "";
+      return `${head}<a class="tt-row" href="#/club/${encodeId(c.id)}"><span><strong>${escapeHtml(clubName(c))}</strong><span class="meta">${escapeHtml(where)}</span></span>${c.s1 ? `<span class="badge">${L.s1Badge}</span>` : ""}</a>`;
+    })
+    .join("");
+  return `${nav("timetable")}<main>
+    <h1>${L.timetable}</h1>
+    <p class="lead">16:00–17:30 · ${DAY[day][lang()]} · ${L.count(rows.length)}<br>${L.source}</p>
+    <div class="tt-pills">${DAY_ORDER.map(
+      (d) => `<a href="${qs(d)}"${d === day ? ' aria-current="page"' : ""}>${DAY[d][lang()]}</a>`
+    ).join("")}</div>
+    <div class="filters">
+      <select id="cat">${["", ...ECA.categories.map((c) => c.id)]
+        .map((id) => `<option value="${id}" ${cat === id ? "selected" : ""}>${id ? catLabel(id) : L.allCat}</option>`)
+        .join("")}</select>
+    </div>
+    <div class="tt-list">${list || `<p class="empty">${L.noResult}</p>`}</div>
+    <h2 class="tt-wide-title">${L.weekTable}</h2>
+    <div class="tt-wide">
+      <table>
+        <thead><tr>${DAY_ORDER.map(
+          (d) => `<th>${DAY[d][lang()]}</th>`
+        ).join("")}</tr></thead>
+        <tbody><tr>${DAY_ORDER.map((d) => {
+          const cell = dayEntries(d, cat)
+            .map(
+              ({ c, where }) =>
+                `<a href="#/club/${encodeId(c.id)}">${escapeHtml(clubName(c))}<span class="meta">${escapeHtml(where)}</span></a>`
+            )
+            .join("");
+          return `<td>${cell || "—"}</td>`;
+        }).join("")}</tr></tbody>
+      </table>
+    </div>
+  </main>`;
+}
+
+function s1Page() {
+  const zh = `<div class="prose">
+    <h2>誰必須參加</h2>
+    <p>中一級同學逢<strong>星期一至四</strong>均需出席課外活動。星期五部分組別仍會訓練，亦有全人教育時段，以校曆為準。</p>
+    <h2>時間</h2>
+    <p>一般為課後 <strong>16:00–17:30</strong>。場地見各組頁及時間表，外借場地（例如田徑、足球、欖球）以當日負責老師指示為準。</p>
+    <h2>如何選組</h2>
+    <p>先到「課外活動」按類別或星期篩選。需要選拔的隊伍（球類、合唱團等）會在首頁「本週重點」列出日期。沒有選拔的組別按學校公布的意願／分配結果出席。</p>
+    <h2>活動類別</h2>
+    <ul>
+      <li>學術：辯論、語文班、集誦、傳媒等</li>
+      <li>藝術及音樂：舞蹈、合唱、樂團、視藝等</li>
+      <li>科創：AI、機械人、無人機、STEAM 等</li>
+      <li>體育：球類、田徑、劍擊、滑板等</li>
+      <li>制服團隊：童軍、女童軍、交通安全隊、升旗隊等</li>
+      <li>服務隊伍：學生會、領袖生、圖書館、校園大使等</li>
+      <li>興趣學會：日本文化、菲林等</li>
+      <li>其他：桌上遊戲、氣球造型等</li>
+    </ul>
+    <h2>出席</h2>
+    <p>點名及請假沿用學校 eClass／組別負責老師安排。報名見「<a href="#/apply">課外活動報名</a>」。</p>
+    <h2>查詢</h2>
+    <p>學生發展部（課外活動）。學校總機見 <a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a>。</p>
+  </div>`;
+  const en = `<div class="prose">
+    <h2>Who must join</h2>
+    <p>All S1 students attend ECA <strong>Monday to Thursday</strong>. Some teams also train on Friday. Follow the school calendar for whole-person education slots.</p>
+    <h2>Time</h2>
+    <p>Usually <strong>16:00–17:30</strong>. Venues are on each club page. Off-campus venues follow the teacher-in-charge.</p>
+    <h2>How to choose</h2>
+    <p>Use the club directory (category or weekday). Teams with trials are listed under “This week” on the home page. Other groups follow the school allocation result.</p>
+    <h2>Attendance</h2>
+    <p>Roll call and leave stay on eClass / the teacher-in-charge. See <a href="#/apply">ECA sign-up</a>.</p>
+    <h2>Contact</h2>
+    <p>Department of Student Affairs (ECA). See <a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a>.</p>
+  </div>`;
+  return `${nav("s1")}<main><h1>${t().s1guide}</h1>${lang() === "en" ? en : zh}</main>`;
+}
+
+function applyPage() {
+  const zh = `<div class="prose">
+    <h2>怎樣報名</h2>
+    <p>中一級課外活動意願及選拔，按學校公布經 <strong>eClass</strong> 提交。本頁只作說明，不收集個人資料或點名。</p>
+    <h2>步驟</h2>
+    <ol>
+      <li>先讀「<a href="#/s1">課外活動須知</a>」，並到「<a href="#/clubs">課外活動</a>」睇組別、時間及地點。</li>
+      <li>需要選拔的隊伍，日期見首頁「本週重點」。</li>
+      <li>按班主任／負責老師指示，在 eClass 填意願或出席選拔。</li>
+    </ol>
+    <h2>查詢</h2>
+    <p>學生發展部（課外活動）。學校網站 <a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a>。</p>
+  </div>`;
+  const en = `<div class="prose">
+    <h2>How to sign up</h2>
+    <p>S1 choices and trials follow the school notice on <strong>eClass</strong>. This page does not collect personal data or take roll call.</p>
+    <h2>Steps</h2>
+    <ol>
+      <li>Read the <a href="#/s1">ECA notes</a> and browse <a href="#/clubs">clubs</a> for time and venue.</li>
+      <li>Trial dates are under “This week” on the home page.</li>
+      <li>Submit your choice on eClass, or attend the trial, as your teacher directs.</li>
+    </ol>
+    <h2>Contact</h2>
+    <p>Department of Student Affairs (ECA). <a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a>.</p>
+  </div>`;
+  return `${nav("apply")}<main><h1>${t().apply}</h1>${lang() === "en" ? en : zh}</main>`;
+}
+
+function teamsStore() {
+  return window.ECA_TEAMS || { events: [], results: [] };
+}
+function pad2(n) {
+  return String(n).padStart(2, "0");
+}
+function ymParts(params) {
+  const now = new Date();
+  const m = String(params?.get("ym") || "").match(/^(\d{4})-(\d{2})$/);
+  let y = m ? +m[1] : now.getFullYear();
+  let mo = m ? +m[2] : now.getMonth() + 1;
+  if (mo < 1) {
+    mo = 12;
+    y--;
+  }
+  if (mo > 12) {
+    mo = 1;
+    y++;
+  }
+  return { y, mo };
+}
+function shiftYm(y, mo, d) {
+  mo += d;
+  if (mo < 1) {
+    mo = 12;
+    y--;
+  }
+  if (mo > 12) {
+    mo = 1;
+    y++;
+  }
+  return `${y}-${pad2(mo)}`;
+}
+function teamsPage(params) {
+  const L = t();
+  const { y, mo } = ymParts(params);
+  const events = teamsStore().events || [];
+  const results = teamsStore().results || [];
+  const prefix = `${y}-${pad2(mo)}-`;
+  const monthEvents = events.filter((e) => String(e.date).startsWith(prefix));
+  const byDay = new Map();
+  for (const e of monthEvents) {
+    const d = String(e.date).slice(8, 10);
+    if (!byDay.has(d)) byDay.set(d, []);
+    byDay.get(d).push(e);
+  }
+  const first = new Date(y, mo - 1, 1);
+  const dim = new Date(y, mo, 0).getDate();
+  const today = new Date();
+  const isThis = today.getFullYear() === y && today.getMonth() + 1 === mo;
+  const wd = lang() === "en" ? ["S", "M", "T", "W", "T", "F", "S"] : ["日", "一", "二", "三", "四", "五", "六"];
+  const title =
+    lang() === "en" ? first.toLocaleString("en", { month: "long", year: "numeric" }) : `${y}年${mo}月`;
+  const cells = [];
+  for (let i = 0; i < first.getDay(); i++) cells.push(`<div class="cal-cell is-pad"></div>`);
+  for (let d = 1; d <= dim; d++) {
+    const evs = byDay.get(pad2(d)) || [];
+    const cls = ["cal-cell", evs.length ? "has-ev" : "", isThis && today.getDate() === d ? "is-today" : ""]
+      .filter(Boolean)
+      .join(" ");
+    const bits = evs
+      .map((e) => {
+        const club = findClub(e.team);
+        const name = club ? clubName(club) : e.team;
+        const tt = lang() === "en" ? e.titleEn || e.titleZh : e.titleZh || e.titleEn;
+        return `<span class="cal-ev">${escapeHtml(name)}${tt ? " · " + escapeHtml(tt) : ""}</span>`;
+      })
+      .join("");
+    cells.push(`<div class="${cls}"><span class="cal-d">${d}</span>${bits}</div>`);
+  }
+  const monthList = monthEvents
+    .slice()
+    .sort((a, b) => String(a.date).localeCompare(String(b.date)))
+    .map((e) => {
+      const club = findClub(e.team);
+      const name = club ? clubName(club) : e.team;
+      const tt = lang() === "en" ? e.titleEn || e.titleZh : e.titleZh || e.titleEn;
+      const href = club ? `#/club/${encodeId(club.id)}` : "#/teams";
+      return `<a class="hl" href="${href}"><time>${escapeHtml(e.date)}</time><span>${escapeHtml(name)}${tt ? ` · ${escapeHtml(tt)}` : ""}${e.venue ? `<span class="meta">${escapeHtml(e.venue)}</span>` : ""}</span></a>`;
+    })
+    .join("");
+  const sports = ECA.clubs.filter((c) => c.category === "sports");
+  const extra = [];
+  for (const r of results) {
+    if (!sports.some((c) => c.id === r.team || c.nameZh === r.team || c.nameEn === r.team)) {
+      extra.push({ id: r.team, nameZh: r.team, nameEn: r.team, category: "sports" });
+    }
+  }
+  const cards = [...sports, ...extra]
+    .map((c) => {
+      const r = results.find((x) => x.team === c.id || x.team === c.nameZh || x.team === c.nameEn);
+      const status = r
+        ? lang() === "en"
+          ? r.statusEn || r.statusZh
+          : r.statusZh || r.statusEn
+        : L.pendingResult;
+      const matches = (r?.matches || [])
+        .map((m) => {
+          const vs = lang() === "en" ? m.vsEn || m.vsZh : m.vsZh || m.vsEn;
+          let out = "";
+          if (m.win === true) out = L.win;
+          else if (m.win === false) out = L.lose;
+          else if (m.draw) out = L.draw;
+          return `<li><time>${escapeHtml(m.date || "")}</time> ${escapeHtml(vs || "")}${m.score ? ` ${escapeHtml(m.score)}` : ""}${out ? ` · ${out}` : ""}</li>`;
+        })
+        .join("");
+      const href = findClub(c.id) ? `#/club/${encodeId(c.id)}` : "#/teams";
+      return `<article class="team-card">
+        <h3><a href="${href}">${escapeHtml(clubName(c))}</a></h3>
+        <p class="meta">${escapeHtml(status || L.pendingResult)}</p>
+        ${matches ? `<ul class="team-matches">${matches}</ul>` : ""}
+      </article>`;
+    })
+    .join("");
+  return `${nav("teams")}<main>
+    <h1>${L.teams}</h1>
+    <h2>${L.calTitle}</h2>
+    <div class="cal-nav">
+      <a href="#/teams?ym=${shiftYm(y, mo, -1)}">‹</a>
+      <span>${escapeHtml(title)}</span>
+      <a href="#/teams?ym=${shiftYm(y, mo, 1)}">›</a>
+    </div>
+    <div class="cal-grid">
+      ${wd.map((w) => `<div class="cal-wd">${w}</div>`).join("")}
+      ${cells.join("")}
+    </div>
+    ${monthList ? `<div class="list" style="margin-top:16px">${monthList}</div>` : `<p class="empty">${L.noFixture}</p>`}
+    <h2 style="margin-top:36px">${L.resultsTitle}</h2>
+    <div class="team-list">${cards}</div>
+  </main>`;
+}
+
+function contactPage() {
+  const zh = `<div class="prose">
+    <h2>學生發展部（課外活動）</h2>
+    <p>組別內容請先問負責老師。一般查詢可經校務處轉學生發展部。</p>
+    <h2>學校</h2>
+    <p>萬鈞伯裘書院<br>新界元朗天水圍天華路 51 號</p>
+    <p>電話：<a href="tel:+85224482960">2448 2960</a><br>
+    電郵：<a href="mailto:enquiries@mkpc.edu.hk">enquiries@mkpc.edu.hk</a><br>
+    傳真：2447 1924</p>
+    <p>辦公時間：星期一至五 08:30–17:00；星期六 09:00–12:30</p>
+    <p>網站：<a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a></p>
+  </div>`;
+  const en = `<div class="prose">
+    <h2>Department of Student Affairs (ECA)</h2>
+    <p>Ask the teacher-in-charge about a club. General enquiries go through the General Office.</p>
+    <h2>School</h2>
+    <p>Man Kwan Pak Kau College<br>51 Tin Wah Road, Tin Shui Wai, Yuen Long, N.T.</p>
+    <p>Tel: <a href="tel:+85224482960">2448 2960</a><br>
+    Email: <a href="mailto:enquiries@mkpc.edu.hk">enquiries@mkpc.edu.hk</a><br>
+    Fax: 2447 1924</p>
+    <p>Office hours: Mon–Fri 08:30–17:00; Sat 09:00–12:30</p>
+    <p>Website: <a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a></p>
+  </div>`;
+  return `${nav("contact")}<main><h1>${t().contact}</h1>${lang() === "en" ? en : zh}</main>`;
+}
+
+function postedNews() {
+  return window.ECA_NEWS || [];
+}
+
+function findClub(name) {
+  return ECA.clubs.find((x) => x.id === name || x.nameZh === name || x.nameEn === name);
+}
+
+function paperDate(iso) {
+  const d = iso ? new Date(iso + "T00:00:00") : new Date();
+  if (Number.isNaN(d.getTime())) return iso || "";
+  if (lang() === "en") {
+    return d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+  }
+  return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日 · 星期${"日一二三四五六"[d.getDay()]}`;
+}
+
+function newsImg(club) {
+  const cat = {
+    sports: "img/sports.jpg",
+    academic: "img/service.jpg",
+    arts: "img/arts.jpg",
+    steam: "img/academic.jpg",
+    service: "img/service.jpg",
+    team: "img/team.jpg",
+    interest: "img/arts.jpg",
+    other: "img/hero.jpg",
+  };
+  return club?.cover || (club?.photos && club.photos[0]) || cat[club?.category] || "img/hero.jpg";
+}
+
+function newsItems() {
+  const posts = postedNews().map((p) => {
+    const club = p.club ? findClub(p.club) : null;
+    return {
+      date: p.date,
+      title: lang() === "en" ? p.titleEn || p.titleZh : p.titleZh || p.titleEn,
+      href: p.id ? `#/news/${encodeId(p.id)}` : club ? `#/club/${encodeId(club.id)}` : "#/news",
+      extra: lang() === "en" ? p.bodyEn || p.bodyZh : p.bodyZh || p.bodyEn,
+      trial: false,
+      img: p.photo || newsImg(club),
+    };
+  });
+  const trials = (ECA.highlights || []).map((h) => {
+    const club = clubFromHighlight(h);
+    return {
+      date: h.date,
+      title: lang() === "en" ? h.titleEn || h.titleZh : h.titleZh,
+      href: highlightHref(h),
+      extra: "",
+      trial: true,
+      img: newsImg(club),
+    };
+  });
+  return [...posts, ...trials].sort((a, b) => String(b.date).localeCompare(String(a.date)));
+}
+
+function newsDek(n, max) {
+  const extra = n.extra ? n.extra.split("\n").map((s) => s.trim()).find(Boolean) || "" : "";
+  if (extra) return extra.length > max ? extra.slice(0, max) + "…" : extra;
+  return n.trial
+    ? lang() === "en"
+      ? `Selection: ${paperDate(n.date)}.`
+      : `選拔日期：${paperDate(n.date)}。`
+    : "";
+}
+
+function npCard(n, kind) {
+  const L = t();
+  const dek = newsDek(n, kind === "hero" ? 120 : 64);
+  const h = kind === "hero" ? "h2" : "h3";
+  return `<a class="np-${kind}" href="${n.href}">
+    <img src="${encodeURI(n.img)}" alt="" />
+    <div>
+      <span class="np-tag">${n.trial ? L.newsTrial : L.news}</span>
+      <${h}>${escapeHtml(n.title)}</${h}>
+      ${kind === "row" ? "" : dek ? `<p>${escapeHtml(dek)}</p>` : ""}
+      <time>${escapeHtml(n.date)}</time>
+    </div>
+  </a>`;
+}
+
+function newsPage() {
+  const L = t();
+  const items = newsItems();
+  if (!items.length) {
+    return `${nav("news")}<main class="np"><div class="np-mast"><h1>${L.news}</h1><span>${paperDate()}</span></div><p class="empty">${L.noNews}</p></main>`;
+  }
+  const hero = items[0];
+  const rail = items.slice(1, 5);
+  const cards = items.slice(5, 9);
+  const rest = items.slice(9);
+  const tick = items
+    .slice(0, 6)
+    .map((n) => `<a href="${n.href}">${escapeHtml(n.title)}</a>`)
+    .join("<span>·</span>");
+  return `${nav("news")}<main class="np">
+    <div class="np-mast">
+      <div>
+        <p class="np-kicker">${escapeHtml(L.school)} · ${escapeHtml(L.paperDept)}</p>
+        <h1>${L.news}</h1>
+      </div>
+      <span>${paperDate()}</span>
+    </div>
+    <div class="np-tick"><b>${L.paperTick}</b>${tick}</div>
+    <div class="np-front">
+      ${npCard(hero, "hero")}
+      <div class="np-rail">${rail.map((n) => npCard(n, "rail")).join("")}</div>
+    </div>
+    ${cards.length ? `<h2 class="np-more">${L.paperMore}</h2><div class="np-cards">${cards.map((n) => npCard(n, "card")).join("")}</div>` : ""}
+    ${rest.length ? `<div class="np-list">${rest.map((n) => npCard(n, "row")).join("")}</div>` : ""}
+  </main>`;
+}
+
+function storyPage(id) {
+  const L = t();
+  const p = postedNews().find((x) => x.id === id);
+  if (!p) {
+    return `${nav("story")}<main class="np"><p class="empty">${L.noNews}</p><p><a class="back" href="#/news">${L.backNews}</a></p></main>`;
+  }
+  const title = lang() === "en" ? p.titleEn || p.titleZh : p.titleZh || p.titleEn;
+  const body = lang() === "en" ? p.bodyEn || p.bodyZh : p.bodyZh || p.bodyEn;
+  const club = p.club ? findClub(p.club) : null;
+  const img = p.photo || newsImg(club);
+  return `${nav("story")}<main class="np np-article">
+    <a class="back" href="#/news">${L.backNews}</a>
+    <p class="np-tag">${L.news}</p>
+    <h1>${escapeHtml(title)}</h1>
+    <p class="np-byline">${escapeHtml(paperDate(p.date))}${club ? ` · <a href="#/club/${encodeId(club.id)}">${escapeHtml(clubName(club))}</a>` : ""}</p>
+    <img class="np-wide" src="${encodeURI(img)}" alt="" />
+    <div class="np-body">${body ? `<p>${escapeHtml(body).replace(/\n/g, "<br>")}</p>` : ""}</div>
+  </main>`;
+}
+
+function footer() {
+  return `<footer><span>© ${new Date().getFullYear()} <a href="https://www.mkpc.edu.hk/">萬鈞伯裘書院</a> · 學生發展部 · ${ECA.generated}</span></footer>`;
+}
+
+function bind() {
+  document.getElementById("langBtn")?.addEventListener("click", () => {
+    localStorage.setItem("eca-lang", lang() === "zh" ? "en" : "zh");
+    render();
+  });
+  const r = parseRoute();
+  const q = document.getElementById("q");
+  const cat = document.getElementById("cat");
+  const day = document.getElementById("day");
+  const sync = () => {
+    const p = new URLSearchParams();
+    if (r.page === "timetable") {
+      p.set("day", r.params?.get("day") || todayKey());
+      if (cat?.value) p.set("cat", cat.value);
+      location.hash = "#/timetable?" + p.toString();
+      return;
+    }
+    if (q?.value) p.set("q", q.value);
+    if (cat?.value) p.set("cat", cat.value);
+    if (day?.value) p.set("day", day.value);
+    const qs = p.toString();
+    location.hash = "#/clubs" + (qs ? "?" + qs : "");
+  };
+  q?.addEventListener("input", () => {
+    clearTimeout(q._t);
+    q._t = setTimeout(sync, 200);
+  });
+  cat?.addEventListener("change", sync);
+  day?.addEventListener("change", sync);
+  const lb = document.getElementById("lb");
+  document.querySelectorAll("[data-full]").forEach((el) => {
+    el.addEventListener("click", () => {
+      if (!lb) return;
+      lb.querySelector("img").src = el.getAttribute("data-full") || el.src;
+      lb.showModal();
+    });
+  });
+  if (lb && !lb.onclick) lb.onclick = () => lb.close();
+}
+
+function render() {
+  const r = parseRoute();
+  let html = "";
+  if (r.page === "clubs") html = clubsPage(r.params);
+  else if (r.page === "club") html = clubPage(r.id);
+  else if (r.page === "timetable") html = timetablePage(r.params);
+  else if (r.page === "s1") html = s1Page();
+  else if (r.page === "apply") html = applyPage();
+  else if (r.page === "teams") html = teamsPage(r.params);
+  else if (r.page === "contact") html = contactPage();
+  else if (r.page === "news") html = newsPage();
+  else if (r.page === "story") html = storyPage(r.id);
+  else html = home();
+  document.getElementById("app").innerHTML = html + footer();
+  document.title = (lang() === "en" ? "ECA" : "課外活動") + " · MKPC";
+  bind();
+}
+
+window.addEventListener("hashchange", render);
+window.addEventListener("DOMContentLoaded", render);

@@ -1,0 +1,8 @@
+.cache/
+data/sheets.json
+node_modules/
+.vercel/
+*.xlsx
+~$
+.DS_Store
+Thumbs.db
