@@ -301,8 +301,28 @@ footer span, footer a { position: relative; color: #eee; }
 .tt-wide td { min-width: 148px; }
 .tt-wide td a { display: block; margin: 0 0 10px; text-decoration: none; font-weight: 700; }
 .tt-wide td a .meta { display: block; font-weight: 400; }
-.s1-tt-wide table { min-width: 760px; }
+.s1-tt-wide { overflow: auto; margin: 8px 0 16px; }
+.s1-tt-wide table {
+  width: 100%;
+  min-width: 0;
+  table-layout: fixed;
+  font-size: 15px;
+  line-height: 1.4;
+}
+.s1-tt-wide th,
+.s1-tt-wide td { width: 25%; padding: 12px 14px; }
+.s1-tt-item {
+  display: block;
+  margin: 0 0 8px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+.s1-tt-item .meta { display: block; font-weight: 400; font-size: 12px; color: var(--muted); }
+.s1-tt-item:hover strong { color: var(--purple); }
+.s1-tt-note { margin: 0 0 10px; font-size: 12px; color: var(--muted); font-weight: 400; }
 .s1-tt-stack { display: none; }
+.s1-tt-stack .s1-tt-item { background: #fff; border-radius: 12px; padding: 12px 16px; box-shadow: 0 4px 16px rgba(0,0,0,.06); }
 @media (max-width: 900px) {
   .grid { grid-template-columns: 1fr 1fr; }
 }

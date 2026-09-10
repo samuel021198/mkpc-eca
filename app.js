@@ -63,10 +63,10 @@ const I18N = {
     back: "返回目錄",
     source: "時間表由總表自動產生，請勿另存一份清單。",
     weekTable: "一週總表",
-    s1tt: "中一級課外活動時間表",
-    s1ttLead: "下表僅列中一可選組別，方便對照志願。一般時間為 16:00–17:30。報名時星期一、三、四、五每日須填三個志願；星期二仍須出席。完整時間表見「時間表」。",
-    s1ttPref: "填志願",
-    s1ttAttend: "出席",
+    s1tt: "中一級報名時間表",
+    s1ttLead: "下表與報名系統可選活動相同。星期一、三、四、五每日填三個志願。標「面試」者僅已獲選拔同學可選。一般時間 16:00–17:30。",
+    s1ttInterview: "面試",
+    s1ttLevel: "須填級別",
     count: (n) => `共 ${n} 組`,
   },
   en: {
@@ -118,10 +118,10 @@ const I18N = {
     back: "Back to directory",
     source: "This timetable is generated from the master sheet. Do not keep a second copy.",
     weekTable: "Week overview",
-    s1tt: "S1 ECA timetable",
-    s1ttLead: "The table lists clubs open to S1, to help with preferences. Usual time is 16:00–17:30. Enter three preferences for Monday, Wednesday, Thursday and Friday. Tuesday remains a compulsory ECA day. See Timetable for the full list.",
-    s1ttPref: "preferences",
-    s1ttAttend: "attend",
+    s1tt: "S1 application timetable",
+    s1ttLead: "This table matches the activities on the application form. Enter three preferences for Monday, Wednesday, Thursday and Friday. Items marked Trial are only for students already selected. Usual time is 16:00–17:30.",
+    s1ttInterview: "Trial",
+    s1ttLevel: "Level required",
     count: (n) => `${n} clubs`,
   },
 };
@@ -490,44 +490,62 @@ function timetablePage(params) {
   </main>`;
 }
 
-function s1DayHead(d) {
-  const L = t();
-  const tag = d === "tue" ? L.s1ttAttend : L.s1ttPref;
-  return `${DAY[d][lang()]}（${tag}）`;
+function s1Form() {
+  return window.ECA_S1_FORM || { dayOrder: [], days: {}, activities: {}, interview: [], needLevel: [], clubAlias: {}, cat: {} };
 }
 
-function s1ClubLink(c, where) {
-  return `<a href="#/club/${encodeId(c.id)}">${escapeHtml(clubName(c))}<span class="meta">${escapeHtml(where)}</span></a>`;
+function s1FormClub(id) {
+  const f = s1Form();
+  return findClub(f.clubAlias[id] || id);
+}
+
+function s1FormItem(a) {
+  const L = t();
+  const f = s1Form();
+  const name = lang() === "en" ? a.en : a.zh;
+  const cat = f.cat[a.cat] ? f.cat[a.cat][lang()] : a.cat;
+  const bits = [cat];
+  if ((f.interview || []).includes(a.id)) bits.push(L.s1ttInterview);
+  if ((f.needLevel || []).includes(a.id)) bits.push(L.s1ttLevel);
+  const inner = `<strong>${escapeHtml(name)}</strong><span class="meta">${escapeHtml(bits.join(" · "))}</span>`;
+  const club = s1FormClub(a.id);
+  return club
+    ? `<a class="s1-tt-item" href="#/club/${encodeId(club.id)}">${inner}</a>`
+    : `<div class="s1-tt-item">${inner}</div>`;
+}
+
+function s1DayActs(day) {
+  return (s1Form().activities[day] || []).map((row) => ({
+    zh: row[0],
+    en: row[1],
+    cat: row[2],
+    id: row[3] || row[0],
+  }));
 }
 
 function s1TimetableHtml() {
   const L = t();
-  const days = ["mon", "tue", "wed", "thu", "fri"];
+  const f = s1Form();
+  const days = f.dayOrder || [];
+  const head = (d) => (lang() === "en" ? f.days[d].en : f.days[d].zh);
   const stack = days
     .map((d) => {
-      const rows = dayEntries(d, "", true);
-      const list = rows
-        .map(
-          ({ c, where }) =>
-            `<a class="tt-row" href="#/club/${encodeId(c.id)}"><span><strong>${escapeHtml(clubName(c))}</strong><span class="meta">${escapeHtml(where)}</span></span></a>`
-        )
-        .join("");
-      return `<h3 class="tt-cat">${escapeHtml(s1DayHead(d))}</h3><div class="tt-list">${list || `<p class="empty">—</p>`}</div>`;
+      const note = lang() === "en" ? f.days[d].noteEn : f.days[d].noteZh;
+      const list = s1DayActs(d).map(s1FormItem).join("");
+      return `<h3 class="tt-cat">${escapeHtml(head(d))}</h3>${note ? `<p class="s1-tt-note">${escapeHtml(note)}</p>` : ""}<div class="tt-list">${list}</div>`;
     })
     .join("");
-  const wide = `<div class="tt-wide s1-tt-wide"><table>
-    <thead><tr>${days.map((d) => `<th>${escapeHtml(s1DayHead(d))}</th>`).join("")}</tr></thead>
+  const wide = `<div class="s1-tt-wide"><table>
+    <thead><tr>${days.map((d) => `<th>${escapeHtml(head(d))}</th>`).join("")}</tr></thead>
     <tbody><tr>${days
       .map((d) => {
-        const cell = dayEntries(d, "", true)
-          .map(({ c, where }) => s1ClubLink(c, where))
-          .join("");
-        return `<td>${cell || "—"}</td>`;
+        const note = lang() === "en" ? f.days[d].noteEn : f.days[d].noteZh;
+        return `<td>${note ? `<p class="s1-tt-note">${escapeHtml(note)}</p>` : ""}${s1DayActs(d).map(s1FormItem).join("")}</td>`;
       })
       .join("")}</tr></tbody>
   </table></div>`;
   return `<h2>${L.s1tt}</h2>
-    <p>${L.s1ttLead} <a href="#/timetable">${L.timetable}</a></p>
+    <p>${L.s1ttLead}</p>
     ${wide}
     <div class="s1-tt-stack">${stack}</div>`;
 }
