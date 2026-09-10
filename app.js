@@ -63,6 +63,7 @@ const I18N = {
     back: "返回目錄",
     source: "時間表由總表自動產生，請勿另存一份清單。",
     weekTable: "一週總表",
+    s1Remark: "標「中一可選」者，總表列為中一級可參加。報名請以中一同學專區為準。",
     s1tt: "中一級報名時間表",
     s1ttLead: "下表與報名系統可選活動相同。星期一、三、四、五每日填三個志願。星期二為科創活動，稍後由老師安排，無須選報。標「面試」者僅已獲選拔同學可選。一般時間 16:00–17:30。",
     s1ttInterview: "面試",
@@ -118,6 +119,7 @@ const I18N = {
     back: "Back to directory",
     source: "This timetable is generated from the master sheet. Do not keep a second copy.",
     weekTable: "Week overview",
+    s1Remark: "“Open to S1” marks clubs listed as open to Secondary 1 on the master sheet. Sign-up follows the S1 area.",
     s1tt: "S1 application timetable",
     s1ttLead: "This table matches the activities on the application form. Enter three preferences for Monday, Wednesday, Thursday and Friday. Tuesday is InnoTech, to be arranged by teachers later; students need not choose a Tuesday activity. Items marked Trial are only for students already selected. Usual time is 16:00–17:30.",
     s1ttInterview: "Trial",
@@ -457,16 +459,12 @@ function timetablePage(params) {
     .join("");
   return `${nav("timetable")}<main>
     <h1>${L.timetable}</h1>
-    <p class="lead">16:00–17:30 · ${DAY[day][lang()]} · ${L.count(rows.length)}<br>${L.source}</p>
-    <div class="tt-pills">${DAY_ORDER.map(
-      (d) => `<a href="${qs(d)}"${d === day ? ' aria-current="page"' : ""}>${DAY[d][lang()]}</a>`
-    ).join("")}</div>
+    <p class="lead">16:00–17:30 · ${L.source}<br>${L.s1Remark}</p>
     <div class="filters">
       <select id="cat">${["", ...ECA.categories.map((c) => c.id)]
         .map((id) => `<option value="${id}" ${cat === id ? "selected" : ""}>${id ? catLabel(id) : L.allCat}</option>`)
         .join("")}</select>
     </div>
-    <div class="tt-list">${list || `<p class="empty">${L.noResult}</p>`}</div>
     <h2 class="tt-wide-title">${L.weekTable}</h2>
     <div class="tt-wide">
       <table>
@@ -477,13 +475,18 @@ function timetablePage(params) {
           const cell = dayEntries(d, cat)
             .map(
               ({ c, where }) =>
-                `<a href="#/club/${encodeId(c.id)}">${escapeHtml(clubName(c))}<span class="meta">${escapeHtml(where)}</span></a>`
+                `<a href="#/club/${encodeId(c.id)}">${escapeHtml(clubName(c))}${c.s1 ? ` <span class="badge">${L.s1Badge}</span>` : ""}<span class="meta">${escapeHtml(where)}</span></a>`
             )
             .join("");
           return `<td>${cell || "—"}</td>`;
         }).join("")}</tr></tbody>
       </table>
     </div>
+    <div class="tt-pills">${DAY_ORDER.map(
+      (d) => `<a href="${qs(d)}"${d === day ? ' aria-current="page"' : ""}>${DAY[d][lang()]}</a>`
+    ).join("")}</div>
+    <p class="lead">${DAY[day][lang()]} · ${L.count(rows.length)}</p>
+    <div class="tt-list">${list || `<p class="empty">${L.noResult}</p>`}</div>
   </main>`;
 }
 

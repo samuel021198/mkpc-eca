@@ -294,13 +294,21 @@ footer span, footer a { position: relative; color: #eee; }
 }
 .tt-row > span { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .tt-row:hover strong { color: var(--purple); }
-.tt-wide-title { margin: 36px 0 12px; font-size: 1.2rem; }
-.tt-wide { overflow: auto; }
-.tt-wide table { min-width: 920px; }
-.tt-wide th { white-space: nowrap; }
-.tt-wide td { min-width: 148px; }
-.tt-wide td a { display: block; margin: 0 0 10px; text-decoration: none; font-weight: 700; }
-.tt-wide td a .meta { display: block; font-weight: 400; }
+.tt-wide-title { margin: 8px 0 12px; font-size: 1.2rem; }
+.tt-wide { overflow: auto; margin: 0 0 24px; }
+.tt-wide table {
+  width: 100%;
+  min-width: 0;
+  table-layout: fixed;
+  font-size: 15px;
+  line-height: 1.4;
+}
+.tt-wide th { white-space: nowrap; padding: 12px 10px; }
+.tt-wide td { width: 16.66%; padding: 12px 10px; }
+.tt-wide td a { display: block; margin: 0 0 8px; text-decoration: none; font-weight: 600; color: inherit; }
+.tt-wide td a:hover { color: var(--purple); }
+.tt-wide td a .meta { display: block; font-weight: 400; font-size: 12px; color: var(--muted); }
+.tt-wide .badge { font-size: 11px; padding: 1px 6px; margin-left: 4px; }
 .s1-tt-wide { overflow: auto; margin: 8px 0 16px; }
 .s1-tt-wide table {
   width: 100%;
