@@ -47,7 +47,7 @@ const I18N = {
     cats: "活動類別",
     week: "本週重點",
     noticeLabel: "通告",
-    notice: "中一級同學須於星期一至五出席課外活動。報名日期為2026年9月15日至19日，詳見中一同學專區。",
+    notice: "中一級同學須於星期一至五出席課外活動。星期二為科創活動，稍後由老師安排，無須選報。報名日期為2026年9月15日至19日，詳見中一同學專區。",
     noWeek: "本週沒有已公布的選拔。可按校徽回首頁，或到課外活動瀏覽所有組別。",
     search: "搜尋組別",
     allCat: "所有類別",
@@ -64,7 +64,7 @@ const I18N = {
     source: "時間表由總表自動產生，請勿另存一份清單。",
     weekTable: "一週總表",
     s1tt: "中一級報名時間表",
-    s1ttLead: "下表與報名系統可選活動相同。星期一、三、四、五每日填三個志願。標「面試」者僅已獲選拔同學可選。一般時間 16:00–17:30。",
+    s1ttLead: "下表與報名系統可選活動相同。星期一、三、四、五每日填三個志願。星期二為科創活動，稍後由老師安排，無須選報。標「面試」者僅已獲選拔同學可選。一般時間 16:00–17:30。",
     s1ttInterview: "面試",
     s1ttLevel: "須填級別",
     count: (n) => `共 ${n} 組`,
@@ -102,7 +102,7 @@ const I18N = {
     cats: "Categories",
     week: "This week",
     noticeLabel: "Notice",
-    notice: "S1 students shall attend ECA from Monday to Friday. Applications are accepted from 15 to 19 September 2026. Please refer to the S1 area.",
+    notice: "S1 students shall attend ECA from Monday to Friday. Tuesday is InnoTech, to be arranged by teachers later; students need not choose a Tuesday activity. Applications are accepted from 15 to 19 September 2026. Please refer to the S1 area.",
     noWeek: "No published selections this week. Browse all clubs in the directory.",
     search: "Search clubs",
     allCat: "All categories",
@@ -119,7 +119,7 @@ const I18N = {
     source: "This timetable is generated from the master sheet. Do not keep a second copy.",
     weekTable: "Week overview",
     s1tt: "S1 application timetable",
-    s1ttLead: "This table matches the activities on the application form. Enter three preferences for Monday, Wednesday, Thursday and Friday. Items marked Trial are only for students already selected. Usual time is 16:00–17:30.",
+    s1ttLead: "This table matches the activities on the application form. Enter three preferences for Monday, Wednesday, Thursday and Friday. Tuesday is InnoTech, to be arranged by teachers later; students need not choose a Tuesday activity. Items marked Trial are only for students already selected. Usual time is 16:00–17:30.",
     s1ttInterview: "Trial",
     s1ttLevel: "Level required",
     count: (n) => `${n} clubs`,
@@ -217,10 +217,8 @@ function nav(page) {
         </span>
       </a>
       <nav class="nav-desk">
-        ${item("#/news", "news", "news")}
         ${item("#/clubs", "clubs", "clubs")}
         ${item("#/timetable", "timetable", "timetable")}
-        ${item("#/teams", "teams", "teams")}
         ${zone(L.s1zone)}
         ${item("#/contact", "contact", "contact")}
       </nav>
@@ -234,7 +232,6 @@ function nav(page) {
     ${tab("#/", "tabHome", "home")}
     ${tab("#/clubs", "tabClubs", "clubs")}
     ${tab("#/timetable", "tabTime", "timetable")}
-    ${tab("#/teams", "teams", "teams")}
     ${zone(L.tabS1)}
   </nav>`;
 }
@@ -553,17 +550,17 @@ function s1TimetableHtml() {
 function s1Page() {
   const zh = `<div class="prose">
     <h2>參加安排</h2>
-    <p>中一級同學須於<strong>星期一至五</strong>出席課外活動。</p>
+    <p>中一級同學須於<strong>星期一至五</strong>出席課外活動。<strong>星期二</strong>為科創活動，稍後由老師安排，同學無須選報。</p>
     <h2>時間</h2>
     <p>一般課外活動為課後 <strong>16:00–17:30</strong>。校隊訓練時間以負責老師安排為準，或會超過 17:30，最遲至 <strong>19:00</strong>。場地請參閱各組時間表；外借場地（例如田徑、足球、欖球）以當日負責老師指示為準。</p>
     ${s1TimetableHtml()}
     <h2>活動類別</h2>
+    <p>以下分類與報名系統相同，用以核對星期一、四、五第一志願須涵蓋至少兩個範疇。</p>
     <ul>
-      <li>學術：辯論、語文班、集誦、Drama Club、Newspaper Club、腦力攻防戰、社會服務團、MKPC On Air 等</li>
-      <li>藝術及音樂：跳舞、合唱、無伴奏合唱、樂團、管樂、視藝、手鈴、手鐘、樂器班等</li>
-      <li>體育：球類、田徑、劍擊、滑板、單輪車、跳繩、匹克球、棍網球等</li>
-      <li>制服團隊：童軍、女童軍、基督少年軍、交通安全隊、升旗隊、銀樂隊（逢星期三）</li>
-      <li>其他：桌上遊戲、桌樂冒險家、氣球造型等</li>
+      <li>學術：Debate Team、中文辯論、法文班、腦力攻防戰、Drama Club、社會服務團、日文班、Newspaper Club、英文集誦、德文班、韓文班</li>
+      <li>體育：女子籃球、男子籃球、羽毛球、田徑、足球、男女子排球、單輪車、乒乓球、跳繩、滑板、欖球、匹克球、劍擊、棍網球</li>
+      <li>藝術及音樂：手鈴、視覺藝術小組、桌上遊戲、MKPC On Air 廣播隊、樂器班、無伴奏合唱團、跳舞、手鐘、桌樂冒險家、合唱團、樂團、氣球造型班、管樂班</li>
+      <li>制服團隊（星期三）：女童軍、基督少年軍、交通安全隊、童軍、銀樂隊、升旗隊。星期三不計入上述兩個範疇。</li>
     </ul>
     <h2>出席</h2>
     <p>點名及請假按學校／組別負責老師安排。報名詳情見「<a href="#/apply">課外活動報名</a>」。</p>
@@ -572,17 +569,17 @@ function s1Page() {
   </div>`;
   const en = `<div class="prose">
     <h2>Participation</h2>
-    <p>All Secondary 1 students shall attend extracurricular activities from <strong>Monday to Friday</strong>.</p>
+    <p>All Secondary 1 students shall attend extracurricular activities from <strong>Monday to Friday</strong>. <strong>Tuesday</strong> is InnoTech, to be arranged by teachers later. Students need not choose a Tuesday activity.</p>
     <h2>Time</h2>
     <p>Regular sessions are held after school from <strong>16:00 to 17:30</strong>. School-team training shall follow the arrangement of the teacher-in-charge and may extend beyond 17:30, until <strong>19:00</strong> at the latest. Venues are set out in the timetable. Off-campus venues (for example athletics, football and rugby) shall follow the instructions of the teacher-in-charge on the day.</p>
     ${s1TimetableHtml()}
     <h2>Categories</h2>
+    <p>These groups match the application system. First preferences on Monday, Thursday and Friday shall cover at least two domains.</p>
     <ul>
-      <li>Academic: debate, language classes, choral speaking, Drama Club, Newspaper Club, Mind Challenge, Social Service Group, MKPC On Air, and others</li>
-      <li>Arts and music: dance, choir, a cappella, orchestra, band, visual arts, handbells, handchimes, instrumental classes, and others</li>
-      <li>Sports: ball games, athletics, fencing, skateboarding, unicycle, jump rope, pickleball, lacrosse, and others</li>
-      <li>Uniformed groups: Scouts, Girl Guides, The Boys’ Brigade, Road Safety Patrol, Flag-guards, and Marching Band (Wednesdays)</li>
-      <li>Others: board games, Tabletop Adventurers, balloon modelling, and others</li>
+      <li>Academic: Debate Team, Chinese Debating, French, Brain Battle, Drama Club, Social Service Group, Japanese, Newspaper Club, English choral speaking, German, Korean</li>
+      <li>Sports: girls’/boys’ basketball, badminton, athletics, football, volleyball, unicycle, table tennis, rope skipping, skateboarding, rugby, pickleball, fencing, lacrosse</li>
+      <li>Arts and music: handbells, visual arts, board games, MKPC On Air, instrumental classes, a cappella, dance, handchimes, tabletop adventure, choir, school band, balloon twisting, wind band</li>
+      <li>Uniformed groups (Wednesday): Girl Guides, Boys’ Brigade, Road Safety Patrol, Scouts, Marching Band, Flag-guards. Wednesday does not count toward the two-domain rule.</li>
     </ul>
     <h2>Attendance</h2>
     <p>Roll call and applications for leave shall follow the arrangements of the school or the teacher-in-charge. Please refer to <a href="#/apply">ECA application</a>.</p>
@@ -599,7 +596,7 @@ function applyPage() {
     <ol>
       <li>請先細閱「<a href="#/s1">課外活動須知</a>」，並核對班別、學號及姓名。各組時間及地點載於「<a href="#/clubs">課外活動</a>」。</li>
       <li>報名日期：<strong>2026年9月15日至19日</strong>（香港時間）。期滿後不得再作修改。</li>
-      <li>星期一、三、四及五，每日須填報<strong>三個志願</strong>，不得重複。</li>
+      <li>星期一、三、四及五，每日須填報<strong>三個志願</strong>，不得重複。星期二為科創活動，稍後由老師安排，無須選報。</li>
       <li>星期一、四及五之第一志願，須涵蓋至少兩個範疇（學術、體育、藝術／音樂），不得三日均選體育，或三日均選音樂／藝術。</li>
       <li>跨天活動（女子籃球、男子籃球、跳舞、田徑、足球）如選作第一志願，其他開班日子將一併鎖定。手鈴與手鐘屬不同活動。</li>
       <li>須面試／選拔之隊伍，僅已獲選拔之同學方可選報；尚未面試或未獲選者，只可選報無需面試之活動。已獲選拔者可選報該隊，亦可選報其他活動；如將該隊填作第一志願，編配時將予優先。</li>
@@ -614,7 +611,7 @@ function applyPage() {
     <ol>
       <li>Students shall first read the <a href="#/s1">ECA notes</a> and verify their class, student number and name. Times and venues are set out under <a href="#/clubs">clubs</a>.</li>
       <li>Application period: <strong>15 to 19 September 2026</strong> (Hong Kong time). No amendment will be accepted after the closing date.</li>
-      <li>On Monday, Wednesday, Thursday and Friday, students shall enter <strong>three preferences</strong> for each day. Duplication on the same day is not permitted.</li>
+      <li>On Monday, Wednesday, Thursday and Friday, students shall enter <strong>three preferences</strong> for each day. Duplication on the same day is not permitted. Tuesday is InnoTech, to be arranged by teachers later; students need not choose a Tuesday activity.</li>
       <li>First preferences on Monday, Thursday and Friday shall cover at least two domains (academic, sports, and arts/music). Students shall not select sports as the first preference on all three days, nor arts/music as the first preference on all three days.</li>
       <li>Where a multi-day activity (Girls’ Basketball, Boys’ Basketball, Dance, Athletics or Football) is entered as the first preference, the remaining scheduled days of that activity will be locked accordingly. Handbells and handchimes are distinct activities.</li>
       <li>Activities requiring an interview or trial may be selected only by students who have already been offered a place. Students who have not attended or have not been selected may choose only activities that do not require a trial. Students who have been selected may still choose other activities; if the team concerned is entered as the first preference, allocation will give it priority.</li>
@@ -969,10 +966,7 @@ function render() {
   else if (r.page === "timetable") html = timetablePage(r.params);
   else if (r.page === "s1") html = s1Page();
   else if (r.page === "apply") html = applyPage();
-  else if (r.page === "teams") html = teamsPage(r.params);
   else if (r.page === "contact") html = contactPage();
-  else if (r.page === "news") html = newsPage();
-  else if (r.page === "story") html = storyPage(r.id);
   else html = home();
   document.getElementById("app").innerHTML = html + footer();
   document.title = (lang() === "en" ? "ECA" : "課外活動") + " · MKPC";

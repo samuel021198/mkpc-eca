@@ -531,7 +531,7 @@ main.np { max-width: 1120px; background: #fff; padding-top: 20px; }
   .cal-cell { min-height: 56px; }
   .tabbar {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     position: fixed;
     left: 0; right: 0; bottom: 0;
     z-index: 30;
