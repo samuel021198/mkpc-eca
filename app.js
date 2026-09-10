@@ -47,7 +47,7 @@ const I18N = {
     cats: "活動類別",
     week: "本週重點",
     noticeLabel: "通告",
-    notice: "中一級逢星期一至四必須出席課外活動。本週選拔日期見下方「本週重點」。",
+    notice: "中一級同學須於星期一至五出席課外活動。報名日期為2026年9月15日至19日，詳見中一同學專區。",
     noWeek: "本週沒有已公布的選拔。可按校徽回首頁，或到課外活動瀏覽所有組別。",
     search: "搜尋組別",
     allCat: "所有類別",
@@ -98,7 +98,7 @@ const I18N = {
     cats: "Categories",
     week: "This week",
     noticeLabel: "Notice",
-    notice: "S1 students must attend ECA Monday to Thursday. Selection dates are listed under This week.",
+    notice: "S1 students shall attend ECA from Monday to Friday. Applications are accepted from 15 to 19 September 2026. Please refer to the S1 area.",
     noWeek: "No published selections this week. Browse all clubs in the directory.",
     search: "Search clubs",
     allCat: "All categories",
@@ -483,71 +483,77 @@ function timetablePage(params) {
 
 function s1Page() {
   const zh = `<div class="prose">
-    <h2>誰必須參加</h2>
-    <p>中一級同學逢<strong>星期一至四</strong>均需出席課外活動。星期五部分組別仍會訓練，亦有全人教育時段，以校曆為準。</p>
+    <h2>參加安排</h2>
+    <p>中一級同學須於<strong>星期一至五</strong>出席課外活動。</p>
     <h2>時間</h2>
-    <p>一般為課後 <strong>16:00–17:30</strong>。場地見各組頁及時間表，外借場地（例如田徑、足球、欖球）以當日負責老師指示為準。</p>
-    <h2>如何選組</h2>
-    <p>先到「課外活動」按類別或星期篩選。需要選拔的隊伍（球類、合唱團等）會在首頁「本週重點」列出日期。沒有選拔的組別按學校公布的意願／分配結果出席。</p>
+    <p>一般課外活動為課後 <strong>16:00–17:30</strong>。校隊訓練時間以負責老師安排為準，或會超過 17:30，最遲至 <strong>19:00</strong>。場地請參閱各組時間表；外借場地（例如田徑、足球、欖球）以當日負責老師指示為準。</p>
     <h2>活動類別</h2>
     <ul>
-      <li>學術：辯論、語文班、集誦、傳媒等</li>
-      <li>藝術及音樂：舞蹈、合唱、樂團、視藝等</li>
-      <li>科創：AI、機械人、無人機、STEAM 等</li>
-      <li>體育：球類、田徑、劍擊、滑板等</li>
-      <li>制服團隊：童軍、女童軍、交通安全隊、升旗隊等</li>
-      <li>服務隊伍：學生會、領袖生、圖書館、校園大使等</li>
-      <li>興趣學會：日本文化、菲林等</li>
-      <li>其他：桌上遊戲、氣球造型等</li>
+      <li>學術：辯論、語文班、集誦、Drama Club、Newspaper Club、腦力攻防戰、社會服務團、MKPC On Air 等</li>
+      <li>藝術及音樂：跳舞、合唱、無伴奏合唱、樂團、管樂、視藝、手鈴、手鐘、樂器班等</li>
+      <li>體育：球類、田徑、劍擊、滑板、單輪車、跳繩、匹克球、棍網球等</li>
+      <li>制服團隊：童軍、女童軍、基督少年軍、交通安全隊、升旗隊、銀樂隊（逢星期三）</li>
+      <li>其他：桌上遊戲、桌樂冒險家、氣球造型等</li>
     </ul>
     <h2>出席</h2>
-    <p>點名及請假沿用學校 eClass／組別負責老師安排。報名見「<a href="#/apply">課外活動報名</a>」。</p>
+    <p>點名及請假按學校／組別負責老師安排。報名詳情見「<a href="#/apply">課外活動報名</a>」。</p>
     <h2>查詢</h2>
-    <p>學生發展部（課外活動）。學校總機見 <a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a>。</p>
+    <p>學生發展部（課外活動）。學校網站：<a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a>。</p>
   </div>`;
   const en = `<div class="prose">
-    <h2>Who must join</h2>
-    <p>All S1 students attend ECA <strong>Monday to Thursday</strong>. Some teams also train on Friday. Follow the school calendar for whole-person education slots.</p>
+    <h2>Participation</h2>
+    <p>All Secondary 1 students shall attend extracurricular activities from <strong>Monday to Friday</strong>.</p>
     <h2>Time</h2>
-    <p>Usually <strong>16:00–17:30</strong>. Venues are on each club page. Off-campus venues follow the teacher-in-charge.</p>
-    <h2>How to choose</h2>
-    <p>Use the club directory (category or weekday). Teams with trials are listed under “This week” on the home page. Other groups follow the school allocation result.</p>
+    <p>Regular sessions are held after school from <strong>16:00 to 17:30</strong>. School-team training shall follow the arrangement of the teacher-in-charge and may extend beyond 17:30, until <strong>19:00</strong> at the latest. Venues are set out in the timetable. Off-campus venues (for example athletics, football and rugby) shall follow the instructions of the teacher-in-charge on the day.</p>
+    <h2>Categories</h2>
+    <ul>
+      <li>Academic: debate, language classes, choral speaking, Drama Club, Newspaper Club, Mind Challenge, Social Service Group, MKPC On Air, and others</li>
+      <li>Arts and music: dance, choir, a cappella, orchestra, band, visual arts, handbells, handchimes, instrumental classes, and others</li>
+      <li>Sports: ball games, athletics, fencing, skateboarding, unicycle, jump rope, pickleball, lacrosse, and others</li>
+      <li>Uniformed groups: Scouts, Girl Guides, The Boys’ Brigade, Road Safety Patrol, Flag-guards, and Marching Band (Wednesdays)</li>
+      <li>Others: board games, Tabletop Adventurers, balloon modelling, and others</li>
+    </ul>
     <h2>Attendance</h2>
-    <p>Roll call and leave stay on eClass / the teacher-in-charge. See <a href="#/apply">ECA sign-up</a>.</p>
-    <h2>Contact</h2>
-    <p>Department of Student Affairs (ECA). See <a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a>.</p>
+    <p>Roll call and applications for leave shall follow the arrangements of the school or the teacher-in-charge. Please refer to <a href="#/apply">ECA application</a>.</p>
+    <h2>Enquiries</h2>
+    <p>Department of Student Affairs (Extracurricular Activities). School website: <a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a>.</p>
   </div>`;
   return `${nav("s1")}<main><h1>${t().s1guide}</h1>${lang() === "en" ? en : zh}</main>`;
 }
 
 function applyPage() {
   const zh = `<div class="prose">
-    <h2>怎樣報名</h2>
-    <p>中一級課外活動意願及選拔，按學校公布經 <strong>eClass</strong> 提交。本頁只作說明，不收集個人資料或點名。</p>
+    <p>中一級課外活動報名，須以學校 <strong>MKPC Google 帳戶</strong>登入報名系統提交。每個帳戶只可遞交一份表格；報名期內可修改後再儲存。本網頁僅供說明，並不收集個人資料。</p>
     <h2>步驟</h2>
     <ol>
-      <li>先讀「<a href="#/s1">課外活動須知</a>」，並到「<a href="#/clubs">課外活動</a>」睇組別、時間及地點。</li>
-      <li>需要選拔的隊伍，日期見首頁「本週重點」。</li>
-      <li>按班主任／負責老師指示，在 eClass 填意願或出席選拔。</li>
+      <li>請先細閱「<a href="#/s1">課外活動須知</a>」，並核對班別、學號及姓名。各組時間及地點載於「<a href="#/clubs">課外活動</a>」。</li>
+      <li>報名日期：<strong>2026年9月15日至19日</strong>（香港時間）。期滿後不得再作修改。</li>
+      <li>星期一、三、四及五，每日須填報<strong>三個志願</strong>，不得重複。</li>
+      <li>星期一、四及五之第一志願，須涵蓋至少兩個範疇（學術、體育、藝術／音樂），不得三日均選體育，或三日均選音樂／藝術。</li>
+      <li>跨天活動（女子籃球、男子籃球、跳舞、田徑、足球）如選作第一志願，其他開班日子將一併鎖定。手鈴與手鐘屬不同活動。</li>
+      <li>須面試／選拔之隊伍，僅已獲選拔之同學方可選報；尚未面試或未獲選者，只可選報無需面試之活動。已獲選拔者可選報該隊，亦可選報其他活動；如將該隊填作第一志願，編配時將予優先。</li>
+      <li>部分樂器班須填報級別。填妥後請按「確認並儲存」。</li>
     </ol>
     <h2>查詢</h2>
-    <p>學生發展部（課外活動）。學校網站 <a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a>。</p>
+    <p>學生發展部（課外活動）。學校網站：<a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a>。</p>
   </div>`;
   const en = `<div class="prose">
-    <h2>How to sign up</h2>
-    <p>S1 choices and trials follow the school notice on <strong>eClass</strong>. This page does not collect personal data or take roll call.</p>
-    <h2>Steps</h2>
+    <p>Secondary 1 students shall submit their extracurricular activity applications through the designated system, using a school <strong>MKPC Google account</strong>. Each account may submit one form only. Amendments may be saved during the application period. This webpage is for information only and does not collect personal data.</p>
+    <h2>Procedure</h2>
     <ol>
-      <li>Read the <a href="#/s1">ECA notes</a> and browse <a href="#/clubs">clubs</a> for time and venue.</li>
-      <li>Trial dates are under “This week” on the home page.</li>
-      <li>Submit your choice on eClass, or attend the trial, as your teacher directs.</li>
+      <li>Students shall first read the <a href="#/s1">ECA notes</a> and verify their class, student number and name. Times and venues are set out under <a href="#/clubs">clubs</a>.</li>
+      <li>Application period: <strong>15 to 19 September 2026</strong> (Hong Kong time). No amendment will be accepted after the closing date.</li>
+      <li>On Monday, Wednesday, Thursday and Friday, students shall enter <strong>three preferences</strong> for each day. Duplication on the same day is not permitted.</li>
+      <li>First preferences on Monday, Thursday and Friday shall cover at least two domains (academic, sports, and arts/music). Students shall not select sports as the first preference on all three days, nor arts/music as the first preference on all three days.</li>
+      <li>Where a multi-day activity (Girls’ Basketball, Boys’ Basketball, Dance, Athletics or Football) is entered as the first preference, the remaining scheduled days of that activity will be locked accordingly. Handbells and handchimes are distinct activities.</li>
+      <li>Activities requiring an interview or trial may be selected only by students who have already been offered a place. Students who have not attended or have not been selected may choose only activities that do not require a trial. Students who have been selected may still choose other activities; if the team concerned is entered as the first preference, allocation will give it priority.</li>
+      <li>Certain instrumental classes require a stated level. Students shall then select “Confirm and save”.</li>
     </ol>
-    <h2>Contact</h2>
-    <p>Department of Student Affairs (ECA). <a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a>.</p>
+    <h2>Enquiries</h2>
+    <p>Department of Student Affairs (Extracurricular Activities). School website: <a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a>.</p>
   </div>`;
   return `${nav("apply")}<main><h1>${t().apply}</h1>${lang() === "en" ? en : zh}</main>`;
 }
-
 function teamsStore() {
   return window.ECA_TEAMS || { events: [], results: [] };
 }

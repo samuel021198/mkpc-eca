@@ -342,8 +342,8 @@ if (list.length < 40) throw new Error(`expected 40+ clubs, got ${list.length}`);
 const data = {
   generated: new Date().toISOString().slice(0, 10),
   source: "2627_課外活動總表 V5.xlsx",
-  timeNoteZh: "課後活動時段一般為 16:00–17:30，實際以當日公布及負責老師為準。",
-  timeNoteEn: "Sessions usually run 16:00–17:30. Follow the teacher-in-charge on the day.",
+  timeNoteZh: "一般課外活動為 16:00–17:30。校隊或會至最遲 19:00，以負責老師為準。",
+  timeNoteEn: "Usual ECA is 16:00–17:30. School teams may run until 19:00 as the teacher directs.",
   categories: [
     { id: "academic", zh: "學術", en: "Academics" },
     { id: "arts", zh: "藝術及音樂", en: "Arts & Music" },
