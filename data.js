@@ -244,8 +244,13 @@ window.ECA = {
       "s1": true,
       "introZh": "匹克球是本校新加入的課外活動，也是近年受歡迎的運動新趨勢。這項運動結合了網球、羽毛球及乒乓球的特色，容易上手，適合男、女同學參與。無論你是否有運動經驗，都歡迎一同嘗試，學習新技能，享受運動樂趣！吳華峰Group NamePickleball",
       "introEn": "Pickleball is a newly introduced ECA at our school and has become a popular new trend in sports. It combines elements of tennis, badminton and table tennis, and is easy to learn. Both boys and girls are welcome to join. Whether or not you have sports experience, come and give it a try, learn new skills and enjoy the fun of sports!",
-      "cover": "",
-      "photos": []
+      "cover": "img/clubs/匹克球-1.jpg",
+      "photos": [
+        "img/clubs/匹克球-1.jpg",
+        "img/clubs/匹克球-2.jpg",
+        "img/clubs/匹克球-3.jpg",
+        "img/clubs/匹克球-4.jpg"
+      ]
     },
     {
       "id": "升旗隊",

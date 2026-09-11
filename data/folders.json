@@ -1,12 +1,4 @@
 {
-    "Newspaper Club_done_no pic":  {
-                                       "cover":  "",
-                                       "photos":  [
-
-                                                  ],
-                                       "introRaw":  "組別名稱校報社中文簡介 (約100字)你是否對講故事和挖掘真相充滿熱情？校報社是你展示才華的最佳場所！我們邀請學生探索新聞學的世界，從撰寫和編輯文章到進行訪談和報導校內活動。我們的社團促進創造力、團隊合作和批判性思維，讓我們一起打造專屬的校報。無論你是有志於成為作家、攝影師還是編輯，這裡都有你的舞台。加入我們，提升技能，結交新朋友，並將你的聲音傳遞給校園社區。讓我們一起講述故事吧！負責老師Mr ScottGroup NameNewspaper ClubEnglish Introduction (about 80 words)Are you passionate about storytelling and uncovering the truth? The Newspaper Club is the perfect place for you! We invite students to explore the world of journalism, from writing and editing articles to conducting interviews and reporting on school events. Our club fosters creativity, teamwork, and critical thinking as we work together to produce our very own school newspaper. Whether you’re an aspiring writer, photographer, or editor, there’s a place for you here. Join us to sharpen your skills, make new friends, and share your voice with the school community. Let’s tell our stories together!Teacher in chargeMr Scott",
-                                       "folderCat":  "學術"
-                                   },
     "基督少年軍":  {
                   "cover":  "img/clubs/基督少年軍-1.jpg",
                   "photos":  [
@@ -296,6 +288,14 @@
                 "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
                 "folderCat":  "學術"
             },
+    "Newspaper Club_done":  {
+                                "cover":  "",
+                                "photos":  [
+
+                                           ],
+                                "introRaw":  "組別名稱校報社中文簡介 (約100字)你是否對講故事和挖掘真相充滿熱情？校報社是你展示才華的最佳場所！我們邀請學生探索新聞學的世界，從撰寫和編輯文章到進行訪談和報導校內活動。我們的社團促進創造力、團隊合作和批判性思維，讓我們一起打造專屬的校報。無論你是有志於成為作家、攝影師還是編輯，這裡都有你的舞台。加入我們，提升技能，結交新朋友，並將你的聲音傳遞給校園社區。讓我們一起講述故事吧！負責老師Mr ScottGroup NameNewspaper ClubEnglish Introduction (about 80 words)Are you passionate about storytelling and uncovering the truth? The Newspaper Club is the perfect place for you! We invite students to explore the world of journalism, from writing and editing articles to conducting interviews and reporting on school events. Our club fosters creativity, teamwork, and critical thinking as we work together to produce our very own school newspaper. Whether you’re an aspiring writer, photographer, or editor, there’s a place for you here. Join us to sharpen your skills, make new friends, and share your voice with the school community. Let’s tell our stories together!Teacher in chargeMr Scott",
+                                "folderCat":  "學術"
+                            },
     "英文集誦_done":  {
                       "cover":  "img/clubs/英文集誦_done-1.jpg",
                       "photos":  [
@@ -611,9 +611,12 @@
                    "folderCat":  "科創"
                },
     "匹克球":  {
-                "cover":  "",
+                "cover":  "img/clubs/匹克球-1.jpg",
                 "photos":  [
-
+                               "img/clubs/匹克球-1.jpg",
+                               "img/clubs/匹克球-2.jpg",
+                               "img/clubs/匹克球-3.jpg",
+                               "img/clubs/匹克球-4.jpg"
                            ],
                 "introRaw":  "組別名稱匹克球中文簡介 (約100字)匹克球是本校新加入的課外活動，也是近年受歡迎的運動新趨勢。這項運動結合了網球、羽毛球及乒乓球的特色，容易上手，適合男、女同學參與。無論你是否有運動經驗，都歡迎一同嘗試，學習新技能，享受運動樂趣！負責老師吳華峰Group NamePickleballEnglish Introduction (about 80 words)Pickleball is a newly introduced ECA at our school and has become a popular new trend in sports. It combines elements of tennis, badminton and table tennis, and is easy to learn. Both boys and girls are welcome to join. Whether or not you have sports experience, come and give it a try, learn new skills and enjoy the fun of sports!Teacher in chargeNG WAH FUNG",
                 "folderCat":  "體育"
