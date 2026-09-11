@@ -1,5 +1,5 @@
 if (window.ECA?.clubs) {
-  const hide = new Set(["增益班", "WebSems", "日本文化研究", "公益少年團"]);
+  const hide = new Set(["增益班", "WebSems", "日本文化研究", "公益少年團", "生成式AI隊", "生成式AI", "沉浸式科技隊"]);
   ECA.clubs = ECA.clubs.filter((c) => !hide.has(c.id) && !hide.has(c.nameZh) && !hide.has(c.nameEn));
 }
 

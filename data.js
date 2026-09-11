@@ -72,8 +72,8 @@ window.ECA = {
         }
       ],
       "s1": false,
-      "introZh": "女子籃球隊致力培養同學的團隊精神與籃球技巧，球隊於逢星期一及星期五放學後進行常規訓練，內容涵蓋體能鍛鍊、基本功練習及戰術配合，並好好準備校際比賽。此外，女子籃球隊會舉辦籃球訓練營，透過密集式訓練與團隊活動，快速提升球員的能力，並建立深厚的隊友默契。歡迎所有熱愛運動的女同學加入!黃栢君老師Group NameGirls Basketball Team",
-      "introEn": "Girls' Basketball Team is dedicated to cultivating teamwork and basketball skills, welcoming all sports-loving female students to join. The team conducts regular training sessions after school every Monday and Friday, covering physical conditioning, basic fundamentals, and tactical coordination to prepare for inter-school competitions. Additionally, the team organizes a basketball training camp to rapidly enhance players' abilities and build deep camaraderie through intensive training and team-building activities.",
+      "introZh": "女子手球隊致力培養同學的團隊凝聚力與手球技術。球隊於逢星期三及星期六進行常規訓練，內容涵蓋體能、基本功及攻防戰術。隊伍積極參加各項校際及公開比賽，讓球員在實戰中積累經驗、突破自我。歡迎所有熱愛運動的女生加入我們！黃栢君老師Group NameGirls Handball Team",
+      "introEn": "Girls' Handball Team is dedicated to cultivating teamwork and handball skills. The team conducts regular training every Wednesday and Saturday, covering physical conditioning, fundamental skills, and offensive and defensive tactics. We actively participate in various inter-school and open competitions, allowing players to gain practical experience and challenge themselves. We welcome all sports-loving girls to join us!",
       "cover": "img/clubs/女子手球-1.jpg",
       "photos": [
         "img/clubs/女子手球-1.jpg",
@@ -138,7 +138,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "女子籃球隊致力培養同學的團隊精神與籃球技巧，球隊於逢星期一及星期五放學後進行常規訓練，內容涵蓋體能鍛鍊、基本功練習及戰術配合，並好好準備校際比賽。此外，女子籃球隊會舉辦籃球訓練營，透過密集式訓練與團隊活動，快速提升球員的能力，並建立深厚的隊友默契。歡迎所有熱愛運動的女同學加入!黃栢君老師Group NameGirls Basketball Team",
-      "introEn": "Girls' Basketball Team is dedicated to cultivating teamwork and basketball skills, welcoming all sports-loving female students to join. The team conducts regular training sessions after school every Monday and Friday, covering physical conditioning, basic fundamentals, and tactical coordination to prepare for inter-school competitions. Additionally, the team organizes a basketball training camp to rapidly enhance players' abilities and build deep camaraderie through intensive training and team-building activities.",
+      "introEn": "Girls' Basketball Team is dedicated to cultivating teamwork and basketball skills among students. The team holds regular training sessions after school every Monday and Friday, covering physical conditioning, basic fundamentals, and tactical coordination to prepare for inter-school competitions. Additionally, the team organizes a basketball training camp to rapidly enhance players' abilities and build deep camaraderie through intensive training and team-building activities. We welcome all sports-loving female students to join us!",
       "cover": "img/clubs/女子籃球-1.jpg",
       "photos": [
         "img/clubs/女子籃球-1.jpg",
@@ -347,9 +347,9 @@ window.ECA = {
       "s1": true,
       "introZh": "課程專為中一學生而設，以輕鬆互動的方式教授日語基礎，包括五十音讀寫、日常問候、自我介紹及生活詞彙。透過角色扮演、語言遊戲與情境對話，融入日本動漫、節慶及飲食文化，激發學習興趣，建立說日語的信心，拓闊跨文化視野。Group NameJapanese Class",
       "introEn": "Designed specifically for Secondary 1 students, this course introduces basic Japanese through a relaxed, interactive approach. Topics include reading and writing hiragana and katakana, everyday greetings, self-introductions, and daily vocabulary. Through role-playing, language games, and situational dialogues, students explore Japanese anime, festivals, and food culture. The course aims to spark students’ interest in learning Japanese, build their confidence in speaking the language, and broaden their cross-cultural understanding.",
-      "cover": "img/clubs/日文班-1.jpg",
+      "cover": "img/clubs/日文班_done-1.jpg",
       "photos": [
-        "img/clubs/日文班-1.jpg"
+        "img/clubs/日文班_done-1.jpg"
       ]
     },
     {
@@ -434,8 +434,8 @@ window.ECA = {
       "teachers": [],
       "sessions": [],
       "s1": false,
-      "introZh": "",
-      "introEn": "",
+      "introZh": "透過計劃培養學生自我規劃及管理能力，加強朋輩輔導員的訓練，除了使他們學習如何關顧中一同學，亦特別加強他們對領袖特質及情緒健康的認識，從而建立一群推動關愛文化的學生團隊。何靜妍、黃詠淇Group NameCLP mentors",
+      "introEn": "The program aims to foster students' self-planning and management skills, while strengthening training for peer mentors. In addition to learning how to care for Secondary 1 students, mentors will gain a deeper understanding of leadership traits and emotional health, thereby establishing a student team that actively promotes a culture of care.",
       "cover": "",
       "photos": []
     },
@@ -820,10 +820,15 @@ window.ECA = {
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "",
-      "cover": "",
-      "photos": []
+      "introZh": "課程專為中一學生而設，透過輕鬆互動的學習方式，教授法文字母、基礎發音、日常問候、自我介紹及生活詞彙。結合角色扮演、語言遊戲與情境對話，融入法國美食、藝術及傳統節慶文化，激發學習興趣，建立說法語的信心，拓闊國際視野。Group NameFrench Class",
+      "introEn": "Designed specifically for Secondary 1 students, this course introduces basic French through a relaxed, interactive approach. Topics include the French alphabet, basic pronunciation, everyday greetings, self-introductions, and daily vocabulary. Through role-playing, language games, and situational dialogues, students explore French food, art, and traditional festivals. The course aims to spark students’ interest in learning French, build their confidence in speaking the language, and broaden their international outlook.",
+      "cover": "img/clubs/法文班_done-1.jpg",
+      "photos": [
+        "img/clubs/法文班_done-1.jpg",
+        "img/clubs/法文班_done-2.jpg",
+        "img/clubs/法文班_done-3.jpg",
+        "img/clubs/法文班_done-4.jpg"
+      ]
     },
     {
       "id": "社會服務團",
@@ -1067,10 +1072,17 @@ window.ECA = {
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "",
-      "cover": "",
-      "photos": []
+      "introZh": "視覺藝術學會致力推動校園藝術文化。學會透過定期舉辦繪畫及手工藝工作坊，並籌辦手製毛筆、參觀展覽及校園佈置等多元活動，豐富同學的校園生活。我們亦積極鼓勵同學參與各項校外比賽，在實踐中開拓視野，提升審美與設計技巧。本會期望提供一個互相切磋與激發創意的平台，讓同學發現創作樂趣，將藝術美感融入日常生活。陳艷芬、謝穎雯Group NameVISUAL ARTS CLUB",
+      "introEn": "The Visual Arts Club is dedicated to promoting art and culture on campus. Through regular drawing and handicraft workshops, as well as diverse activities like handmade brush making, exhibition visits, and campus decoration, the Society enriches students' school life. We also actively encourage students to participate in external competitions to broaden their horizons and enhance their aesthetic and design skills through hands-on practice. We aim to provide a collaborative platform that sparks creativity, helping students discover the joy of creation and integrate artistic beauty into their daily lives.",
+      "cover": "img/clubs/視覺藝術小組-1.jpg",
+      "photos": [
+        "img/clubs/視覺藝術小組-1.jpg",
+        "img/clubs/視覺藝術小組-2.jpg",
+        "img/clubs/視覺藝術小組-3.jpg",
+        "img/clubs/視覺藝術小組-4.jpg",
+        "img/clubs/視覺藝術小組-5.jpg",
+        "img/clubs/視覺藝術小組-6.jpg"
+      ]
     },
     {
       "id": "單車",
@@ -1082,7 +1094,7 @@ window.ECA = {
       ],
       "sessions": [],
       "s1": false,
-      "introZh": "",
+      "introZh": "透過單車能顯著促進精神健康，透過有氧運動刺激腦內啡與多巴胺分泌，有效減輕焦慮和憂鬱症狀。此外，規律的騎乘能改善睡眠品質、緩解壓力，並在戶外運動中帶來自由感 與成就感。在戶外踩踏單車能親近自然、遠離日常喧囂與電子螢幕。專注於騎乘節奏與路況，能有效轉移對煩惱的注意力。提升自信與自由度：騎車出遊能讓人掌握移動的節奏與方向，帶來獨立自主的成就感與自由感，是幫助心理重建的良好催化劑。引入課程包括透過教授駕駛技巧為學生建立生活常規及自我管理習慣考取金章考場地單車牌不同形式單車比賽如電競單車比賽、場地單車賽、山藝單車比賽或公路單車比賽等活動包括：進行區內一日單車活動大嶼山進行一次兩日一夜集訓5月境外日本廣島尾道單車交流活動",
       "introEn": "",
       "cover": "img/clubs/單車-1.jpg",
       "photos": [
@@ -1563,9 +1575,9 @@ window.ECA = {
       "s1": true,
       "introZh": "課程專為中一學生而設，透過輕鬆互動的學習方式，教授德語字母、發音規則、日常問候、自我介紹、數字及顏色等基礎知識。結合德國傳統節慶、聖誕市集、特色美食與格林童話，讓學生認識德國文化，培養語言興趣，學習簡單日常交流。Group NameGerman Class",
       "introEn": "Designed specifically for Secondary 1 students, this course introduces basic German through a relaxed, interactive approach. Topics include the German alphabet, pronunciation rules, everyday greetings, self-introductions, numbers, and colours. By incorporating traditional German festivals, Christmas markets, local specialities, and Grimms’ fairy tales, the course helps students explore German culture, develop an interest in the language, and learn to communicate in simple everyday situations.",
-      "cover": "img/clubs/德文班-1.jpg",
+      "cover": "img/clubs/德文班_done-1.jpg",
       "photos": [
-        "img/clubs/德文班-1.jpg"
+        "img/clubs/德文班_done-1.jpg"
       ]
     },
     {
@@ -1749,10 +1761,17 @@ window.ECA = {
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "",
-      "cover": "",
-      "photos": []
+      "introZh": "本校戲劇學會是一個歡迎所有對表演和戲劇感興趣的學生參加的社團。透過有趣的活動，學生可以深入認識戲劇、練習表演技巧、提升英語口語能力，以及探索不同的角色和故事。學會會員亦有機會在老師、同學和家長面前登臺演出。這些演出能幫助學生克服害羞，更有自信地表達自己。透過團隊合作，學生亦能培養創意、溝通技巧和合作精神。最重要的是，戲劇學會能提升學生的自信心和自尊感，同時令英語學習變得有趣而有意義。Mr Muji, Mr DariGroup NameDrama  Club",
+      "introEn": "Our school Drama Club is a welcoming place for students who are interested in acting and theatre. Through fun activities, students can learn more about drama, practise acting skills, improve their spoken English, and explore different characters and stories. Club members also have opportunities to perform on stage in front of teachers, classmates, and parents. These performances help students overcome shyness and express themselves with confidence. By working together, students develop creativity, communication skills, and teamwork. Most importantly, the Drama Club builds students’ confidence and self-esteem while making English learning enjoyable and meaningful.",
+      "cover": "img/clubs/Drama Club-1.jpg",
+      "photos": [
+        "img/clubs/Drama Club-1.jpg",
+        "img/clubs/Drama Club-2.jpg",
+        "img/clubs/Drama Club-3.jpg",
+        "img/clubs/Drama Club-4.jpg",
+        "img/clubs/Drama Club-5.jpg",
+        "img/clubs/Drama Club-6.jpg"
+      ]
     },
     {
       "id": "IT Prefect",
@@ -1815,6 +1834,19 @@ window.ECA = {
         }
       ],
       "s1": true,
+      "introZh": "",
+      "introEn": "",
+      "cover": "",
+      "photos": []
+    },
+    {
+      "id": "Newspaper Club_done_no pic",
+      "nameZh": "Newspaper Club_done_no pic",
+      "nameEn": "Newspaper Club_done_no pic",
+      "category": "academic",
+      "teachers": [],
+      "sessions": [],
+      "s1": false,
       "introZh": "你是否對講故事和挖掘真相充滿熱情？校報社是你展示才華的最佳場所！我們邀請學生探索新聞學的世界，從撰寫和編輯文章到進行訪談和報導校內活動。我們的社團促進創造力、團隊合作和批判性思維，讓我們一起打造專屬的校報。無論你是有志於成為作家、攝影師還是編輯，這裡都有你的舞台。加入我們，提升技能，結交新朋友，並將你的聲音傳遞給校園社區。讓我們一起講述故事吧！Mr ScottGroup NameNewspaper Club",
       "introEn": "Are you passionate about storytelling and uncovering the truth? The Newspaper Club is the perfect place for you! We invite students to explore the world of journalism, from writing and editing articles to conducting interviews and reporting on school events. Our club fosters creativity, teamwork, and critical thinking as we work together to produce our very own school newspaper. Whether you’re an aspiring writer, photographer, or editor, there’s a place for you here. Join us to sharpen your skills, make new friends, and share your voice with the school community. Let’s tell our stories together!",
       "cover": "",

@@ -1,10 +1,23 @@
 {
-    "Drama Club":  {
-                       "cover":  "",
-                       "photos":  [
+    "Newspaper Club_done_no pic":  {
+                                       "cover":  "",
+                                       "photos":  [
 
+                                                  ],
+                                       "introRaw":  "組別名稱校報社中文簡介 (約100字)你是否對講故事和挖掘真相充滿熱情？校報社是你展示才華的最佳場所！我們邀請學生探索新聞學的世界，從撰寫和編輯文章到進行訪談和報導校內活動。我們的社團促進創造力、團隊合作和批判性思維，讓我們一起打造專屬的校報。無論你是有志於成為作家、攝影師還是編輯，這裡都有你的舞台。加入我們，提升技能，結交新朋友，並將你的聲音傳遞給校園社區。讓我們一起講述故事吧！負責老師Mr ScottGroup NameNewspaper ClubEnglish Introduction (about 80 words)Are you passionate about storytelling and uncovering the truth? The Newspaper Club is the perfect place for you! We invite students to explore the world of journalism, from writing and editing articles to conducting interviews and reporting on school events. Our club fosters creativity, teamwork, and critical thinking as we work together to produce our very own school newspaper. Whether you’re an aspiring writer, photographer, or editor, there’s a place for you here. Join us to sharpen your skills, make new friends, and share your voice with the school community. Let’s tell our stories together!Teacher in chargeMr Scott",
+                                       "folderCat":  "學術"
+                                   },
+    "Drama Club":  {
+                       "cover":  "img/clubs/Drama Club-1.jpg",
+                       "photos":  [
+                                      "img/clubs/Drama Club-1.jpg",
+                                      "img/clubs/Drama Club-2.jpg",
+                                      "img/clubs/Drama Club-3.jpg",
+                                      "img/clubs/Drama Club-4.jpg",
+                                      "img/clubs/Drama Club-5.jpg",
+                                      "img/clubs/Drama Club-6.jpg"
                                   ],
-                       "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                       "introRaw":  "組別名稱Drama  Club中文簡介 (約100字)本校戲劇學會是一個歡迎所有對表演和戲劇感興趣的學生參加的社團。透過有趣的活動，學生可以深入認識戲劇、練習表演技巧、提升英語口語能力，以及探索不同的角色和故事。學會會員亦有機會在老師、同學和家長面前登臺演出。這些演出能幫助學生克服害羞，更有自信地表達自己。透過團隊合作，學生亦能培養創意、溝通技巧和合作精神。最重要的是，戲劇學會能提升學生的自信心和自尊感，同時令英語學習變得有趣而有意義。負責老師Mr Muji, Mr DariGroup NameDrama  ClubEnglish Introduction (about 80 words)Our school Drama Club is a welcoming place for students who are interested in acting and theatre. Through fun activities, students can learn more about drama, practise acting skills, improve their spoken English, and explore different characters and stories. Club members also have opportunities to perform on stage in front of teachers, classmates, and parents. These performances help students overcome shyness and express themselves with confidence. By working together, students develop creativity, communication skills, and teamwork. Most importantly, the Drama Club builds students’ confidence and self-esteem while making English learning enjoyable and meaningful.Teacher in charge",
                        "folderCat":  "學術"
                    },
     "基督少年軍":  {
@@ -20,14 +33,6 @@
                   "introRaw":  "組別名稱基督少年軍中文簡介 (約100字)香港基督少年軍第251分隊由萬鈞伯裘書院主辦，隸屬新九西區，設有中級組。分隊以基督教信仰為基礎，透過紀律訓練、品格教育及多元活動，培養隊員服從、虔誠、紀律及自愛的精神，並鼓勵隊員發展潛能、拓闊視野，促進全人成長。負責老師馬嘉雯、吳諾文Group NameThe Boys’ Brigade, Hong KongEnglish Introduction (about 80 words)The 251st Company of The Boys’ Brigade, Hong Kong, is organised by Man Kwan Pak Kau College. Rooted in the Christian faith, the company promotes character development through discipline training, faith education and diverse activities. It nurtures obedience, reverence, discipline and self-respect among members. Through learning and participation, members are encouraged to develop their potential, broaden their horizons and grow as individuals. The company provides opportunities for young people to strengthen their values and pursue growth within a supportive community.Teacher in chargeMa Ka Man, Ng Lok Man",
                   "folderCat":  "制服團隊"
               },
-    "日文班":  {
-                "cover":  "img/clubs/日文班-1.jpg",
-                "photos":  [
-                               "img/clubs/日文班-1.jpg"
-                           ],
-                "introRaw":  "組別名稱日文班中文簡介 (約100字)課程專為中一學生而設，以輕鬆互動的方式教授日語基礎，包括五十音讀寫、日常問候、自我介紹及生活詞彙。透過角色扮演、語言遊戲與情境對話，融入日本動漫、節慶及飲食文化，激發學習興趣，建立說日語的信心，拓闊跨文化視野。負責老師Group NameJapanese ClassEnglish Introduction (about 80 words)Designed specifically for Secondary 1 students, this course introduces basic Japanese through a relaxed, interactive approach. Topics include reading and writing hiragana and katakana, everyday greetings, self-introductions, and daily vocabulary. Through role-playing, language games, and situational dialogues, students explore Japanese anime, festivals, and food culture. The course aims to spark students’ interest in learning Japanese, build their confidence in speaking the language, and broaden their cross-cultural understanding.Teacher in charge",
-                "folderCat":  "學術"
-            },
     "中文辯論_done":  {
                       "cover":  "img/clubs/中文辯論_done-1.jpg",
                       "photos":  [
@@ -41,6 +46,17 @@
                       "introRaw":  "組別名稱中文辯論中文簡介 (約100字)辯論校隊致力培養同學的思辨能力、表達技巧及團隊合作精神。隊員平日會接受辯論訓練，學習資料搜集、論點組織、臨場反應及演說技巧，並代表學校參加不同類型的辯論比賽，擴闊視野、累積實戰經驗。此外，隊員亦會協助校內舉辦辯論比賽及相關活動，推廣辯論文化，讓更多同學認識辯論、享受辯論。負責老師萬嘉傑Group NameChinese Debate TeamEnglish Introduction (about 80 words)The Chinese Debate Team is dedicated to developing students’ critical thinking, public speaking skills, and teamwork. Team members receive regular debate training, learning research skills, argument organization, quick response, and presentation techniques. They also represent the school in various debate competitions, broadening their horizons and gaining practical experience. In addition, members assist in organizing school debate competitions and related activities, promoting a debating culture and encouraging more students to understand and enjoy debate.Teacher in chargeMan Ka Kit Jacky",
                       "folderCat":  "學術"
                   },
+    "法文班_done":  {
+                     "cover":  "img/clubs/法文班_done-1.jpg",
+                     "photos":  [
+                                    "img/clubs/法文班_done-1.jpg",
+                                    "img/clubs/法文班_done-2.jpg",
+                                    "img/clubs/法文班_done-3.jpg",
+                                    "img/clubs/法文班_done-4.jpg"
+                                ],
+                     "introRaw":  "組別名稱法文班中文簡介 (約100字)課程專為中一學生而設，透過輕鬆互動的學習方式，教授法文字母、基礎發音、日常問候、自我介紹及生活詞彙。結合角色扮演、語言遊戲與情境對話，融入法國美食、藝術及傳統節慶文化，激發學習興趣，建立說法語的信心，拓闊國際視野。負責老師Group NameFrench ClassEnglish Introduction (about 80 words)Designed specifically for Secondary 1 students, this course introduces basic French through a relaxed, interactive approach. Topics include the French alphabet, basic pronunciation, everyday greetings, self-introductions, and daily vocabulary. Through role-playing, language games, and situational dialogues, students explore French food, art, and traditional festivals. The course aims to spark students’ interest in learning French, build their confidence in speaking the language, and broaden their international outlook.Teacher in charge",
+                     "folderCat":  "學術"
+                 },
     "腦力攻防戰":  {
                   "cover":  "img/clubs/腦力攻防戰-1.jpg",
                   "photos":  [
@@ -96,14 +112,16 @@
                  "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
                  "folderCat":  "服務隊伍"
              },
-    "德文班":  {
-                "cover":  "img/clubs/德文班-1.jpg",
-                "photos":  [
-                               "img/clubs/德文班-1.jpg"
-                           ],
-                "introRaw":  "組別名稱德文班中文簡介 (約100字)課程專為中一學生而設，透過輕鬆互動的學習方式，教授德語字母、發音規則、日常問候、自我介紹、數字及顏色等基礎知識。結合德國傳統節慶、聖誕市集、特色美食與格林童話，讓學生認識德國文化，培養語言興趣，學習簡單日常交流。負責老師Group NameGerman ClassEnglish Introduction (about 80 words)Designed specifically for Secondary 1 students, this course introduces basic German through a relaxed, interactive approach. Topics include the German alphabet, pronunciation rules, everyday greetings, self-introductions, numbers, and colours. By incorporating traditional German festivals, Christmas markets, local specialities, and Grimms’ fairy tales, the course helps students explore German culture, develop an interest in the language, and learn to communicate in simple everyday situations.Teacher in charge",
-                "folderCat":  "學術"
-            },
+    "圖書館管理隊":  {
+                   "cover":  "img/clubs/圖書館管理隊-1.jpg",
+                   "photos":  [
+                                  "img/clubs/圖書館管理隊-1.jpg",
+                                  "img/clubs/圖書館管理隊-2.jpg",
+                                  "img/clubs/圖書館管理隊-3.jpg"
+                              ],
+                   "introRaw":  "組別名稱喜閱大使中文簡介 (約100字)本館專為中一至中五學生設立「喜閱大使」一職，委派學生參與圖書館的營運與推廣。職責包括處理圖書借還、書籍上架等日常館務，並協助籌辦各類閱讀活動，藉此培養學生的責任感，共同推廣校園閱讀風氣。負責老師陳麗嫻Group NamelibrarianEnglish Introduction (about 80 words)The library has established the role of \u0026quot;librarian\u0026quot; for Form 1 to Form 5 students, appointing them to participate in library operations and promotion. Responsibilities include handling book loans and returns, shelving, and assisting in organizing various reading activities—fostering students\u0027 sense of responsibility while jointly promoting a reading culture on campus.Teacher in chargeChan Lai Han",
+                   "folderCat":  "服務隊伍"
+               },
     "跳繩":  {
                "cover":  "img/clubs/跳繩-1.jpg",
                "photos":  [
@@ -130,6 +148,14 @@
                 "introRaw":  "組別名稱女童軍中文簡介 (約100字)本校女童軍致力培育學生成為自信、獨立且富責任感的良好公民。透過恆常訓練、戶外活動及社區服務，隊員可學習實用技能、急救知識與團隊合作，並培養堅毅、自律及關愛他人的品格。我們鼓勵學生在活動中結交朋友、發掘潛能、建立自信，並秉持「日行一善」的精神，回饋校園與社會，更希望她們在愉快的環境中健康成長，全面發展。負責老師黃轉鳳老師、黃麗娜老師Group NameGirl GuidesEnglish Introduction (about 80 words)Our school\u0027s Girl Guides is dedicated to nurturing students into confident, independent, and responsible good citizens. Through regular training, outdoor activities, and community service, members can learn practical skills, first aid knowledge, and teamwork, while cultivating perseverance, self-discipline, and a caring character towards others. We encourage students to make friends, discover their potential, and build self-confidence through our activities, and to uphold the spirit of \u0026quot;Do a Good Turn Daily\u0026quot; by giving back to the school and society. Furthermore, we hope they will grow up healthily and develop holistically in a joyful environment.Teacher in chargeWong Chuen Fung、Wong Lai Na",
                 "folderCat":  "制服團隊"
             },
+    "德文班_done":  {
+                     "cover":  "img/clubs/德文班_done-1.jpg",
+                     "photos":  [
+                                    "img/clubs/德文班_done-1.jpg"
+                                ],
+                     "introRaw":  "組別名稱德文班中文簡介 (約100字)課程專為中一學生而設，透過輕鬆互動的學習方式，教授德語字母、發音規則、日常問候、自我介紹、數字及顏色等基礎知識。結合德國傳統節慶、聖誕市集、特色美食與格林童話，讓學生認識德國文化，培養語言興趣，學習簡單日常交流。負責老師Group NameGerman ClassEnglish Introduction (about 80 words)Designed specifically for Secondary 1 students, this course introduces basic German through a relaxed, interactive approach. Topics include the German alphabet, pronunciation rules, everyday greetings, self-introductions, numbers, and colours. By incorporating traditional German festivals, Christmas markets, local specialities, and Grimms’ fairy tales, the course helps students explore German culture, develop an interest in the language, and learn to communicate in simple everyday situations.Teacher in charge",
+                     "folderCat":  "學術"
+                 },
     "銀樂隊":  {
                 "cover":  "img/clubs/銀樂隊-1.jpg",
                 "photos":  [
@@ -169,7 +195,7 @@
                     "photos":  [
 
                                ],
-                    "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                    "introRaw":  "組別名稱生涯規劃小導師中文簡介 (約100字)透過計劃培養學生自我規劃及管理能力，加強朋輩輔導員的訓練，除了使他們學習如何關顧中一同學，亦特別加強他們對領袖特質及情緒健康的認識，從而建立一群推動關愛文化的學生團隊。負責老師何靜妍、黃詠淇Group NameCLP mentorsEnglish Introduction (about 80 words)The program aims to foster students\u0027 self-planning and management skills, while strengthening training for peer mentors. In addition to learning how to care for Secondary 1 students, mentors will gain a deeper understanding of leadership traits and emotional health, thereby establishing a student team that actively promotes a culture of care.Teacher in charge",
                     "folderCat":  "服務隊伍"
                 },
     "沉浸式科技隊":  {
@@ -198,22 +224,9 @@
                                 "img/clubs/女子籃球-5.jpg",
                                 "img/clubs/女子籃球-6.jpg"
                             ],
-                 "introRaw":  "組別名稱女子籃球隊中文簡介 (約100字)女子籃球隊致力培養同學的團隊精神與籃球技巧，球隊於逢星期一及星期五放學後進行常規訓練，內容涵蓋體能鍛鍊、基本功練習及戰術配合，並好好準備校際比賽。此外，女子籃球隊會舉辦籃球訓練營，透過密集式訓練與團隊活動，快速提升球員的能力，並建立深厚的隊友默契。歡迎所有熱愛運動的女同學加入!負責老師黃栢君老師Group NameGirls Basketball TeamEnglish Introduction (about 80 words)Girls\u0027 Basketball Team is dedicated to cultivating teamwork and basketball skills, welcoming all sports-loving female students to join. The team conducts regular training sessions after school every Monday and Friday, covering physical conditioning, basic fundamentals, and tactical coordination to prepare for inter-school competitions. Additionally, the team organizes a basketball training camp to rapidly enhance players\u0027 abilities and build deep camaraderie through intensive training and team-building activities.Teacher in chargeMiss Wong Pak Kwan",
+                 "introRaw":  "組別名稱女子籃球隊中文簡介 (約100字)女子籃球隊致力培養同學的團隊精神與籃球技巧，球隊於逢星期一及星期五放學後進行常規訓練，內容涵蓋體能鍛鍊、基本功練習及戰術配合，並好好準備校際比賽。此外，女子籃球隊會舉辦籃球訓練營，透過密集式訓練與團隊活動，快速提升球員的能力，並建立深厚的隊友默契。歡迎所有熱愛運動的女同學加入!負責老師黃栢君老師Group NameGirls Basketball TeamEnglish Introduction (about 80 words)Girls\u0027 Basketball Team is dedicated to cultivating teamwork and basketball skills among students. The team holds regular training sessions after school every Monday and Friday, covering physical conditioning, basic fundamentals, and tactical coordination to prepare for inter-school competitions. Additionally, the team organizes a basketball training camp to rapidly enhance players\u0027 abilities and build deep camaraderie through intensive training and team-building activities. We welcome all sports-loving female students to join us!Teacher in chargeMiss Wong Pak Kwan",
                  "folderCat":  "體育"
              },
-    "交通安全隊":  {
-                  "cover":  "img/clubs/交通安全隊-1.jpg",
-                  "photos":  [
-                                 "img/clubs/交通安全隊-1.jpg",
-                                 "img/clubs/交通安全隊-2.jpg",
-                                 "img/clubs/交通安全隊-3.jpg",
-                                 "img/clubs/交通安全隊-4.jpg",
-                                 "img/clubs/交通安全隊-5.jpg",
-                                 "img/clubs/交通安全隊-6.jpg"
-                             ],
-                  "introRaw":  "組別名稱交通安全隊中文簡介 (約100字)交通安全隊目的是希望透過教育，向青少年隊員灌輸交通安全的基本常識。日常訓練包括步操、學習道路、交通安全及航空相關知識，並考取專章。除了校內訓練外，本校的交通安全隊亦重視隊員的校外學習體驗，透過訓練營及歷奇活動擴闊隊員的視野，培養團隊合作能力和領導才能，鼓勵隊員從體驗及實踐中學習及成長。負責老師曹思思 范曦文 郭万Group NameHong Kong Road Safety PatrolEnglish Introduction (about 80 words)The Road Safety Patrol aims to equip young members with basic knowledge of road safety through education and training. Its regular activities include drill practice, learning about roads, traffic safety, and aviation-related knowledge, as well as working towards badges.Beyond school-based training, the Road Safety Patrol also values members’ learning experiences outside the classroom. Through training camps and adventure activities, students are given opportunities to broaden their horizons, strengthen their teamwork and leadership skills, and learn and grow through hands-on experience and practice.Teacher in chargeCao Si Si, Fan Hei Man, Guo Wan",
-                  "folderCat":  "制服團隊"
-              },
     "AI科學研究隊":  {
                     "cover":  "img/clubs/AI科學研究隊-1.jpg",
                     "photos":  [
@@ -313,17 +326,9 @@
                               "img/clubs/單車-5.jpg",
                               "img/clubs/單車-6.jpg"
                           ],
-               "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+               "introRaw":  "組別名稱中文簡介 (約100字)透過單車能顯著促進精神健康，透過有氧運動刺激腦內啡與多巴胺分泌，有效減輕焦慮和憂鬱症狀。此外，規律的騎乘能改善睡眠品質、緩解壓力，並在戶外運動中帶來自由感 與成就感。在戶外踩踏單車能親近自然、遠離日常喧囂與電子螢幕。專注於騎乘節奏與路況，能有效轉移對煩惱的注意力。提升自信與自由度：騎車出遊能讓人掌握移動的節奏與方向，帶來獨立自主的成就感與自由感，是幫助心理重建的良好催化劑。引入課程包括透過教授駕駛技巧為學生建立生活常規及自我管理習慣考取金章考場地單車牌不同形式單車比賽如電競單車比賽、場地單車賽、山藝單車比賽或公路單車比賽等活動包括：進行區內一日單車活動大嶼山進行一次兩日一夜集訓5月境外日本廣島尾道單車交流活動負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
                "folderCat":  "體育"
            },
-    "Newspaper Club":  {
-                           "cover":  "",
-                           "photos":  [
-
-                                      ],
-                           "introRaw":  "組別名稱校報社中文簡介 (約100字)你是否對講故事和挖掘真相充滿熱情？校報社是你展示才華的最佳場所！我們邀請學生探索新聞學的世界，從撰寫和編輯文章到進行訪談和報導校內活動。我們的社團促進創造力、團隊合作和批判性思維，讓我們一起打造專屬的校報。無論你是有志於成為作家、攝影師還是編輯，這裡都有你的舞台。加入我們，提升技能，結交新朋友，並將你的聲音傳遞給校園社區。讓我們一起講述故事吧！負責老師Mr ScottGroup NameNewspaper ClubEnglish Introduction (about 80 words)Are you passionate about storytelling and uncovering the truth? The Newspaper Club is the perfect place for you! We invite students to explore the world of journalism, from writing and editing articles to conducting interviews and reporting on school events. Our club fosters creativity, teamwork, and critical thinking as we work together to produce our very own school newspaper. Whether you’re an aspiring writer, photographer, or editor, there’s a place for you here. Join us to sharpen your skills, make new friends, and share your voice with the school community. Let’s tell our stories together!Teacher in chargeMr Scott",
-                           "folderCat":  "學術"
-                       },
     "菲林小組":  {
                  "cover":  "img/clubs/菲林小組-1.jpg",
                  "photos":  [
@@ -362,11 +367,16 @@
                "folderCat":  "藝術及音樂"
            },
     "視覺藝術小組":  {
-                   "cover":  "",
+                   "cover":  "img/clubs/視覺藝術小組-1.jpg",
                    "photos":  [
-
+                                  "img/clubs/視覺藝術小組-1.jpg",
+                                  "img/clubs/視覺藝術小組-2.jpg",
+                                  "img/clubs/視覺藝術小組-3.jpg",
+                                  "img/clubs/視覺藝術小組-4.jpg",
+                                  "img/clubs/視覺藝術小組-5.jpg",
+                                  "img/clubs/視覺藝術小組-6.jpg"
                               ],
-                   "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                   "introRaw":  "組別名稱視覺藝術學會中文簡介 (約100字)視覺藝術學會致力推動校園藝術文化。學會透過定期舉辦繪畫及手工藝工作坊，並籌辦手製毛筆、參觀展覽及校園佈置等多元活動，豐富同學的校園生活。我們亦積極鼓勵同學參與各項校外比賽，在實踐中開拓視野，提升審美與設計技巧。本會期望提供一個互相切磋與激發創意的平台，讓同學發現創作樂趣，將藝術美感融入日常生活。負責老師陳艷芬、謝穎雯Group NameVISUAL ARTS CLUBEnglish Introduction (about 80 words)The Visual Arts Club is dedicated to promoting art and culture on campus. Through regular drawing and handicraft workshops, as well as diverse activities like handmade brush making, exhibition visits, and campus decoration, the Society enriches students\u0027 school life. We also actively encourage students to participate in external competitions to broaden their horizons and enhance their aesthetic and design skills through hands-on practice. We aim to provide a collaborative platform that sparks creativity, helping students discover the joy of creation and integrate artistic beauty into their daily lives.Teacher in chargeChan Yim Fun, Tse Wing Man",
                    "folderCat":  "藝術及音樂"
                },
     "女子手球":  {
@@ -378,7 +388,7 @@
                                 "img/clubs/女子手球-4.jpg",
                                 "img/clubs/女子手球-5.jpg"
                             ],
-                 "introRaw":  "組別名稱女子籃球隊中文簡介 (約100字)女子籃球隊致力培養同學的團隊精神與籃球技巧，球隊於逢星期一及星期五放學後進行常規訓練，內容涵蓋體能鍛鍊、基本功練習及戰術配合，並好好準備校際比賽。此外，女子籃球隊會舉辦籃球訓練營，透過密集式訓練與團隊活動，快速提升球員的能力，並建立深厚的隊友默契。歡迎所有熱愛運動的女同學加入!負責老師黃栢君老師Group NameGirls Basketball TeamEnglish Introduction (about 80 words)Girls\u0027 Basketball Team is dedicated to cultivating teamwork and basketball skills, welcoming all sports-loving female students to join. The team conducts regular training sessions after school every Monday and Friday, covering physical conditioning, basic fundamentals, and tactical coordination to prepare for inter-school competitions. Additionally, the team organizes a basketball training camp to rapidly enhance players\u0027 abilities and build deep camaraderie through intensive training and team-building activities.Teacher in chargeMiss Wong Pak Kwan",
+                 "introRaw":  "組別名稱女子手球隊中文簡介 (約100字)女子手球隊致力培養同學的團隊凝聚力與手球技術。球隊於逢星期三及星期六進行常規訓練，內容涵蓋體能、基本功及攻防戰術。隊伍積極參加各項校際及公開比賽，讓球員在實戰中積累經驗、突破自我。歡迎所有熱愛運動的女生加入我們！負責老師黃栢君老師Group NameGirls Handball TeamEnglish Introduction (about 80 words)Girls\u0027 Handball Team is dedicated to cultivating teamwork and handball skills. The team conducts regular training every Wednesday and Saturday, covering physical conditioning, fundamental skills, and offensive and defensive tactics. We actively participate in various inter-school and open competitions, allowing players to gain practical experience and challenge themselves. We welcome all sports-loving girls to join us!Teacher in chargeMiss Wong Pak Kwan",
                  "folderCat":  "體育"
              },
     "日本文化研究":  {
@@ -389,13 +399,18 @@
                    "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
                    "folderCat":  "興趣學會"
                },
-    "氣球造型班":  {
-                  "cover":  "img/clubs/氣球造型班-1.jpg",
+    "交通安全隊":  {
+                  "cover":  "img/clubs/交通安全隊-1.jpg",
                   "photos":  [
-                                 "img/clubs/氣球造型班-1.jpg"
+                                 "img/clubs/交通安全隊-1.jpg",
+                                 "img/clubs/交通安全隊-2.jpg",
+                                 "img/clubs/交通安全隊-3.jpg",
+                                 "img/clubs/交通安全隊-4.jpg",
+                                 "img/clubs/交通安全隊-5.jpg",
+                                 "img/clubs/交通安全隊-6.jpg"
                              ],
-                  "introRaw":  "組別名稱中文簡介 (約100字)透過學習扭氣球的基本技巧及不同造型設計，讓同學由簡單作品逐步掌握氣球造型的製作方法，發揮創意及想像力。製作過程亦能訓練手眼協調、耐性和專注力，並透過互相欣賞、交流及合作創作，提升同學的成功感、自信心及社交能力。負責老師Group NameEnglish Introduction (about 80 words)Students learn basic balloon-twisting techniques and create a variety of balloon models, progressing from simple designs to more creative works. The activities help develop creativity, imagination, hand-eye coordination, patience and concentration. By sharing ideas, appreciating one another’s work and creating together, students can also strengthen their confidence, sense of achievement and interpersonal skills.Teacher in charge",
-                  "folderCat":  "其他"
+                  "introRaw":  "組別名稱交通安全隊中文簡介 (約100字)交通安全隊目的是希望透過教育，向青少年隊員灌輸交通安全的基本常識。日常訓練包括步操、學習道路、交通安全及航空相關知識，並考取專章。除了校內訓練外，本校的交通安全隊亦重視隊員的校外學習體驗，透過訓練營及歷奇活動擴闊隊員的視野，培養團隊合作能力和領導才能，鼓勵隊員從體驗及實踐中學習及成長。負責老師曹思思 范曦文 郭万Group NameHong Kong Road Safety PatrolEnglish Introduction (about 80 words)The Road Safety Patrol aims to equip young members with basic knowledge of road safety through education and training. Its regular activities include drill practice, learning about roads, traffic safety, and aviation-related knowledge, as well as working towards badges.Beyond school-based training, the Road Safety Patrol also values members’ learning experiences outside the classroom. Through training camps and adventure activities, students are given opportunities to broaden their horizons, strengthen their teamwork and leadership skills, and learn and grow through hands-on experience and practice.Teacher in chargeCao Si Si, Fan Hei Man, Guo Wan",
+                  "folderCat":  "制服團隊"
               },
     "棍網球":  {
                 "cover":  "",
@@ -405,16 +420,22 @@
                 "introRaw":  "組別名稱棍網球 中文簡介 (約100字)棍網球是一項刺激又充滿速度感的新興運動，講求團隊合作、反應及戰術運用。本校棍網球隊近年於全港學界比賽中表現出色，每年均能取得頭三名的佳績。歡迎喜歡挑戰、熱愛刺激運動的同學加入，一同訓練、突破自己，為校爭光！負責老師吳華峰Group NameLacrosse TeamEnglish Introduction (about 80 words)Lacrosse is an exciting and fast-paced emerging sport that requires teamwork, quick reactions and good tactics. Our school Lacrosse Team has performed excellently in the Hong Kong inter-school competitions, consistently achieving top-three results every year. Students who enjoy challenges and exciting sports are welcome to join us, train hard and bring glory to the school!Teacher in chargeNG WAH FUNG",
                 "folderCat":  "體育"
             },
-    "圖書館管理隊":  {
-                   "cover":  "img/clubs/圖書館管理隊-1.jpg",
-                   "photos":  [
-                                  "img/clubs/圖書館管理隊-1.jpg",
-                                  "img/clubs/圖書館管理隊-2.jpg",
-                                  "img/clubs/圖書館管理隊-3.jpg"
-                              ],
-                   "introRaw":  "組別名稱喜閱大使中文簡介 (約100字)本館專為中一至中五學生設立「喜閱大使」一職，委派學生參與圖書館的營運與推廣。職責包括處理圖書借還、書籍上架等日常館務，並協助籌辦各類閱讀活動，藉此培養學生的責任感，共同推廣校園閱讀風氣。負責老師陳麗嫻Group NamelibrarianEnglish Introduction (about 80 words)The library has established the role of \u0026quot;librarian\u0026quot; for Form 1 to Form 5 students, appointing them to participate in library operations and promotion. Responsibilities include handling book loans and returns, shelving, and assisting in organizing various reading activities—fostering students\u0027 sense of responsibility while jointly promoting a reading culture on campus.Teacher in chargeChan Lai Han",
-                   "folderCat":  "服務隊伍"
-               },
+    "氣球造型班":  {
+                  "cover":  "img/clubs/氣球造型班-1.jpg",
+                  "photos":  [
+                                 "img/clubs/氣球造型班-1.jpg"
+                             ],
+                  "introRaw":  "組別名稱中文簡介 (約100字)透過學習扭氣球的基本技巧及不同造型設計，讓同學由簡單作品逐步掌握氣球造型的製作方法，發揮創意及想像力。製作過程亦能訓練手眼協調、耐性和專注力，並透過互相欣賞、交流及合作創作，提升同學的成功感、自信心及社交能力。負責老師Group NameEnglish Introduction (about 80 words)Students learn basic balloon-twisting techniques and create a variety of balloon models, progressing from simple designs to more creative works. The activities help develop creativity, imagination, hand-eye coordination, patience and concentration. By sharing ideas, appreciating one another’s work and creating together, students can also strengthen their confidence, sense of achievement and interpersonal skills.Teacher in charge",
+                  "folderCat":  "其他"
+              },
+    "日文班_done":  {
+                     "cover":  "img/clubs/日文班_done-1.jpg",
+                     "photos":  [
+                                    "img/clubs/日文班_done-1.jpg"
+                                ],
+                     "introRaw":  "組別名稱日文班中文簡介 (約100字)課程專為中一學生而設，以輕鬆互動的方式教授日語基礎，包括五十音讀寫、日常問候、自我介紹及生活詞彙。透過角色扮演、語言遊戲與情境對話，融入日本動漫、節慶及飲食文化，激發學習興趣，建立說日語的信心，拓闊跨文化視野。負責老師Group NameJapanese ClassEnglish Introduction (about 80 words)Designed specifically for Secondary 1 students, this course introduces basic Japanese through a relaxed, interactive approach. Topics include reading and writing hiragana and katakana, everyday greetings, self-introductions, and daily vocabulary. Through role-playing, language games, and situational dialogues, students explore Japanese anime, festivals, and food culture. The course aims to spark students’ interest in learning Japanese, build their confidence in speaking the language, and broaden their cross-cultural understanding.Teacher in charge",
+                     "folderCat":  "學術"
+                 },
     "手鐘":  {
                "cover":  "img/clubs/手鐘-1.jpg",
                "photos":  [
@@ -434,14 +455,19 @@
                "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
                "folderCat":  "體育"
            },
-    "法文班":  {
-                "cover":  "",
-                "photos":  [
-
-                           ],
-                "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
-                "folderCat":  "學術"
-            },
+    "男子排球":  {
+                 "cover":  "img/clubs/男子排球-1.jpg",
+                 "photos":  [
+                                "img/clubs/男子排球-1.jpg",
+                                "img/clubs/男子排球-2.jpg",
+                                "img/clubs/男子排球-3.jpg",
+                                "img/clubs/男子排球-4.jpg",
+                                "img/clubs/男子排球-5.jpg",
+                                "img/clubs/男子排球-6.jpg"
+                            ],
+                 "introRaw":  "組別名稱男子排球校隊中文簡介 (約100字)男子排球校隊逢星期二、星期四及星期六練習。球隊近年於元朗區取得前三名的優異成績，表現出色。我們希望有興趣及具團隊精神的同學加入，一同努力訓練，提升發球、接球、扣殺及防守技術，繼續傳承球隊精神，為校爭光。負責老師黃子傑Group NameBoys’ Volleyball TeamEnglish Introduction (about 80 words)The Boys’ Volleyball Team trains every Tuesday, Thursday and Saturday. In recent years, the team has achieved excellent results, finishing in the top three in Yuen Long District. We welcome students who are interested and have good team spirit to join us. Let’s train hard, improve our volleyball skills and continue the team’s proud tradition.Teacher in chargeWONG TSZ KIT",
+                 "folderCat":  "體育"
+             },
     "游泳隊":  {
                 "cover":  "img/clubs/游泳隊-1.jpg",
                 "photos":  [
@@ -551,19 +577,6 @@
                 "introRaw":  "組別名稱羽毛球校隊中文簡介 (約100字)男子羽毛球校隊逢星期一及星期二練習。球隊近年展現卓越實力，於學界羽毛球比賽榮獲男子B組冠軍，成績斐然！我們希望有興趣及具團隊精神的同學加入，一同努力訓練，提升發球、高遠球、扣殺及步法等實戰技術，繼續傳承球隊精神，為校爭光。負責老師王麗愉Group NameBadminton TeamEnglish Introduction (about 80 words)Our Boys\u0027 Badminton Team trains every Monday and Tuesday. Demonstrating outstanding performance, the team recently captured the Boy\u0027s B Grade Championship in the Interschool Badminton Competition! We welcome passionate students with a strong team spirit to join us, train hard to refine serving, clearing, smashing, and footwork skills, carry forward our team spirit, and bring honor to our school.Teacher in chargeWong Lai Yu",
                 "folderCat":  "體育"
             },
-    "男子排球":  {
-                 "cover":  "img/clubs/男子排球-1.jpg",
-                 "photos":  [
-                                "img/clubs/男子排球-1.jpg",
-                                "img/clubs/男子排球-2.jpg",
-                                "img/clubs/男子排球-3.jpg",
-                                "img/clubs/男子排球-4.jpg",
-                                "img/clubs/男子排球-5.jpg",
-                                "img/clubs/男子排球-6.jpg"
-                            ],
-                 "introRaw":  "組別名稱男子排球校隊中文簡介 (約100字)男子排球校隊逢星期二、星期四及星期六練習。球隊近年於元朗區取得前三名的優異成績，表現出色。我們希望有興趣及具團隊精神的同學加入，一同努力訓練，提升發球、接球、扣殺及防守技術，繼續傳承球隊精神，為校爭光。負責老師黃子傑Group NameBoys’ Volleyball TeamEnglish Introduction (about 80 words)The Boys’ Volleyball Team trains every Tuesday, Thursday and Saturday. In recent years, the team has achieved excellent results, finishing in the top three in Yuen Long District. We welcome students who are interested and have good team spirit to join us. Let’s train hard, improve our volleyball skills and continue the team’s proud tradition.Teacher in chargeWONG TSZ KIT",
-                 "folderCat":  "體育"
-             },
     "MKPC On Air_done":  {
                              "cover":  "img/clubs/MKPC On Air_done-1.jpg",
                              "photos":  [

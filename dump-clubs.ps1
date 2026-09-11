@@ -4,8 +4,8 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 Add-Type -AssemblyName System.Drawing
 
 $root = Split-Path $PSScriptRoot -Parent
-$cands = Get-ChildItem -LiteralPath $root -Directory -Recurse -ErrorAction SilentlyContinue |
-  Where-Object { $_.Name -eq "Newspaper Club" }
+$cands = Get-ChildItem -LiteralPath $root -Directory -Recurse -Depth 3 -ErrorAction SilentlyContinue |
+  Where-Object { $_.Name -like "Newspaper Club*" }
 $clubRoot = $null
 $best = 0
 foreach ($c in $cands) {
@@ -118,10 +118,9 @@ function Save-Cover([string]$src, [string]$dest, [bool]$wide = $false) {
   }
 }
 
-if (-not (Test-Path -LiteralPath $clubRoot)) {
-  [IO.File]::WriteAllText((Join-Path $outData "folders.json"), "{}", [Text.UTF8Encoding]::new($false))
+if ([string]::IsNullOrEmpty($clubRoot) -or -not (Test-Path -LiteralPath $clubRoot)) {
   Write-Host "no club folders"
-  exit 0
+  exit 1
 }
 
 function Get-FolderStamp([string]$dir) {
