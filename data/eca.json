@@ -1871,8 +1871,15 @@
       "s1": true,
       "introZh": "你是否對講故事和挖掘真相充滿熱情？校報社是你展示才華的最佳場所！我們邀請學生探索新聞學的世界，從撰寫和編輯文章到進行訪談和報導校內活動。我們的社團促進創造力、團隊合作和批判性思維，讓我們一起打造專屬的校報。無論你是有志於成為作家、攝影師還是編輯，這裡都有你的舞台。加入我們，提升技能，結交新朋友，並將你的聲音傳遞給校園社區。讓我們一起講述故事吧！Mr ScottGroup NameNewspaper Club",
       "introEn": "Are you passionate about storytelling and uncovering the truth? The Newspaper Club is the perfect place for you! We invite students to explore the world of journalism, from writing and editing articles to conducting interviews and reporting on school events. Our club fosters creativity, teamwork, and critical thinking as we work together to produce our very own school newspaper. Whether you’re an aspiring writer, photographer, or editor, there’s a place for you here. Join us to sharpen your skills, make new friends, and share your voice with the school community. Let’s tell our stories together!",
-      "cover": "",
-      "photos": []
+      "cover": "img/clubs/Newspaper Club_done-1.jpg",
+      "photos": [
+        "img/clubs/Newspaper Club_done-1.jpg",
+        "img/clubs/Newspaper Club_done-2.jpg",
+        "img/clubs/Newspaper Club_done-3.jpg",
+        "img/clubs/Newspaper Club_done-4.jpg",
+        "img/clubs/Newspaper Club_done-5.jpg",
+        "img/clubs/Newspaper Club_done-6.jpg"
+      ]
     },
     {
       "id": "Steam Club",
