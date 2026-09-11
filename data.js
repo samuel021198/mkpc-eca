@@ -334,8 +334,10 @@ window.ECA = {
       "s1": true,
       "introZh": "課程專為中一學生而設，以輕鬆互動的方式教授日語基礎，包括五十音讀寫、日常問候、自我介紹及生活詞彙。透過角色扮演、語言遊戲與情境對話，融入日本動漫、節慶及飲食文化，激發學習興趣，建立說日語的信心，拓闊跨文化視野。Group NameJapanese Class",
       "introEn": "Designed specifically for Secondary 1 students, this course introduces basic Japanese through a relaxed, interactive approach. Topics include reading and writing hiragana and katakana, everyday greetings, self-introductions, and daily vocabulary. Through role-playing, language games, and situational dialogues, students explore Japanese anime, festivals, and food culture. The course aims to spark students’ interest in learning Japanese, build their confidence in speaking the language, and broaden their cross-cultural understanding.",
-      "cover": "",
-      "photos": []
+      "cover": "img/clubs/日文班-1.jpg",
+      "photos": [
+        "img/clubs/日文班-1.jpg"
+      ]
     },
     {
       "id": "日本文化研究",
@@ -708,8 +710,14 @@ window.ECA = {
       "s1": true,
       "introZh": "",
       "introEn": "",
-      "cover": "",
-      "photos": []
+      "cover": "img/clubs/足球-1.jpg",
+      "photos": [
+        "img/clubs/足球-1.jpg",
+        "img/clubs/足球-2.jpg",
+        "img/clubs/足球-3.jpg",
+        "img/clubs/足球-4.jpg",
+        "img/clubs/足球-5.jpg"
+      ]
     },
     {
       "id": "拉丁舞",
@@ -1432,10 +1440,17 @@ window.ECA = {
         }
       ],
       "s1": true,
-      "introZh": "萬鈞伯裘書院銀樂隊，成立在於培養學生對音樂的興趣及各種樂器的演奏能力。隊員要求嚴謹的編排和排練，整體表現力求協調，表演出純熟技術。從樂器的演奏到花式步操動作均培訓指導，展示隊員堅苦的練習和專業的音樂素養。校內校外大小的活動都能見到銀樂隊的蹤影，擔當開幕演奏或活動的重要角色。銀樂隊表演不僅是一種音樂藝術的展現，同時也是隊員成長和技能提升的機會，在過程中收穫了與音樂、團隊合作和自我挑戰相關的深刻經驗。",
-      "introEn": "The Man Kwan Pak Kau College Marching Band was established to cultivate students’ interest in music and develop their ability to play a variety of musical instruments. Band members undergo disciplined rehearsals and carefully structured training, with a strong emphasis on coordination, teamwork, and performance quality. From instrumental performance to marching formations and routines, members receive comprehensive training and guidance, demonstrating the results of their hard work, dedication, and musical competence.The Marching Band plays an active role in both school and external events, often performing at opening ceremonies and other important occasions. Its performances are not only a showcase of musical artistry but also valuable opportunities for members to grow and develop their skills. Through their participation, students gain meaningful experience in music, teamwork, discipline, and overcoming personal challenges.",
-      "cover": "",
-      "photos": []
+      "introZh": "萬鈞伯裘書院銀樂隊，成立在於培養學生對音樂的興趣及各種樂器的演奏能力。隊員要求嚴謹的編排和排練，整體表現力求協調，表演出純熟技術。從樂器的演奏到花式步操動作均培訓指導，展示隊員堅苦的練習和專業的音樂素養。校內校外大小的活動都能見到銀樂隊的蹤影，擔當開幕演奏或活動的重要角色。銀樂隊表演不僅是一種音樂藝術的展現，同時也是隊員成長和技能提升的機會，在過程中收穫了與音樂、團隊合作和自我挑戰相關的深刻經驗。陳秋雲老師，陳振華老師Group NameThe Silver Band",
+      "introEn": "The Man Kwan Pak Kau College Silver Band was established to cultivate students’ interest in music and develop their ability to play a variety of musical instruments. Band members undergo disciplined rehearsals and carefully structured training, with a strong emphasis on coordination, teamwork, and performance quality. From instrumental performance to marching formations and routines, members receive comprehensive training and guidance, demonstrating the results of their hard work, dedication, and musical competence.The Marching Band plays an active role in both school and external events, often performing at opening ceremonies and other important occasions. Its performances are not only a showcase of musical artistry but also valuable opportunities for members to grow and develop their skills. Through their participation, students gain meaningful experience in music, teamwork, discipline, and overcoming personal challenges.",
+      "cover": "img/clubs/銀樂隊-1.jpg",
+      "photos": [
+        "img/clubs/銀樂隊-1.jpg",
+        "img/clubs/銀樂隊-2.jpg",
+        "img/clubs/銀樂隊-3.jpg",
+        "img/clubs/銀樂隊-4.jpg",
+        "img/clubs/銀樂隊-5.jpg",
+        "img/clubs/銀樂隊-6.jpg"
+      ]
     },
     {
       "id": "領袖生",
@@ -1447,8 +1462,8 @@ window.ECA = {
       ],
       "sessions": [],
       "s1": false,
-      "introZh": "",
-      "introEn": "",
+      "introZh": "學校領袖生是維護校園秩序和學校形象的重要角色。作為領袖生，他們具備嚴謹和公正的處事態度，並且要能夠與學生建立良好的關係。學校領袖生的付出不僅能夠維護學校的形象和安全，也能夠提高學生的紀律觀念和社會責任感。感謝這些學校領袖生為學校的付出，也為我們提供了一個安全和諧的學習環境。林子華老師何靜妍主任Group NameSchool prefect",
+      "introEn": "School prefects play an important role in maintaining order and the image of the school. As prefects, they possess a strict and fair approach to handling situations, and are able to establish good relationships with students. The efforts of school prefects not only help to uphold the school's image and safety, but also promote discipline and a sense of social responsibility among students. We are grateful for the contributions of these school prefects, who provide us with a safe and harmonious learning environment.",
       "cover": "",
       "photos": []
     },
@@ -1506,8 +1521,10 @@ window.ECA = {
       "s1": true,
       "introZh": "課程專為中一學生而設，透過輕鬆互動的學習方式，教授德語字母、發音規則、日常問候、自我介紹、數字及顏色等基礎知識。結合德國傳統節慶、聖誕市集、特色美食與格林童話，讓學生認識德國文化，培養語言興趣，學習簡單日常交流。Group NameGerman Class",
       "introEn": "Designed specifically for Secondary 1 students, this course introduces basic German through a relaxed, interactive approach. Topics include the German alphabet, pronunciation rules, everyday greetings, self-introductions, numbers, and colours. By incorporating traditional German festivals, Christmas markets, local specialities, and Grimms’ fairy tales, the course helps students explore German culture, develop an interest in the language, and learn to communicate in simple everyday situations.",
-      "cover": "",
-      "photos": []
+      "cover": "img/clubs/德文班-1.jpg",
+      "photos": [
+        "img/clubs/德文班-1.jpg"
+      ]
     },
     {
       "id": "樂團",

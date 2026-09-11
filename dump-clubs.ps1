@@ -49,6 +49,17 @@ function Save-Cover([string]$src, [string]$dest) {
   try {
     Copy-Item -LiteralPath $src -Destination $tmp -Force
     $img = [Drawing.Image]::FromFile($tmp)
+    $orient = 1
+    try { $orient = $img.GetPropertyItem(0x0112).Value[0] } catch {}
+    switch ($orient) {
+      2 { $img.RotateFlip([Drawing.RotateFlipType]::RotateNoneFlipX) }
+      3 { $img.RotateFlip([Drawing.RotateFlipType]::Rotate180FlipNone) }
+      4 { $img.RotateFlip([Drawing.RotateFlipType]::RotateNoneFlipY) }
+      5 { $img.RotateFlip([Drawing.RotateFlipType]::Rotate90FlipX) }
+      6 { $img.RotateFlip([Drawing.RotateFlipType]::Rotate90FlipNone) }
+      7 { $img.RotateFlip([Drawing.RotateFlipType]::Rotate270FlipX) }
+      8 { $img.RotateFlip([Drawing.RotateFlipType]::Rotate270FlipNone) }
+    }
     $maxW = 1000
     $scale = [Math]::Min(1.0, $maxW / [double]$img.Width)
     $w = [Math]::Max(1, [int]($img.Width * $scale))
