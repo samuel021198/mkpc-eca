@@ -21,17 +21,23 @@ New-Item -ItemType Directory -Force -Path $outData | Out-Null
 
 function Get-DocxText([string]$path) {
   $tmp = Join-Path $env:TEMP ("eca_docx_" + [guid]::NewGuid().ToString("n"))
+  $copy = Join-Path $env:TEMP ("eca_docx_" + [guid]::NewGuid().ToString("n") + ".docx")
   New-Item -ItemType Directory -Path $tmp | Out-Null
   try {
-    [IO.Compression.ZipFile]::ExtractToDirectory($path, $tmp)
+    Copy-Item -LiteralPath $path -Destination $copy -Force
+    [IO.Compression.ZipFile]::ExtractToDirectory($copy, $tmp)
     $xmlPath = Join-Path $tmp "word\document.xml"
     if (-not (Test-Path -LiteralPath $xmlPath)) { return "" }
     $xml = [IO.File]::ReadAllText($xmlPath)
     $xml = $xml -replace "</w:p>", "`n"
     $parts = [regex]::Matches($xml, '<w:t[^>]*>([^<]*)</w:t>') | ForEach-Object { $_.Groups[1].Value }
     return ($parts -join "") -replace '&amp;', '&'
+  } catch {
+    Write-Host "skip docx" $path
+    return ""
   } finally {
     Remove-Item -LiteralPath $tmp -Recurse -Force -ErrorAction SilentlyContinue
+    Remove-Item -LiteralPath $copy -Force -ErrorAction SilentlyContinue
   }
 }
 

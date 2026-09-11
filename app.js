@@ -1,5 +1,5 @@
 if (window.ECA?.clubs) {
-  const hide = new Set(["增益班", "WebSems", "日本文化研究"]);
+  const hide = new Set(["增益班", "WebSems", "日本文化研究", "公益少年團"]);
   ECA.clubs = ECA.clubs.filter((c) => !hide.has(c.id) && !hide.has(c.nameZh) && !hide.has(c.nameEn));
 }
 
@@ -192,7 +192,7 @@ function parseRoute() {
   if (parts[0] === "news") return { page: "news" };
   if (parts[0] === "timetable") return { page: "timetable", params };
   if (parts[0] === "teams") return { page: "teams", params };
-  if (parts[0] === "s1") return { page: "s1" };
+  if (parts[0] === "s1") return { page: "s1", params };
   if (parts[0] === "apply") return { page: "apply" };
   if (parts[0] === "contact") return { page: "contact" };
   return { page: "home" };
@@ -583,24 +583,66 @@ function s1DayActs(day) {
   }));
 }
 
-function s1TimetableHtml() {
+const S1_CAT_ORDER = ["學術", "體育", "藝術", "制服"];
+
+function s1SortActs(acts) {
+  return acts.slice().sort(
+    (a, b) =>
+      S1_CAT_ORDER.indexOf(a.cat) - S1_CAT_ORDER.indexOf(b.cat) ||
+      (lang() === "en" ? a.en : a.zh).localeCompare(lang() === "en" ? b.en : b.zh, lang() === "en" ? "en" : "zh-Hant")
+  );
+}
+
+function s1PickDay(params, days) {
+  const d = params?.get("day") || "";
+  if (days.includes(d)) return d;
+  const today = todayKey();
+  return days.includes(today) ? today : days[0] || "mon";
+}
+
+function s1TimetableHtml(params) {
   const L = t();
   const f = s1Form();
   const days = f.dayOrder || [];
   const head = (d) => (lang() === "en" ? f.days[d].en : f.days[d].zh);
-  const stack = days
-    .map((d) => {
-      const note = lang() === "en" ? f.days[d].noteEn : f.days[d].noteZh;
-      const list = s1DayActs(d).map(s1FormItem).join("");
-      return `<h3 class="tt-cat">${escapeHtml(head(d))}</h3>${note ? `<p class="s1-tt-note">${escapeHtml(note)}</p>` : ""}<div class="tt-list">${list}</div>`;
+  const day = s1PickDay(params, days);
+  const cat = params?.get("cat") || "";
+  let acts = s1SortActs(s1DayActs(day));
+  if (cat) acts = acts.filter((a) => a.cat === cat);
+  const qs = (d) => {
+    const p = new URLSearchParams();
+    p.set("day", d);
+    if (cat) p.set("cat", cat);
+    return "#/s1?" + p.toString();
+  };
+  let last = "";
+  const list = acts
+    .map((a) => {
+      const lab = f.cat[a.cat] ? f.cat[a.cat][lang()] : a.cat;
+      const headCat = a.cat !== last ? ((last = a.cat), `<h3 class="tt-cat">${escapeHtml(lab)}</h3>`) : "";
+      return headCat + s1FormItem(a);
     })
     .join("");
+  const note = lang() === "en" ? f.days[day]?.noteEn : f.days[day]?.noteZh;
+  const stack = `<div class="tt-pills">${days
+    .map((d) => `<a href="${qs(d)}"${d === day ? ' aria-current="page"' : ""}>${escapeHtml(head(d))}</a>`)
+    .join("")}</div>
+    <div class="filters">
+      <select id="s1cat">${["", ...S1_CAT_ORDER]
+        .map((id) => {
+          const lab = id ? (f.cat[id] ? f.cat[id][lang()] : id) : L.allCat;
+          return `<option value="${id}" ${cat === id ? "selected" : ""}>${escapeHtml(lab)}</option>`;
+        })
+        .join("")}</select>
+    </div>
+    ${note ? `<p class="s1-tt-note">${escapeHtml(note)}</p>` : ""}
+    <div class="tt-list">${list || `<p class="empty">${L.noResult}</p>`}</div>`;
   const wide = `<div class="s1-tt-wide"><table>
     <thead><tr>${days.map((d) => `<th>${escapeHtml(head(d))}</th>`).join("")}</tr></thead>
     <tbody><tr>${days
       .map((d) => {
-        const note = lang() === "en" ? f.days[d].noteEn : f.days[d].noteZh;
-        return `<td>${note ? `<p class="s1-tt-note">${escapeHtml(note)}</p>` : ""}${s1DayActs(d).map(s1FormItem).join("")}</td>`;
+        const n = lang() === "en" ? f.days[d].noteEn : f.days[d].noteZh;
+        return `<td>${n ? `<p class="s1-tt-note">${escapeHtml(n)}</p>` : ""}${s1DayActs(d).map(s1FormItem).join("")}</td>`;
       })
       .join("")}</tr></tbody>
   </table></div>`;
@@ -610,13 +652,13 @@ function s1TimetableHtml() {
     <div class="s1-tt-stack">${stack}</div>`;
 }
 
-function s1Page() {
+function s1Page(params) {
   const zh = `<div class="prose">
     <h2>參加安排</h2>
     <p>中一級同學須於<strong>星期一至五</strong>出席課外活動。<strong>星期二</strong>為科創活動，稍後由老師安排，同學無須選報。</p>
     <h2>時間</h2>
     <p>一般課外活動為課後 <strong>16:00–17:30</strong>。校隊訓練時間以負責老師安排為準，或會超過 17:30，最遲至 <strong>19:00</strong>。場地請參閱各組時間表；外借場地（例如田徑、足球、欖球）以當日負責老師指示為準。</p>
-    ${s1TimetableHtml()}
+    ${s1TimetableHtml(params)}
     <h2>活動類別</h2>
     <p>以下分類與報名系統相同，用以核對星期一、四、五第一志願須涵蓋至少兩個範疇。</p>
     <ul>
@@ -635,7 +677,7 @@ function s1Page() {
     <p>All Secondary 1 students shall attend extracurricular activities from <strong>Monday to Friday</strong>. <strong>Tuesday</strong> is InnoTech, to be arranged by teachers later. Students need not choose a Tuesday activity.</p>
     <h2>Time</h2>
     <p>Regular sessions are held after school from <strong>16:00 to 17:30</strong>. School-team training shall follow the arrangement of the teacher-in-charge and may extend beyond 17:30, until <strong>19:00</strong> at the latest. Venues are set out in the timetable. Off-campus venues (for example athletics, football and rugby) shall follow the instructions of the teacher-in-charge on the day.</p>
-    ${s1TimetableHtml()}
+    ${s1TimetableHtml(params)}
     <h2>Categories</h2>
     <p>These groups match the application system. First preferences on Monday, Thursday and Friday shall cover at least two domains.</p>
     <ul>
@@ -987,6 +1029,15 @@ function bind() {
     render();
   });
   const r = parseRoute();
+  const s1cat = document.getElementById("s1cat");
+  if (r.page === "s1" && s1cat) {
+    s1cat.addEventListener("change", () => {
+      const p = new URLSearchParams();
+      p.set("day", s1PickDay(r.params, s1Form().dayOrder || []));
+      if (s1cat.value) p.set("cat", s1cat.value);
+      location.hash = "#/s1?" + p.toString();
+    });
+  }
   const q = document.getElementById("q");
   const cat = document.getElementById("cat");
   const day = document.getElementById("day");
@@ -1027,7 +1078,7 @@ function render() {
   if (r.page === "clubs") html = clubsPage(r.params);
   else if (r.page === "club") html = clubPage(r.id);
   else if (r.page === "timetable") html = timetablePage(r.params);
-  else if (r.page === "s1") html = s1Page();
+  else if (r.page === "s1") html = s1Page(r.params);
   else if (r.page === "apply") html = applyPage();
   else if (r.page === "contact") html = contactPage();
   else html = home();
