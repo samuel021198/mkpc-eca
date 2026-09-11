@@ -63,11 +63,12 @@ const I18N = {
     back: "返回目錄",
     source: "時間表由總表自動產生，請勿另存一份清單。",
     weekTable: "一週總表",
-    s1Remark: "標「中一可選」者與中一報名表可選活動相同。星期二科創無須選報。",
+    s1Remark: "標「中一可選」者與中一報名表該日可選活動相同。星期二為科創，不標中一可選。",
     s1tt: "中一級報名時間表",
     s1ttLead: "下表與報名系統可選活動相同。星期一、三、四、五每日填三個志願。星期二為科創活動，稍後由老師安排，無須選報。標「面試」者僅已獲選拔同學可選。一般時間 16:00–17:30。",
     s1ttInterview: "面試",
     s1ttLevel: "須填級別",
+    tueSteam: "科創 · 稍後由老師安排",
     count: (n) => `共 ${n} 組`,
   },
   en: {
@@ -119,11 +120,12 @@ const I18N = {
     back: "Back to directory",
     source: "This timetable is generated from the master sheet. Do not keep a second copy.",
     weekTable: "Week overview",
-    s1Remark: "“Open to S1” matches the Secondary 1 application form. Tuesday InnoTech need not be chosen.",
+    s1Remark: "“Open to S1” matches that day’s options on the application form. Tuesday is InnoTech and is not marked Open to S1.",
     s1tt: "S1 application timetable",
     s1ttLead: "This table matches the activities on the application form. Enter three preferences for Monday, Wednesday, Thursday and Friday. Tuesday is InnoTech, to be arranged by teachers later; students need not choose a Tuesday activity. Items marked Trial are only for students already selected. Usual time is 16:00–17:30.",
     s1ttInterview: "Trial",
     s1ttLevel: "Level required",
+    tueSteam: "InnoTech · to be arranged",
     count: (n) => `${n} clubs`,
   },
 };
@@ -148,8 +150,25 @@ function teacherLabel(name) {
 function teachersText(c) {
   return (c.teachers || []).map(teacherLabel).join("、");
 }
+function clubSessions(c) {
+  let ss = c.sessions || [];
+  if (c.id === "桌上遊戲" || c.nameZh === "桌上遊戲") return ss.filter((s) => s.day === "mon");
+  const board = findClub("桌上遊戲");
+  if (c.id === "腦力攻防戰" || c.nameZh === "腦力攻防戰") {
+    const extra = (board?.sessions || []).filter((s) => s.day === "wed").map((s) => ({ ...s, label: c.nameZh }));
+    return ss.concat(extra);
+  }
+  if (c.id === "桌樂冒險家" || c.nameZh === "桌樂冒險家") {
+    const extra = (board?.sessions || []).filter((s) => s.day === "thu").map((s) => ({ ...s, label: c.nameZh }));
+    return ss.concat(extra);
+  }
+  return ss;
+}
+
 function daysText(c) {
-  const ds = [...new Set(c.sessions.map((s) => s.day))];
+  const ds = [...new Set(clubSessions(c).map((s) => s.day))];
+  if (c.category === "steam" && !ds.includes("tue")) ds.push("tue");
+  ds.sort((a, b) => DAY_ORDER.indexOf(a) - DAY_ORDER.indexOf(b));
   return ds.map((d) => DAY[d][lang()]).join("、") || "—";
 }
 function escapeHtml(s) {
@@ -347,7 +366,9 @@ function clubsPage(params) {
   const q = (params.get("q") || "").trim().toLowerCase();
   let rows = ECA.clubs;
   if (cat) rows = rows.filter((c) => c.category === cat);
-  if (day) rows = rows.filter((c) => c.sessions.some((s) => s.day === day));
+  if (day) {
+    rows = rows.filter((c) => clubSessions(c).some((s) => s.day === day) || (day === "tue" && c.category === "steam"));
+  }
   if (q) {
     rows = rows.filter((c) =>
       [c.nameZh, c.nameEn, c.teachers.join(" "), catLabel(c.category), c.introZh, c.introEn].join(" ").toLowerCase().includes(q)
@@ -373,12 +394,15 @@ function clubPage(id) {
   const L = t();
   const c = ECA.clubs.find((x) => x.id === id);
   if (!c) return `${nav("clubs")}<main><p>${L.noResult}</p></main>`;
-  const sess = c.sessions
+  let sess = clubSessions(c)
     .map((s) => {
       const extra = s.label && s.label !== c.nameZh ? ` · ${escapeHtml(s.label)}` : "";
       return `<li>${DAY[s.day][lang()]} · ${escapeHtml(s.venue)}${extra} · ${sessionTime(c, s)}</li>`;
     })
     .join("");
+  if (c.category === "steam" && !clubSessions(c).some((s) => s.day === "tue")) {
+    sess += `<li>${DAY.tue[lang()]} · ${L.tueSteam}</li>`;
+  }
   const intro = cleanIntro(lang() === "en" ? c.introEn || c.introZh : c.introZh || c.introEn);
   const coverHtml = c.cover
     ? `<div class="cover ${escapeHtml(c.category)} hero zoom" data-full="${encodeURI(c.cover)}" style="background-image:url('${encodeURI(c.cover)}')"></div>`
@@ -423,12 +447,15 @@ function sessionBits(c, s) {
 function dayEntries(day, cat, onlyS1) {
   const rows = [];
   for (const c of ECA.clubs) {
-    if (onlyS1 && !c.s1) continue;
+    if (onlyS1 && !isS1OpenOnDay(c, day)) continue;
     if (cat && c.category !== cat) continue;
-    const ss = c.sessions.filter((s) => s.day === day);
-    if (!ss.length) continue;
-    const where = [...new Set(ss.map((s) => sessionBits(c, s)))].join("、");
-    rows.push({ c, where });
+    const ss = clubSessions(c).filter((s) => s.day === day);
+    if (ss.length) {
+      const where = [...new Set(ss.map((s) => sessionBits(c, s)))].join("、");
+      rows.push({ c, where });
+      continue;
+    }
+    if (day === "tue" && c.category === "steam") rows.push({ c, where: t().tueSteam });
   }
   rows.sort(
     (a, b) =>
@@ -454,7 +481,7 @@ function timetablePage(params) {
   const list = rows
     .map(({ c, where }) => {
       const head = c.category !== last ? ((last = c.category), `<h3 class="tt-cat">${escapeHtml(catLabel(c.category))}</h3>`) : "";
-      return `${head}<a class="tt-row" href="#/club/${encodeId(c.id)}"><span><strong>${escapeHtml(clubName(c))}</strong><span class="meta">${escapeHtml(where)}</span></span>${isS1Open(c) ? `<span class="badge">${L.s1Badge}</span>` : ""}</a>`;
+      return `${head}<a class="tt-row" href="#/club/${encodeId(c.id)}"><span><strong>${escapeHtml(clubName(c))}</strong><span class="meta">${escapeHtml(where)}</span></span>${isS1OpenOnDay(c, day) ? `<span class="badge">${L.s1Badge}</span>` : ""}</a>`;
     })
     .join("");
   return `${nav("timetable")}<main>
@@ -475,7 +502,7 @@ function timetablePage(params) {
           const cell = dayEntries(d, cat)
             .map(
               ({ c, where }) =>
-                `<a href="#/club/${encodeId(c.id)}">${escapeHtml(clubName(c))}${isS1Open(c) ? ` <span class="badge">${L.s1Badge}</span>` : ""}<span class="meta">${escapeHtml(where)}</span></a>`
+                `<a href="#/club/${encodeId(c.id)}">${escapeHtml(clubName(c))}${isS1OpenOnDay(c, d) ? ` <span class="badge">${L.s1Badge}</span>` : ""}<span class="meta">${escapeHtml(where)}</span></a>`
             )
             .join("");
           return `<td>${cell || "—"}</td>`;
@@ -512,6 +539,19 @@ function s1OpenIds() {
 
 function isS1Open(c) {
   return s1OpenIds().has(c.id);
+}
+
+function isS1OpenOnDay(c, day) {
+  if (day === "tue") return false;
+  const f = s1Form();
+  const extra = { 男女子排球: ["女子排球", "男子排球"] };
+  for (const row of f.activities[day] || []) {
+    const id = row[3] || row[0];
+    for (const name of extra[id] || [f.clubAlias[id] || id]) {
+      if (c.id === name || c.nameZh === name) return true;
+    }
+  }
+  return false;
 }
 
 function s1FormClub(id) {
