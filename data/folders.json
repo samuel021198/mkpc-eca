@@ -151,11 +151,16 @@
                 "folderCat":  "制服團隊"
             },
     "英文大使":  {
-                 "cover":  "",
+                 "cover":  "img/clubs/英文大使-1.jpg",
                  "photos":  [
-
+                                "img/clubs/英文大使-1.jpg",
+                                "img/clubs/英文大使-2.jpg",
+                                "img/clubs/英文大使-3.jpg",
+                                "img/clubs/英文大使-4.jpg",
+                                "img/clubs/英文大使-5.jpg",
+                                "img/clubs/英文大使-6.jpg"
                             ],
-                 "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                 "introRaw":  "組別名稱英文大使中文簡介 (約100字)加入我們的英語大使計畫，釋放你對英語的熱情！這是一個令人興奮的機會，專為渴望提升語言能力和培養領導才能的學生而設。作為英語大使，你將負責組織充滿活力的午餐時間英語活動、精彩的每月活動，以及英文早會分享，激勵同學們一起練習英語。你還可以參與文化交流，分享自己的獨特經歷，同時學習不同的觀點。這項計畫不僅能增強你的溝通自信，還能讓你在校園內建立珍貴的友誼。成為我們的一部分——今天就來報名成為英語大使吧！負責老師陳淑真老師Group NameEnglish Ambassadors English Introduction (about 80 words)Join our English Ambassadors Program and unleash your passion for the English language! This exciting opportunity is for motivated students eager to enhance their language skills and develop leadership qualities. As an English Ambassador, you will help organize vibrant lunchtime English activities, monthly events, and engaging morning assemblies that inspire your peers to practice English. Dive into cultural exchanges, share your unique background, and learn from diverse perspectives. This program not only boosts your confidence in communication but also helps you forge lasting connections within the school community. Be a part of something special—become an English Ambassador today!Teacher in chargeMiss Amelia",
                  "folderCat":  "服務隊伍"
              },
     "樂團":  {
@@ -345,7 +350,7 @@
                                  "img/clubs/社會服務團-5.jpg",
                                  "img/clubs/社會服務團-6.jpg"
                              ],
-                  "introRaw":  "組別名稱社會服務團中文簡介 (約100字)社會服務團的服務多元，包括：探訪活動、義賣籌款、制作小手作等...... 在幫助社會上有需要人士的同時，你將擁有一個機會去認識自我，發揮所長。透過參與各類型的義工服務，你可以用愛心和關懷，真誠地幫弱勢社群帶來温暖。義工服務不僅能幫助他人，更能讓你變成更好的自己！負責老師馬穎嫻老師、梁子軒先生、林紀彤老師Group NameSocial Service GroupEnglish Introduction (about 80 words)The services of the Social Service Group are diverse, including visitation activities, charity sales for fundraising, making small handicrafts, and more...While helping those in need in society, you will have the opportunity to get to know yourself and develop your strengths.By participating in various types of Social Service, you can use love and care to sincerely bring warmth to disadvantaged communities.Social Service not only helps others, but also enables you to become a better version of yourself !Teacher in chargeMa Wing Han, Leung Tsz Hin, Lam Kei Tung",
+                  "introRaw":  "組別名稱社會服務團中文簡介 (約100字)社會服務團是一個讓學生透過服務學習與成長的地方，透過多元的義工活動及培訓，包括：探訪活動、賣旗籌款、手作義工活動及其他社區服務等......學生在策劃與推行義工服務的過程中汲取知識，提升個人能力，並培養責任感和同理心等正面的價值觀，進而回饋社會，服務大眾。加入社會服務團，讓服務成為學習的起點，讓你的光芒照亮更多人！如有意參與義工服務，歡迎瀏覽以下網站尋找適合你的義工服務：https://script.google.com/a/macros/mail.mkpc.edu.hk/s/AKfycbwf49EfQ8B6yj4PG11Hm6OzbekO7fN2vz-vz3HqVupJttKwlz49Z4BS5Xt2-aYcc1xM/exec負責老師馬穎嫻老師、梁子軒先生、林紀彤老師Group NameSocial Service TeamEnglish Introduction (about 80 words)The Social Service Team is a place where students can learn and grow through social service. Through a wide range of volunteer activities and training, including visits, flag-selling fundraising, handicraft volunteer activities, and other community services, students can gain knowledge, enhance their personal abilities, and develop positive values such as a sense of responsibility and empathy while planning and carrying out volunteer services. In doing so, they can give back to society and serve the community.Join the Social Service Team — let service be the starting point of learning, and let your light brighten the lives of others!If you are interested in taking part in volunteer service, please visit the following website to find volunteer opportunities that suit you:https://script.google.com/a/macros/mail.mkpc.edu.hk/s/AKfycbwf49EfQ8B6yj4PG11Hm6OzbekO7fN2vz-vz3HqVupJttKwlz49Z4BS5Xt2-aYcc1xM/execTeacher in chargeMa Wing Han, Leung Tsz Hin, Lam Kei Tung",
                   "folderCat":  "服務隊伍"
               },
     "手鈴":  {
@@ -406,9 +411,14 @@
                   "folderCat":  "制服團隊"
               },
     "棍網球":  {
-                "cover":  "",
+                "cover":  "img/clubs/棍網球-1.jpg",
                 "photos":  [
-
+                               "img/clubs/棍網球-1.jpg",
+                               "img/clubs/棍網球-2.jpg",
+                               "img/clubs/棍網球-3.jpg",
+                               "img/clubs/棍網球-4.jpg",
+                               "img/clubs/棍網球-5.jpg",
+                               "img/clubs/棍網球-6.jpg"
                            ],
                 "introRaw":  "組別名稱棍網球 中文簡介 (約100字)棍網球是一項刺激又充滿速度感的新興運動，講求團隊合作、反應及戰術運用。本校棍網球隊近年於全港學界比賽中表現出色，每年均能取得頭三名的佳績。歡迎喜歡挑戰、熱愛刺激運動的同學加入，一同訓練、突破自己，為校爭光！負責老師吳華峰Group NameLacrosse TeamEnglish Introduction (about 80 words)Lacrosse is an exciting and fast-paced emerging sport that requires teamwork, quick reactions and good tactics. Our school Lacrosse Team has performed excellently in the Hong Kong inter-school competitions, consistently achieving top-three results every year. Students who enjoy challenges and exciting sports are welcome to join us, train hard and bring glory to the school!Teacher in chargeNG WAH FUNG",
                 "folderCat":  "體育"
@@ -441,11 +451,15 @@
                "folderCat":  "藝術及音樂"
            },
     "劍擊":  {
-               "cover":  "",
+               "cover":  "img/clubs/劍擊-1.jpg",
                "photos":  [
-
+                              "img/clubs/劍擊-1.jpg",
+                              "img/clubs/劍擊-2.jpg",
+                              "img/clubs/劍擊-3.jpg",
+                              "img/clubs/劍擊-4.jpg",
+                              "img/clubs/劍擊-5.jpg"
                           ],
-               "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+               "introRaw":  "組別名稱劍擊校隊中文簡介 (約100字)近年香港劍擊隊為香港屢創佳績，如果你也希望能成爲下一個劍神，非常歡迎加入劍擊對！練習會於星期五放學後進行，作爲一位高水平劍手，需要進行一系列的訓練，技術、肌耐力、策略、步法、反應…等等，希望劍手能全面提升自身能力，並與校外、甚至海外的劍手交流切磋，為校奪冠!負責老師范嘉楊Group NameFencing TeamEnglish Introduction (about 80 words)In recent years, the Hong Kong fencing team has repeatedly achieved great results for Hong Kong. If you also hope to become the next fencing legend, you’re very welcome to join the fencing team! Training sessions will be held on Fridays after school. As a high-level fencer, you will need to go through a series of training. Namely technique, muscular endurance, strategy, footwork, reaction…etc, so that fencers can improve their abilities in every aspect and fence with fencers outside the school or even overseas! The ultimate goal is to win a champion!Teacher in chargeFan Ka Yeung",
                "folderCat":  "體育"
            },
     "學生會":  {
@@ -481,9 +495,14 @@
                 "folderCat":  "體育"
             },
     "英文辯論_done":  {
-                      "cover":  "",
+                      "cover":  "img/clubs/英文辯論_done-1.jpg",
                       "photos":  [
-
+                                     "img/clubs/英文辯論_done-1.jpg",
+                                     "img/clubs/英文辯論_done-2.jpg",
+                                     "img/clubs/英文辯論_done-3.jpg",
+                                     "img/clubs/英文辯論_done-4.jpg",
+                                     "img/clubs/英文辯論_done-5.jpg",
+                                     "img/clubs/英文辯論_done-6.jpg"
                                  ],
                       "introRaw":  "組別名稱英文辯論中文簡介 (約100字)辯論社並不僅僅是為了那些喜歡自己聲音的人，而是為了所有曾經想過「等一下，這真的是真的嗎？」的人。在這裡，我們不僅進行辯論，還會開心地交流，並一起提升思考能力。你無需是最聰明的人，只要帶著好奇心來到這裡即可。 我們將幫助你自信地表達，堅定自己的觀點，甚至不時重新思考自己的想法。在這裡，沒有壓力，沒有批評。只有充滿活力的氛圍、更深入的對話，以及你畢業後仍能受益的能力。快來看看我們的精彩活動，一起成長吧！負責老師Ms RamanGroup NameEnglish Debate English Introduction (about 80 words)Debate Club isn’t only for those who like the sound of their own voice. It’s for anyone who has ever wondered, “Hold on, is that really true?” Yes, we debate. But we also joke, and sharpen our thinking as a team.You don’t have to be the sharpest mind in the room. You just have to arrive ready to be curious. We’ll help you talk with confidence, stand behind your points, and maybe even rethink your views now and then.Zero stress, zero criticism. Just lively energy, smarter chats, and abilities you’ll carry after graduation. Come see what we’re about!Teacher in chargeMs Raman",
                       "folderCat":  "學術"
@@ -648,11 +667,16 @@
                  "folderCat":  "體育"
              },
     "男子籃球":  {
-                 "cover":  "",
+                 "cover":  "img/clubs/男子籃球-1.jpg",
                  "photos":  [
-
+                                "img/clubs/男子籃球-1.jpg",
+                                "img/clubs/男子籃球-2.jpg",
+                                "img/clubs/男子籃球-3.jpg",
+                                "img/clubs/男子籃球-4.jpg",
+                                "img/clubs/男子籃球-5.jpg",
+                                "img/clubs/男子籃球-6.jpg"
                             ],
-                 "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                 "introRaw":  "組別名稱男子籃球中文簡介 (約100字)負責老師吳華峰Group NameEnglish Introduction (about 80 words)Teacher in charge",
                  "folderCat":  "體育"
              },
     "桌樂冒險家":  {
@@ -677,11 +701,16 @@
                  "folderCat":  "科創"
              },
     "拉丁舞":  {
-                "cover":  "",
+                "cover":  "img/clubs/拉丁舞-1.jpg",
                 "photos":  [
-
+                               "img/clubs/拉丁舞-1.jpg",
+                               "img/clubs/拉丁舞-2.jpg",
+                               "img/clubs/拉丁舞-3.jpg",
+                               "img/clubs/拉丁舞-4.jpg",
+                               "img/clubs/拉丁舞-5.jpg",
+                               "img/clubs/拉丁舞-6.jpg"
                            ],
-                "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                "introRaw":  "組別名稱拉丁舞中文簡介 (約100字)本校拉丁舞校隊由專業導師帶領，透過系統化訓練培養自信與合作，並重視基本功及技巧提升。另外，鼓勵隊員參與不同規模個人賽事，拓展視野、累積實戰經驗，持續精進。負責老師鄧鵠耀Group NameLatin DanceEnglish Introduction (about 80 words)Our school’s Latin dance team is led by professional instructors. Through structured training, students build confidence and teamwork while strengthening fundamentals and improving technique. In addition, team members are encouraged to take part in individual competitions of various levels to broaden their horizons, gain practical experience, and continue to improve.Teacher in chargeTang Kuk Yiu (Helios)",
                 "folderCat":  "藝術及音樂"
             },
     "合唱團":  {
@@ -782,9 +811,9 @@
                      "folderCat":  "學術"
                  },
     "韓文班_done":  {
-                     "cover":  "img/clubs/韓文班_done-1.jpg",
+                     "cover":  "img/clubs/韓文班_done-2.jpg",
                      "photos":  [
-                                    "img/clubs/韓文班_done-1.jpg"
+                                    "img/clubs/韓文班_done-2.jpg"
                                 ],
                      "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameKorean Class (한국어 수업)English Introduction (about 80 words)Designed for beginners, this course offers a clear guide to the Korean alphabet, Hangul. Students will learn to recognize consonants and vowels, read Korean words, and spell out what they hear.The focus is on building practical reading and writing skills through everyday themes, such as geography, academic terms, and honorifics. To make learning easier, lessons will point out words that sound similar in Cantonese and Korean due to shared roots. Additionally, students will study authentic texts, like K-pop lyrics, to understand the real meaning behind popular cultural phrases. 다같이 한국어 공부를 해요!Teacher in chargeWang Heumil",
                      "folderCat":  "學術"
