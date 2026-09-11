@@ -1,5 +1,5 @@
 if (window.ECA?.clubs) {
-  const hide = new Set(["增益班", "WebSems"]);
+  const hide = new Set(["增益班", "WebSems", "日本文化研究"]);
   ECA.clubs = ECA.clubs.filter((c) => !hide.has(c.id) && !hide.has(c.nameZh) && !hide.has(c.nameEn));
 }
 
@@ -39,9 +39,9 @@ const I18N = {
     lose: "負",
     draw: "和",
     tabHome: "首頁",
-    tabClubs: "組別",
+    tabClubs: "活動",
     tabTime: "時間表",
-    tabS1: "中一",
+    tabS1: "中一安排",
     lang: "English",
     homeLead: "發掘潛能、團隊、溝通與協作。2026–2027 課外活動總覽。",
     cats: "活動類別",
@@ -98,7 +98,7 @@ const I18N = {
     tabHome: "Home",
     tabClubs: "Clubs",
     tabTime: "Times",
-    tabS1: "S1",
+    tabS1: "S1 plan",
     lang: "中文",
     homeLead: "Discover potential, teamwork, and collaboration. 2026–2027 ECA overview.",
     cats: "Categories",
