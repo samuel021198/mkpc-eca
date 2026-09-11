@@ -564,7 +564,10 @@
       "cover": "img/clubs/合唱團-1.jpg",
       "photos": [
         "img/clubs/合唱團-1.jpg",
-        "img/clubs/合唱團-2.jpg"
+        "img/clubs/合唱團-2.jpg",
+        "img/clubs/合唱團-3.jpg",
+        "img/clubs/合唱團-4.jpg",
+        "img/clubs/合唱團-5.jpg"
       ]
     },
     {
@@ -820,8 +823,8 @@
         }
       ],
       "s1": true,
-      "introZh": "課程專為中一學生而設，透過輕鬆互動的學習方式，教授法文字母、基礎發音、日常問候、自我介紹及生活詞彙。結合角色扮演、語言遊戲與情境對話，融入法國美食、藝術及傳統節慶文化，激發學習興趣，建立說法語的信心，拓闊國際視野。Group NameFrench Class",
-      "introEn": "Designed specifically for Secondary 1 students, this course introduces basic French through a relaxed, interactive approach. Topics include the French alphabet, basic pronunciation, everyday greetings, self-introductions, and daily vocabulary. Through role-playing, language games, and situational dialogues, students explore French food, art, and traditional festivals. The course aims to spark students’ interest in learning French, build their confidence in speaking the language, and broaden their international outlook.",
+      "introZh": "探索法語的精彩世界！加入我們的法文班，沉浸於充滿活力的法語世界！這是一個專為初學者設計的動態一小時每週課後冒險，內容遠超基本語法練習。體驗有趣而互動的學習方式，掌握日常法語，同時探索讓法語文化獨具魅力的豐富傳統、音樂、電影和藝術！您將體驗到的精彩內容：實用會話： 掌握基本短語，自信地練習口語，通過互動遊戲和角色扮演來擴展詞彙量。音樂與電影： 發現流行的法語歌曲，分析精彩的電影片段，透過多種媒體訓練你的耳朵，提高地道的發音和節奏感。文化探索： 了解現代青年文化、著名傳統、標誌性藝術以及來自法國和法語地區的美味烹飪習俗。趣味活動： 通過生動的小組討論、問答和動手創意項目與同學建立聯繫，讓語言學習充滿活力！無論你是計劃未來的旅行，渴望學習新技能，還是對藝術和文化充滿熱情，我們的課程都將提供一個支持和啟發的環境，助你開啟法語之旅。不要錯過這次機會—今天就加入我們，一起展開這段精彩的冒險吧！Ms Roisin Group NameFrench Class",
+      "introEn": "Immerse yourself in the vibrant world of the French-speaking world in French Conversation & Culture, a dynamic, one-hour weekly afterschool adventure designed specifically for beginners! This class goes far beyond basic grammar drills, offering a fun and interactive gateway to mastering everyday French while exploring the rich traditions, music, cinema, and art that make French culture so iconic.What You’ll ExperiencePractical Conversation: Learn essential everyday phrases, practice speaking with confidence, and build foundational vocabulary through role-play and interactive games.Music & Cinema: Discover popular French songs, analyze movie clips, and use media to tune your ear to authentic pronunciation and rhythm.Cultural Exploration: Journey through modern youth culture, famous traditions, landmark art, and delicious culinary customs from France and French-speaking regions worldwide.Engaging Activities: Connect with peers through group discussions, trivia, and hands-on creative projects that bring the language to life.Whether you’re planning a future trip, looking to pick up a new skill, or simply passionate about arts and culture, this class provides a supportive and inspiring environment to kickstart your French journey.",
       "cover": "img/clubs/法文班_done-1.jpg",
       "photos": [
         "img/clubs/法文班_done-1.jpg",
@@ -1527,14 +1530,29 @@
       "nameEn": "Drama Society",
       "category": "arts",
       "teachers": [
+        "李日東",
+        "Dari",
         "林至泰"
       ],
-      "sessions": [],
-      "s1": false,
-      "introZh": "",
-      "introEn": "",
-      "cover": "",
-      "photos": []
+      "sessions": [
+        {
+          "day": "thu",
+          "venue": "N301",
+          "label": "Drama Club"
+        }
+      ],
+      "s1": true,
+      "introZh": "本校戲劇學會是一個歡迎所有對表演和戲劇感興趣的學生參加的社團。透過有趣的活動，學生可以深入認識戲劇、練習表演技巧、提升英語口語能力，以及探索不同的角色和故事。學會會員亦有機會在老師、同學和家長面前登臺演出。這些演出能幫助學生克服害羞，更有自信地表達自己。透過團隊合作，學生亦能培養創意、溝通技巧和合作精神。最重要的是，戲劇學會能提升學生的自信心和自尊感，同時令英語學習變得有趣而有意義。Mr Muji, Mr DariGroup NameDrama  Club",
+      "introEn": "Our school Drama Club is a welcoming place for students who are interested in acting and theatre. Through fun activities, students can learn more about drama, practise acting skills, improve their spoken English, and explore different characters and stories. Club members also have opportunities to perform on stage in front of teachers, classmates, and parents. These performances help students overcome shyness and express themselves with confidence. By working together, students develop creativity, communication skills, and teamwork. Most importantly, the Drama Club builds students’ confidence and self-esteem while making English learning enjoyable and meaningful.",
+      "cover": "img/clubs/Drama Club_done-1.jpg",
+      "photos": [
+        "img/clubs/Drama Club_done-1.jpg",
+        "img/clubs/Drama Club_done-2.jpg",
+        "img/clubs/Drama Club_done-3.jpg",
+        "img/clubs/Drama Club_done-4.jpg",
+        "img/clubs/Drama Club_done-5.jpg",
+        "img/clubs/Drama Club_done-6.jpg"
+      ]
     },
     {
       "id": "劍擊",
@@ -1666,9 +1684,9 @@
       "s1": true,
       "introZh": "Group NameKorean Class (한국어 수업)",
       "introEn": "Designed for beginners, this course offers a clear guide to the Korean alphabet, Hangul. Students will learn to recognize consonants and vowels, read Korean words, and spell out what they hear.The focus is on building practical reading and writing skills through everyday themes, such as geography, academic terms, and honorifics. To make learning easier, lessons will point out words that sound similar in Cantonese and Korean due to shared roots. Additionally, students will study authentic texts, like K-pop lyrics, to understand the real meaning behind popular cultural phrases. 다같이 한국어 공부를 해요!",
-      "cover": "img/clubs/韓文班-1.jpg",
+      "cover": "img/clubs/韓文班_done-1.jpg",
       "photos": [
-        "img/clubs/韓文班-1.jpg"
+        "img/clubs/韓文班_done-1.jpg"
       ]
     },
     {
@@ -1745,35 +1763,6 @@
       ]
     },
     {
-      "id": "Drama Club",
-      "nameZh": "Drama Club",
-      "nameEn": "Drama Club",
-      "category": "academic",
-      "teachers": [
-        "李日東",
-        "Dari"
-      ],
-      "sessions": [
-        {
-          "day": "thu",
-          "venue": "N301",
-          "label": "Drama Club"
-        }
-      ],
-      "s1": true,
-      "introZh": "本校戲劇學會是一個歡迎所有對表演和戲劇感興趣的學生參加的社團。透過有趣的活動，學生可以深入認識戲劇、練習表演技巧、提升英語口語能力，以及探索不同的角色和故事。學會會員亦有機會在老師、同學和家長面前登臺演出。這些演出能幫助學生克服害羞，更有自信地表達自己。透過團隊合作，學生亦能培養創意、溝通技巧和合作精神。最重要的是，戲劇學會能提升學生的自信心和自尊感，同時令英語學習變得有趣而有意義。Mr Muji, Mr DariGroup NameDrama  Club",
-      "introEn": "Our school Drama Club is a welcoming place for students who are interested in acting and theatre. Through fun activities, students can learn more about drama, practise acting skills, improve their spoken English, and explore different characters and stories. Club members also have opportunities to perform on stage in front of teachers, classmates, and parents. These performances help students overcome shyness and express themselves with confidence. By working together, students develop creativity, communication skills, and teamwork. Most importantly, the Drama Club builds students’ confidence and self-esteem while making English learning enjoyable and meaningful.",
-      "cover": "img/clubs/Drama Club-1.jpg",
-      "photos": [
-        "img/clubs/Drama Club-1.jpg",
-        "img/clubs/Drama Club-2.jpg",
-        "img/clubs/Drama Club-3.jpg",
-        "img/clubs/Drama Club-4.jpg",
-        "img/clubs/Drama Club-5.jpg",
-        "img/clubs/Drama Club-6.jpg"
-      ]
-    },
-    {
       "id": "IT Prefect",
       "nameZh": "IT Prefect",
       "nameEn": "IT Prefect",
@@ -1834,19 +1823,6 @@
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "",
-      "cover": "",
-      "photos": []
-    },
-    {
-      "id": "Newspaper Club_done_no pic",
-      "nameZh": "Newspaper Club_done_no pic",
-      "nameEn": "Newspaper Club_done_no pic",
-      "category": "academic",
-      "teachers": [],
-      "sessions": [],
-      "s1": false,
       "introZh": "你是否對講故事和挖掘真相充滿熱情？校報社是你展示才華的最佳場所！我們邀請學生探索新聞學的世界，從撰寫和編輯文章到進行訪談和報導校內活動。我們的社團促進創造力、團隊合作和批判性思維，讓我們一起打造專屬的校報。無論你是有志於成為作家、攝影師還是編輯，這裡都有你的舞台。加入我們，提升技能，結交新朋友，並將你的聲音傳遞給校園社區。讓我們一起講述故事吧！Mr ScottGroup NameNewspaper Club",
       "introEn": "Are you passionate about storytelling and uncovering the truth? The Newspaper Club is the perfect place for you! We invite students to explore the world of journalism, from writing and editing articles to conducting interviews and reporting on school events. Our club fosters creativity, teamwork, and critical thinking as we work together to produce our very own school newspaper. Whether you’re an aspiring writer, photographer, or editor, there’s a place for you here. Join us to sharpen your skills, make new friends, and share your voice with the school community. Let’s tell our stories together!",
       "cover": "",

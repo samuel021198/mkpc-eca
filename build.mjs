@@ -101,6 +101,7 @@ const ALIAS = {
   管樂班: "管弦樂班",
   "田徑(田項)": "田徑",
   銀樂: "銀樂隊",
+  "Drama Club": "劇社",
 };
 
 const SKIP = new Set([
@@ -152,7 +153,7 @@ const DAYS = ["", "mon", "tue", "wed", "thu", "fri", "sat"];
 const clubs = new Map();
 
 function norm(n) {
-  n = (n || "").replace(/\s+/g, " ").trim().replace(/_done$/, "");
+  n = (n || "").replace(/\s+/g, " ").trim().replace(/_done.*$/i, "");
   return ALIAS[n] || n;
 }
 
