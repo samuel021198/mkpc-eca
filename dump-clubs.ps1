@@ -156,7 +156,7 @@ Get-ChildItem -LiteralPath $clubRoot -Directory | ForEach-Object {
   $dest = if ($old -and $old.cover) { Join-Path $PSScriptRoot (($old.cover -replace "/", "\")) } else { "" }
   $coverOk = -not $dest -or (Test-Path -LiteralPath $dest)
   $destFresh = $dest -and $coverOk -and ((Get-Item -LiteralPath $dest).LastWriteTimeUtc.Ticks -ge [int64]$tick)
-  if ($old -and $old.cover -and $coverOk -and ($stamps[$name] -eq $tick -or $destFresh)) {
+  if ($old -and $old.cover -and $coverOk -and ($stamps[$name] -eq $tick)) {
     $map[$name] = $old
     $stamps[$name] = $tick
     return
