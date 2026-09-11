@@ -100,6 +100,7 @@ const ALIAS = {
   銅管樂: "管弦樂班",
   管樂班: "管弦樂班",
   "田徑(田項)": "田徑",
+  銀樂: "銀樂隊",
 };
 
 const SKIP = new Set([
@@ -151,7 +152,7 @@ const DAYS = ["", "mon", "tue", "wed", "thu", "fri", "sat"];
 const clubs = new Map();
 
 function norm(n) {
-  n = (n || "").replace(/\s+/g, " ").trim();
+  n = (n || "").replace(/\s+/g, " ").trim().replace(/_done$/, "");
   return ALIAS[n] || n;
 }
 
@@ -310,11 +311,16 @@ function parseIntro(raw) {
   } else {
     const zi = raw.indexOf(zhMark);
     zh = (zi >= 0 ? raw.slice(zi + zhMark.length) : raw).trim();
+    const split = zh.search(/[。！？]\s*(?=[A-Z])/);
+    if (split >= 0) {
+      en = zh.slice(split + 1).trim();
+      zh = zh.slice(0, split + 1).trim();
+    }
   }
   zh = zh.replace(/組別名稱\s*\/\s*Group Name/g, "").replace(/\(約100字\)/g, "").replace(/負責老師/g, "").replace(/\bGroup Name\b/g, "").trim();
-  en = en.replace(/Please write[^\n]*/gi, "").trim();
+  en = en.replace(/Please write[^\n]*/gi, "").replace(/^\(about 80 words\)/i, "").replace(/Teacher in charge.*$/i, "").trim();
   if (/請在此填寫|請填寫/.test(zh) || zh.length < 8) zh = "";
-  if (/Please write/i.test(en) || en.length < 8) en = "";
+  if (/Please write/i.test(en) || en.length < 40) en = "";
   return { introZh: zh, introEn: en };
 }
 
@@ -326,10 +332,10 @@ if (fs.existsSync(foldersPath)) {
     if (!c) continue;
     if (cat) c.category = cat;
     const parsed = parseIntro(f.introRaw || "");
-    c.introZh = f.introZh || parsed.introZh;
-    c.introEn = f.introEn || parsed.introEn;
-    c.cover = f.cover || "";
-    c.photos = f.photos || [];
+    if (f.introZh || parsed.introZh) c.introZh = f.introZh || parsed.introZh;
+    if (f.introEn || parsed.introEn) c.introEn = f.introEn || parsed.introEn;
+    if (f.cover) c.cover = f.cover;
+    if (f.photos?.length) c.photos = f.photos;
   }
 }
 

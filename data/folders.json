@@ -25,22 +25,22 @@
                 "photos":  [
 
                            ],
-                "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                "introRaw":  "組別名稱日文班中文簡介 (約100字)課程專為中一學生而設，以輕鬆互動的方式教授日語基礎，包括五十音讀寫、日常問候、自我介紹及生活詞彙。透過角色扮演、語言遊戲與情境對話，融入日本動漫、節慶及飲食文化，激發學習興趣，建立說日語的信心，拓闊跨文化視野。負責老師Group NameJapanese ClassEnglish Introduction (about 80 words)Designed specifically for Secondary 1 students, this course introduces basic Japanese through a relaxed, interactive approach. Topics include reading and writing hiragana and katakana, everyday greetings, self-introductions, and daily vocabulary. Through role-playing, language games, and situational dialogues, students explore Japanese anime, festivals, and food culture. The course aims to spark students’ interest in learning Japanese, build their confidence in speaking the language, and broaden their cross-cultural understanding.Teacher in charge",
                 "folderCat":  "學術"
             },
-    "男子手球":  {
-                 "cover":  "img/clubs/男子手球-1.jpg",
-                 "photos":  [
-                                "img/clubs/男子手球-1.jpg",
-                                "img/clubs/男子手球-2.jpg",
-                                "img/clubs/男子手球-3.jpg",
-                                "img/clubs/男子手球-4.jpg",
-                                "img/clubs/男子手球-5.jpg",
-                                "img/clubs/男子手球-6.jpg"
-                            ],
-                 "introRaw":  "組別名稱男子手球校隊中文簡介 (約100字)男子手球校隊逢星期二、星期三及星期六進行訓練。球隊近年曾奪得男子組冠軍，成績令人鼓舞。我們希望招募有熱誠、有毅力的同學加入，一起提升技術、培養團隊精神，並再次挑戰精英賽，爭取佳績，延續球隊光榮傳統。負責老師黃子傑Group NameBoys’ Handball TeamEnglish Introduction (about 80 words)The Boys’ Handball Team trains every Tuesday, Wednesday and Saturday. In recent years, the team has won the boys’ championship, which is a great achievement. We hope to recruit passionate and determined students to join us. Let’s improve our skills, build team spirit and challenge ourselves again in the elite competition.Teacher in chargeWONG TSZ KIT",
-                 "folderCat":  "體育"
-             },
+    "中文辯論_done":  {
+                      "cover":  "img/clubs/中文辯論_done-1.jpg",
+                      "photos":  [
+                                     "img/clubs/中文辯論_done-1.jpg",
+                                     "img/clubs/中文辯論_done-2.jpg",
+                                     "img/clubs/中文辯論_done-3.jpg",
+                                     "img/clubs/中文辯論_done-4.jpg",
+                                     "img/clubs/中文辯論_done-5.jpg",
+                                     "img/clubs/中文辯論_done-6.jpg"
+                                 ],
+                      "introRaw":  "組別名稱中文辯論中文簡介 (約100字)辯論校隊致力培養同學的思辨能力、表達技巧及團隊合作精神。隊員平日會接受辯論訓練，學習資料搜集、論點組織、臨場反應及演說技巧，並代表學校參加不同類型的辯論比賽，擴闊視野、累積實戰經驗。此外，隊員亦會協助校內舉辦辯論比賽及相關活動，推廣辯論文化，讓更多同學認識辯論、享受辯論。負責老師萬嘉傑Group NameChinese Debate TeamEnglish Introduction (about 80 words)The Chinese Debate Team is dedicated to developing students’ critical thinking, public speaking skills, and teamwork. Team members receive regular debate training, learning research skills, argument organization, quick response, and presentation techniques. They also represent the school in various debate competitions, broadening their horizons and gaining practical experience. In addition, members assist in organizing school debate competitions and related activities, promoting a debating culture and encouraging more students to understand and enjoy debate.Teacher in chargeMan Ka Kit Jacky",
+                      "folderCat":  "學術"
+                  },
     "腦力攻防戰":  {
                   "cover":  "img/clubs/腦力攻防戰-1.jpg",
                   "photos":  [
@@ -101,7 +101,7 @@
                 "photos":  [
 
                            ],
-                "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                "introRaw":  "組別名稱德文班中文簡介 (約100字)課程專為中一學生而設，透過輕鬆互動的學習方式，教授德語字母、發音規則、日常問候、自我介紹、數字及顏色等基礎知識。結合德國傳統節慶、聖誕市集、特色美食與格林童話，讓學生認識德國文化，培養語言興趣，學習簡單日常交流。負責老師Group NameGerman ClassEnglish Introduction (about 80 words)Designed specifically for Secondary 1 students, this course introduces basic German through a relaxed, interactive approach. Topics include the German alphabet, pronunciation rules, everyday greetings, self-introductions, numbers, and colours. By incorporating traditional German festivals, Christmas markets, local specialities, and Grimms’ fairy tales, the course helps students explore German culture, develop an interest in the language, and learn to communicate in simple everyday situations.Teacher in charge",
                 "folderCat":  "學術"
             },
     "跳繩":  {
@@ -130,19 +130,6 @@
                 "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
                 "folderCat":  "制服團隊"
             },
-    "MKPC On Air":  {
-                        "cover":  "img/clubs/MKPC On Air-1.jpg",
-                        "photos":  [
-                                       "img/clubs/MKPC On Air-1.jpg",
-                                       "img/clubs/MKPC On Air-2.jpg",
-                                       "img/clubs/MKPC On Air-3.jpg",
-                                       "img/clubs/MKPC On Air-4.jpg",
-                                       "img/clubs/MKPC On Air-5.jpg",
-                                       "img/clubs/MKPC On Air-6.jpg"
-                                   ],
-                        "introRaw":  "組別名稱MKPC on Air中文簡介 (約100字)準備好讓你的聲音傳遍校園了嗎？歡迎加入 MKPC on Air！這裡是你主持節目、發揮創意、分享想法的專屬廣播平台！由 Mr. Johan 帶領，這不只是一項課外活動（ECA），更像是一個屬於同學們的校園電台。無論你想寫廣播稿、主持現場訪問、討論本地及國際熱門話題、分享喜愛的音樂，還是為朋友點歌送祝福，這裡都有一支Mic等著你。活動時間： 由 10月5日 起，逢星期一下午 4:00 – 5:30快來踏出第一步，拿起Mic，建立自信，讓全校聽見你的聲音！歡迎到我們的攤位了解詳情，今天就加入我們的MKPC on Air團隊吧！負責老師Group NameMKPC on AirEnglish Introduction (about 80 words)Ready to make your voice heard across the school? Welcome to MKPC on Air, your ultimate platform to host, create, and broadcast!Led by Mr. Johan, this isn\u0027t just an ECA—it’s your very own radio station. Whether you want to write scripts, host live interviews, debate viral local and international topics, share your favorite music, or send out song dedications, there’s a mic waiting for you.When: Every Monday starting October 5th | 4:00 PM – 5:30 PMStep up to the mic, gain confidence, and go live. Drop by our booth and join the crew today!Teacher in chargeMr Johan, Miss Liu Shuk Kwan ",
-                        "folderCat":  "學術"
-                    },
     "銀樂隊":  {
                 "cover":  "",
                 "photos":  [
@@ -210,11 +197,16 @@
                   "folderCat":  "制服團隊"
               },
     "AI科學研究隊":  {
-                    "cover":  "",
+                    "cover":  "img/clubs/AI科學研究隊-1.jpg",
                     "photos":  [
-
+                                   "img/clubs/AI科學研究隊-1.jpg",
+                                   "img/clubs/AI科學研究隊-2.jpg",
+                                   "img/clubs/AI科學研究隊-3.jpg",
+                                   "img/clubs/AI科學研究隊-4.jpg",
+                                   "img/clubs/AI科學研究隊-5.jpg",
+                                   "img/clubs/AI科學研究隊-6.jpg"
                                ],
-                    "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                    "introRaw":  "組別名稱AI 科學研究隊中文簡介 (約100字)本活動旨在引領同學深入學習各類科學檢測方法，透過動手實驗與探究，發掘生活中隱藏的科學奧秘。同學將就社會各項環境及民生議題展開深度研究，培養以科學思維分析問題及提出解決方案的能力，立志成為具備社會責任感的新生代科學家。此外，課程特設海洋生態探索環節，帶領同學認識珊瑚的生態價值，學習珊瑚保育的科學知識，從而提升對海洋環境保護的關注與承擔。負責老師張思華Group NameAI research TeamEnglish Introduction (about 80 words)This activity guides students in exploring various scientific investigation methods, uncovering the wonders of everyday life through hands-on experiments and inquiry-based learning. Students will research environmental and social issues, developing critical thinking skills to propose evidence-based solutions, nurturing them into socially responsible young scientists. The programme also features a marine ecology component, where students will discover the ecological importance of coral reefs and learn about coral conservation, deepening their commitment to protecting our marine environment.Teacher in chargeCheung Sze Wa",
                     "folderCat":  "科創"
                 },
     "田徑":  {
@@ -244,11 +236,11 @@
                 "folderCat":  "藝術及音樂"
             },
     "韓文班":  {
-                "cover":  "",
+                "cover":  "img/clubs/韓文班-1.jpg",
                 "photos":  [
-
+                               "img/clubs/韓文班-1.jpg"
                            ],
-                "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameKorean ECAEnglish Introduction (about 80 words)- designed for complete beginners who are interested in learning Korean language “hangul”- objective: students will be able to recognize “hangul” consonants and vowels, read Korean words, and create Korean characters on their own based on what Korean they listenClass will focus on reading Korean words and being able to write themStudents will learn words from wide range of pool, including countries / places, food, academics, ho ching, sports, as well as common phrases that are used in daily life. Some Korean words students learn will have “Chinese” origin, as they are pronounced quite similar (in Canto \u0026 Korean), making the students to easier those words as they can remember the Cantonese counterpartFun activity: as students are first exposed to Korean language through Kpop or Kdrama, we may use Kpop lyrics (for example) as a learning material, we will go over what the lyrics truly meansTeacher in chargeWang Heumil",
+                "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameKorean Class (한국어 수업)English Introduction (about 80 words)Designed for beginners, this course offers a clear guide to the Korean alphabet, Hangul. Students will learn to recognize consonants and vowels, read Korean words, and spell out what they hear.The focus is on building practical reading and writing skills through everyday themes, such as geography, academic terms, and honorifics. To make learning easier, lessons will point out words that sound similar in Cantonese and Korean due to shared roots. Additionally, students will study authentic texts, like K-pop lyrics, to understand the real meaning behind popular cultural phrases. 다같이 한국어 공부를 해요!Teacher in chargeWang Heumil",
                 "folderCat":  "學術"
             },
     "乒乓球":  {
@@ -280,6 +272,19 @@
                 "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
                 "folderCat":  "學術"
             },
+    "英文集誦_done":  {
+                      "cover":  "img/clubs/英文集誦_done-1.jpg",
+                      "photos":  [
+                                     "img/clubs/英文集誦_done-1.jpg",
+                                     "img/clubs/英文集誦_done-2.jpg",
+                                     "img/clubs/英文集誦_done-3.jpg",
+                                     "img/clubs/英文集誦_done-4.jpg",
+                                     "img/clubs/英文集誦_done-5.jpg",
+                                     "img/clubs/英文集誦_done-6.jpg"
+                                 ],
+                      "introRaw":  "組別名稱英文集誦中文簡介 (約100字)這個學會旨在幫助您的孩子建立真正的口語自信。通過團體朗讀和表演，學生可以練習清晰的發音、生動的表達和穩定的語速，並在安全且充滿鼓勵的環境中進步。這也是一個極好的機會，讓他們學習如何團隊合作、傾聽他人並互相支持。主要目的是幫助每個學生感到舒適地站起來、大膽表達，並為自己的聲音感到自豪。我們期待這學期與您的孩子一起努力！負責老師Mr. Wayne, 韓卓穎老師Group NameChoral Speaking ClubEnglish Introduction (about 80 words)Welcome to the Choral Speaking Club! This club helps your children build real confidence in their speaking without feeling put on the spot. By reading and performing together in a group, students practice clear pronunciation, good expression, and steady pacing in a way that feels safe and encouraging.It is also a great way for them to practice teamwork, learn to listen to each other, and support their classmates. The main goal is to help every student feel comfortable standing up, speaking out, and feeling proud of their voice. We look forward to working with your children this term!Teacher in chargeMr. Wayne, Ms. Hon Cheuk Wing",
+                      "folderCat":  "學術"
+                  },
     "單車":  {
                "cover":  "",
                "photos":  [
@@ -310,19 +315,27 @@
                  "folderCat":  "興趣學會"
              },
     "社會服務團":  {
-                  "cover":  "",
+                  "cover":  "img/clubs/社會服務團-1.jpg",
                   "photos":  [
-
+                                 "img/clubs/社會服務團-1.jpg",
+                                 "img/clubs/社會服務團-2.jpg",
+                                 "img/clubs/社會服務團-3.jpg",
+                                 "img/clubs/社會服務團-4.jpg",
+                                 "img/clubs/社會服務團-5.jpg",
+                                 "img/clubs/社會服務團-6.jpg"
                              ],
-                  "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                  "introRaw":  "組別名稱社會服務團中文簡介 (約100字)社會服務團的服務多元，包括：探訪活動、義賣籌款、制作小手作等...... 在幫助社會上有需要人士的同時，你將擁有一個機會去認識自我，發揮所長。透過參與各類型的義工服務，你可以用愛心和關懷，真誠地幫弱勢社群帶來温暖。義工服務不僅能幫助他人，更能讓你變成更好的自己！負責老師馬穎嫻老師、梁子軒先生、林紀彤老師Group NameSocial Service GroupEnglish Introduction (about 80 words)The services of the Social Service Group are diverse, including visitation activities, charity sales for fundraising, making small handicrafts, and more...While helping those in need in society, you will have the opportunity to get to know yourself and develop your strengths.By participating in various types of Social Service, you can use love and care to sincerely bring warmth to disadvantaged communities.Social Service not only helps others, but also enables you to become a better version of yourself !Teacher in chargeMa Wing Han, Leung Tsz Hin, Lam Kei Tung",
                   "folderCat":  "服務隊伍"
               },
     "手鈴":  {
-               "cover":  "",
+               "cover":  "img/clubs/手鈴-1.jpg",
                "photos":  [
-
+                              "img/clubs/手鈴-1.jpg",
+                              "img/clubs/手鈴-2.jpg",
+                              "img/clubs/手鈴-3.jpg",
+                              "img/clubs/手鈴-4.jpg"
                           ],
-               "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+               "introRaw":  "組別名稱手鈴中文簡介 (約100字)手鈴是一項有趣的課後活動，學生們用特製的手鈴演奏音樂。每位學生負責特定的音符，大家通力合作，共同創造出美妙的旋律。這項活動有助於學生培養節奏感、時間感和聆聽能力，同時促進團隊合作、紀律和專注力。手鈴小組經常在學校活動中表演，讓學生有機會展示才華並提升自信。通過定期練習，學生們能享受合奏的樂趣，在互相支持的團隊中建立深厚的友誼。參與手鈴活動還能提升手眼協調能力，並培養對音樂和藝術的終身熱愛。負責老師郭家銘, 黃洛潼Group NameHandbellEnglish Introduction (about 80 words)Handbell is a fun after-school activity where students play music with specially crafted handbells. Each student is responsible for certain notes, and by working together, the group creates melodies. This activity helps students build timing, rhythm, and listening skills while encouraging teamwork, discipline, and focus. Handbell groups often perform at school events, giving students a chance to showcase their talents and gain confidence. With regular practice, students enjoy making music together and form lasting friendships in a supportive group. Participating in handbell also improves hand-eye coordination and fosters a lifelong appreciation for music and the arts.Teacher in chargeKwok Ka Ming, Wong Lok Tung",
                "folderCat":  "藝術及音樂"
            },
     "視覺藝術小組":  {
@@ -349,6 +362,14 @@
                    "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
                    "folderCat":  "興趣學會"
                },
+    "領袖生":  {
+                "cover":  "",
+                "photos":  [
+
+                           ],
+                "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                "folderCat":  "服務隊伍"
+            },
     "氣球造型班":  {
                   "cover":  "img/clubs/氣球造型班-1.jpg",
                   "photos":  [
@@ -376,11 +397,14 @@
                    "folderCat":  "服務隊伍"
                },
     "手鐘":  {
-               "cover":  "",
+               "cover":  "img/clubs/手鐘-1.jpg",
                "photos":  [
-
+                              "img/clubs/手鐘-1.jpg",
+                              "img/clubs/手鐘-2.jpg",
+                              "img/clubs/手鐘-3.jpg",
+                              "img/clubs/手鐘-4.jpg"
                           ],
-               "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+               "introRaw":  "組別名稱手鐘中文簡介 (約100字)手鐘（Handchime）是一項深受歡迎的課後活動。學生們用手持鋁鋁製方形的管演奏音樂，每位學生負責特定的音符，大家合作演奏出旋律和和聲。除了學習節奏、節拍感和聆聽等音樂技巧外，學生們還能培養團隊合作、協作和專注力。手鐘小組經常在學校活動中表演，讓學生有機會展示所學，並提升自信。通過定期練習，學生們不僅享受合奏的樂趣，還能在友善的氛圍中建立深厚的友誼。負責老師郭家銘, 黃洛潼Group NameHandchimeEnglish Introduction (about 80 words)Handchime is a well-liked after-school activity where students play music with hand-held chimes. Each student is responsible for certain notes, and together they create melodies and harmonies as a group. Along with learning musical skills like rhythm, timing, and listening, students also build teamwork, cooperation, and focus. Handchime groups often perform at school events, giving students a chance to show what they have learned and feel more confident. With regular practice, students enjoy making music together and form lasting friendships in a welcoming setting.Teacher in chargeKwok Ka Ming, Wong Lok Tung",
                "folderCat":  "藝術及音樂"
            },
     "劍擊":  {
@@ -407,21 +431,26 @@
                 "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
                 "folderCat":  "體育"
             },
-    "男子籃球":  {
-                 "cover":  "",
-                 "photos":  [
+    "英文辯論_done":  {
+                      "cover":  "",
+                      "photos":  [
 
+                                 ],
+                      "introRaw":  "組別名稱英文辯論中文簡介 (約100字)辯論社並不僅僅是為了那些喜歡自己聲音的人，而是為了所有曾經想過「等一下，這真的是真的嗎？」的人。在這裡，我們不僅進行辯論，還會開心地交流，並一起提升思考能力。你無需是最聰明的人，只要帶著好奇心來到這裡即可。 我們將幫助你自信地表達，堅定自己的觀點，甚至不時重新思考自己的想法。在這裡，沒有壓力，沒有批評。只有充滿活力的氛圍、更深入的對話，以及你畢業後仍能受益的能力。快來看看我們的精彩活動，一起成長吧！負責老師Ms RamanGroup NameEnglish Debate English Introduction (about 80 words)Debate Club isn’t only for those who like the sound of their own voice. It’s for anyone who has ever wondered, “Hold on, is that really true?” Yes, we debate. But we also joke, and sharpen our thinking as a team.You don’t have to be the sharpest mind in the room. You just have to arrive ready to be curious. We’ll help you talk with confidence, stand behind your points, and maybe even rethink your views now and then.Zero stress, zero criticism. Just lively energy, smarter chats, and abilities you’ll carry after graduation. Come see what we’re about!Teacher in chargeMs Raman",
+                      "folderCat":  "學術"
+                  },
+    "男子手球":  {
+                 "cover":  "img/clubs/男子手球-1.jpg",
+                 "photos":  [
+                                "img/clubs/男子手球-1.jpg",
+                                "img/clubs/男子手球-2.jpg",
+                                "img/clubs/男子手球-3.jpg",
+                                "img/clubs/男子手球-4.jpg",
+                                "img/clubs/男子手球-5.jpg",
+                                "img/clubs/男子手球-6.jpg"
                             ],
-                 "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                 "introRaw":  "組別名稱男子手球校隊中文簡介 (約100字)男子手球校隊逢星期二、星期三及星期六進行訓練。球隊近年曾奪得男子組冠軍，成績令人鼓舞。我們希望招募有熱誠、有毅力的同學加入，一起提升技術、培養團隊精神，並再次挑戰精英賽，爭取佳績，延續球隊光榮傳統。負責老師黃子傑Group NameBoys’ Handball TeamEnglish Introduction (about 80 words)The Boys’ Handball Team trains every Tuesday, Wednesday and Saturday. In recent years, the team has won the boys’ championship, which is a great achievement. We hope to recruit passionate and determined students to join us. Let’s improve our skills, build team spirit and challenge ourselves again in the elite competition.Teacher in chargeWONG TSZ KIT",
                  "folderCat":  "體育"
-             },
-    "英文辯論":  {
-                 "cover":  "",
-                 "photos":  [
-
-                            ],
-                 "introRaw":  "組別名稱英文辯論中文簡介 (約100字)辯論社並不僅僅是為了那些喜歡自己聲音的人，而是為了所有曾經想過「等一下，這真的是真的嗎？」的人。在這裡，我們不僅進行辯論，還會開心地交流，並一起提升思考能力。你無需是最聰明的人，只要帶著好奇心來到這裡即可。 我們將幫助你自信地表達，堅定自己的觀點，甚至不時重新思考自己的想法。在這裡，沒有壓力，沒有批評。只有充滿活力的氛圍、更深入的對話，以及你畢業後仍能受益的能力。快來看看我們的精彩活動，一起成長吧！負責老師Ms RamanGroup NameEnglish Debate English Introduction (about 80 words)Debate Club isn’t only for those who like the sound of their own voice. It’s for anyone who has ever wondered, “Hold on, is that really true?” Yes, we debate. But we also joke, and sharpen our thinking as a team.You don’t have to be the sharpest mind in the room. You just have to arrive ready to be curious. We’ll help you talk with confidence, stand behind your points, and maybe even rethink your views now and then.Zero stress, zero criticism. Just lively energy, smarter chats, and abilities you’ll carry after graduation. Come see what we’re about!Teacher in chargeMs Raman",
-                 "folderCat":  "學術"
              },
     "欖球":  {
                "cover":  "",
@@ -439,14 +468,14 @@
                  "introRaw":  "組別名稱機械人隊中文簡介 (約100字)UGOT機械人組裝與編程活動。同學親手搭建多形態AI機械人，學習圖形化編程，應用感測器與AI視覺，並出戰校際邀請賽及WRC世界機器人大賽，培養創科精神、團隊協作與解難能力。負責老師黃守宏Group NameRobot teamEnglish Introduction (about 80 words)Teacher in charge",
                  "folderCat":  "科創"
              },
-    "領袖生":  {
-                "cover":  "",
-                "photos":  [
+    "銀樂":  {
+               "cover":  "",
+               "photos":  [
 
-                           ],
-                "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
-                "folderCat":  "服務隊伍"
-            },
+                          ],
+               "introRaw":  "萬鈞伯裘書院銀樂隊，成立在於培養學生對音樂的興趣及各種樂器的演奏能力。隊員要求嚴謹的編排和排練，整體表現力求協調，表演出純熟技術。從樂器的演奏到花式步操動作均培訓指導，展示隊員堅苦的練習和專業的音樂素養。校內校外大小的活動都能見到銀樂隊的蹤影，擔當開幕演奏或活動的重要角色。銀樂隊表演不僅是一種音樂藝術的展現，同時也是隊員成長和技能提升的機會，在過程中收穫了與音樂、團隊合作和自我挑戰相關的深刻經驗。The Man Kwan Pak Kau College Marching Band was established to cultivate students’ interest in music and develop their ability to play a variety of musical instruments. Band members undergo disciplined rehearsals and carefully structured training, with a strong emphasis on coordination, teamwork, and performance quality. From instrumental performance to marching formations and routines, members receive comprehensive training and guidance, demonstrating the results of their hard work, dedication, and musical competence.The Marching Band plays an active role in both school and external events, often performing at opening ceremonies and other important occasions. Its performances are not only a showcase of musical artistry but also valuable opportunities for members to grow and develop their skills. Through their participation, students gain meaningful experience in music, teamwork, discipline, and overcoming personal challenges.",
+               "folderCat":  "制服團隊"
+           },
     "管弦樂班":  {
                  "cover":  "img/clubs/管弦樂班-1.jpg",
                  "photos":  [
@@ -457,11 +486,16 @@
                  "folderCat":  "藝術及音樂"
              },
     "升旗隊":  {
-                "cover":  "",
+                "cover":  "img/clubs/升旗隊-1.jpg",
                 "photos":  [
-
+                               "img/clubs/升旗隊-1.jpg",
+                               "img/clubs/升旗隊-2.jpg",
+                               "img/clubs/升旗隊-3.jpg",
+                               "img/clubs/升旗隊-4.jpg",
+                               "img/clubs/升旗隊-5.jpg",
+                               "img/clubs/升旗隊-6.jpg"
                            ],
-                "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                "introRaw":  "組別名稱升旗隊中文簡介 (約100字)本校升旗隊旨在培養學生的國民身份認同、紀律意識與團隊精神。隊員將接受專業的步操訓練與升旗儀式指導，學習嚴謹的儀態與莊嚴的禮儀。透過參與每週升旗禮及學校重要慶典，學員不僅能展現自信與責任感，更能深化對國家的尊重與熱愛。歡迎有志鍛鍊自我、展現團隊風采的同學踴躍加入！負責老師袁德璋老師Group NameFlag GuardEnglish Introduction (about 80 words)Our school Flag Guard aims to foster national identity, discipline, and teamwork among students. Team members undergo professional parade drill training and learn the solemn protocol of flag-raising ceremonies. By taking part in weekly ceremonies and key school events, students develop strong leadership, self-confidence, and a sense of responsibility. We welcome all dedicated students who wish to challenge themselves, showcase team spirit, and take pride in representing our school!Teacher in charge",
                 "folderCat":  "制服團隊"
             },
     "劇社":  {
@@ -498,6 +532,19 @@
                  "introRaw":  "組別名稱男子排球校隊中文簡介 (約100字)男子排球校隊逢星期二、星期四及星期六練習。球隊近年於元朗區取得前三名的優異成績，表現出色。我們希望有興趣及具團隊精神的同學加入，一同努力訓練，提升發球、接球、扣殺及防守技術，繼續傳承球隊精神，為校爭光。負責老師黃子傑Group NameBoys’ Volleyball TeamEnglish Introduction (about 80 words)The Boys’ Volleyball Team trains every Tuesday, Thursday and Saturday. In recent years, the team has achieved excellent results, finishing in the top three in Yuen Long District. We welcome students who are interested and have good team spirit to join us. Let’s train hard, improve our volleyball skills and continue the team’s proud tradition.Teacher in chargeWONG TSZ KIT",
                  "folderCat":  "體育"
              },
+    "MKPC On Air_done":  {
+                             "cover":  "img/clubs/MKPC On Air_done-1.jpg",
+                             "photos":  [
+                                            "img/clubs/MKPC On Air_done-1.jpg",
+                                            "img/clubs/MKPC On Air_done-2.jpg",
+                                            "img/clubs/MKPC On Air_done-3.jpg",
+                                            "img/clubs/MKPC On Air_done-4.jpg",
+                                            "img/clubs/MKPC On Air_done-5.jpg",
+                                            "img/clubs/MKPC On Air_done-6.jpg"
+                                        ],
+                             "introRaw":  "組別名稱MKPC on Air中文簡介 (約100字)準備好讓你的聲音傳遍校園了嗎？歡迎加入 MKPC on Air！這裡是你主持節目、發揮創意、分享想法的專屬廣播平台！由 Mr. Johan 帶領，這不只是一項課外活動（ECA），更像是一個屬於同學們的校園電台。無論你想寫廣播稿、主持現場訪問、討論本地及國際熱門話題、分享喜愛的音樂，還是為朋友點歌送祝福，這裡都有一支Mic等著你。活動時間： 由 10月5日 起，逢星期一下午 4:00 – 5:30快來踏出第一步，拿起Mic，建立自信，讓全校聽見你的聲音！歡迎到我們的攤位了解詳情，今天就加入我們的MKPC on Air團隊吧！負責老師Group NameMKPC on AirEnglish Introduction (about 80 words)Ready to make your voice heard across the school? Welcome to MKPC on Air, your ultimate platform to host, create, and broadcast!Led by Mr. Johan, this isn\u0027t just an ECA—it’s your very own radio station. Whether you want to write scripts, host live interviews, debate viral local and international topics, share your favorite music, or send out song dedications, there’s a mic waiting for you.When: Every Monday starting October 5th | 4:00 PM – 5:30 PMStep up to the mic, gain confidence, and go live. Drop by our booth and join the crew today!Teacher in chargeMr Johan, Miss Liu Shuk Kwan ",
+                             "folderCat":  "學術"
+                         },
     "AI編程隊":  {
                   "cover":  "img/clubs/AI編程隊-1.jpg",
                   "photos":  [
@@ -509,19 +556,6 @@
                   "introRaw":  "組別名稱AI 編程隊中文簡介 (約100字)本活動教授學生基礎 Python 語法，並運用 AI 生成平台，親自動手製作專屬 Web App。課程鼓勵同學發揮創意，針對「可持續發展目標（SDGs）」構思科技解決方案，從中掌握編程與 AI 技能，提升解難能力！負責老師黃俊偉Group NameAI InnovatorsEnglish Introduction (about 80 words)This activity teaches basic Python and utilizes AI platforms for students to build their own Web Apps. It encourages creativity by guiding them to design tech solutions for the Sustainable Development Goals (SDGs), helping them master AI and coding skills while enhancing problem-solving abilities!Teacher in chargeWong Chun Wai",
                   "folderCat":  "科創"
               },
-    "英文集誦":  {
-                 "cover":  "img/clubs/英文集誦-1.jpg",
-                 "photos":  [
-                                "img/clubs/英文集誦-1.jpg",
-                                "img/clubs/英文集誦-2.jpg",
-                                "img/clubs/英文集誦-3.jpg",
-                                "img/clubs/英文集誦-4.jpg",
-                                "img/clubs/英文集誦-5.jpg",
-                                "img/clubs/英文集誦-6.jpg"
-                            ],
-                 "introRaw":  "組別名稱英文集誦中文簡介 (約100字)這個學會旨在幫助您的孩子建立真正的口語自信。通過團體朗讀和表演，學生可以練習清晰的發音、生動的表達和穩定的語速，並在安全且充滿鼓勵的環境中進步。這也是一個極好的機會，讓他們學習如何團隊合作、傾聽他人並互相支持。主要目的是幫助每個學生感到舒適地站起來、大膽表達，並為自己的聲音感到自豪。我們期待這學期與您的孩子一起努力！負責老師Mr. Wayne, 韓卓穎老師Group NameChoral Speaking ClubEnglish Introduction (about 80 words)Welcome to the Choral Speaking Club! This club helps your children build real confidence in their speaking without feeling put on the spot. By reading and performing together in a group, students practice clear pronunciation, good expression, and steady pacing in a way that feels safe and encouraging.It is also a great way for them to practice teamwork, learn to listen to each other, and support their classmates. The main goal is to help every student feel comfortable standing up, speaking out, and feeling proud of their voice. We look forward to working with your children this term!Teacher in chargeMr. Wayne, Ms. Hon Cheuk Wing",
-                 "folderCat":  "學術"
-             },
     "單輪車":  {
                 "cover":  "img/clubs/單輪車-1.jpg",
                 "photos":  [
@@ -576,18 +610,13 @@
                  "introRaw":  "組別名稱女子排球校隊中文簡介 (約100字)女子排球校隊練習時間為逢星期四及星期六。球隊著重態度與技術的展現，致力提供展現潛能的平台。我們誠邀有熱誠、懂合作的同學加入，透過系統化訓練精進發球、接球、扣殺及防守等各項技術，攜手建立屬於我們的球隊文化，為校爭光！負責老師王麗愉Group NameGirls’ Volleyball TeamEnglish Introduction (about 80 words)The Girls\u0027 Volleyball Team practices every Thursday and Saturday. The team emphasizes both attitude and skill, offering a dedicated platform for players to showcase their potential. We warmly invite passionate and collaborative students to join us in refining core techniques—including serving, passing, spiking, and defense—as we build our team culture together and proudly represent our school!Teacher in chargeWong Lai Yu",
                  "folderCat":  "體育"
              },
-    "中文辯論":  {
-                 "cover":  "img/clubs/中文辯論-1.jpg",
+    "男子籃球":  {
+                 "cover":  "",
                  "photos":  [
-                                "img/clubs/中文辯論-1.jpg",
-                                "img/clubs/中文辯論-2.jpg",
-                                "img/clubs/中文辯論-3.jpg",
-                                "img/clubs/中文辯論-4.jpg",
-                                "img/clubs/中文辯論-5.jpg",
-                                "img/clubs/中文辯論-6.jpg"
+
                             ],
-                 "introRaw":  "組別名稱中文辯論中文簡介 (約100字)辯論校隊致力培養同學的思辨能力、表達技巧及團隊合作精神。隊員平日會接受辯論訓練，學習資料搜集、論點組織、臨場反應及演說技巧，並代表學校參加不同類型的辯論比賽，擴闊視野、累積實戰經驗。此外，隊員亦會協助校內舉辦辯論比賽及相關活動，推廣辯論文化，讓更多同學認識辯論、享受辯論。負責老師萬嘉傑Group NameChinese Debate TeamEnglish Introduction (about 80 words)The Chinese Debate Team is dedicated to developing students’ critical thinking, public speaking skills, and teamwork. Team members receive regular debate training, learning research skills, argument organization, quick response, and presentation techniques. They also represent the school in various debate competitions, broadening their horizons and gaining practical experience. In addition, members assist in organizing school debate competitions and related activities, promoting a debating culture and encouraging more students to understand and enjoy debate.Teacher in chargeMan Ka Kit Jacky",
-                 "folderCat":  "學術"
+                 "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                 "folderCat":  "體育"
              },
     "桌樂冒險家":  {
                   "cover":  "img/clubs/桌樂冒險家-1.jpg",
@@ -658,17 +687,27 @@
     "桌上遊戲":  {
                  "cover":  "img/clubs/桌上遊戲-1.jpg",
                  "photos":  [
-                                "img/clubs/桌上遊戲-1.jpg"
+                                "img/clubs/桌上遊戲-1.jpg",
+                                "img/clubs/桌上遊戲-2.jpg",
+                                "img/clubs/桌上遊戲-3.jpg",
+                                "img/clubs/桌上遊戲-4.jpg",
+                                "img/clubs/桌上遊戲-5.jpg",
+                                "img/clubs/桌上遊戲-6.jpg"
                             ],
-                 "introRaw":  "組別名稱中文簡介 (約100字)透過不同類型的桌上遊戲，讓同學在輕鬆有趣的互動過程中學習策略思考、邏輯分析及解難技巧。同學亦需與組員溝通、協商及共同制定策略，從遊戲中培養專注力、團隊合作精神及良好社交技巧，並學習以正面態度面對勝負與挑戰。負責老師Group NameEnglish Introduction (about 80 words)Through a variety of board games, students develop strategic thinking, logical reasoning and problem-solving skills in an enjoyable and interactive environment. They will also learn to communicate, cooperate and make decisions with their peers, while enhancing their concentration, teamwork and social skills. The activities encourage students to face challenges and winning or losing with a positive attitude.Teacher in charge",
+                 "introRaw":  "組別名稱桌上遊戲中文簡介 (約100字)透過不同類型的桌上遊戲，讓同學在輕鬆有趣的互動過程中學習策略思考、邏輯分析及解難技巧。同學亦需與組員溝通、協商及共同制定策略，從遊戲中培養專注力、團隊合作精神及良好社交技巧，並學習以正面態度面對勝負與挑戰。負責老師歐陽佩霞老師Group NameBoard GameEnglish Introduction (about 80 words)Through a variety of board games, students develop strategic thinking, logical reasoning and problem-solving skills in an enjoyable and interactive environment. They will also learn to communicate, cooperate and make decisions with their peers, while enhancing their concentration, teamwork and social skills. The activities encourage students to face challenges and winning or losing with a positive attitude.Teacher in chargeMs Au Yeung",
                  "folderCat":  "其他"
              },
     "武術":  {
-               "cover":  "",
+               "cover":  "img/clubs/武術-1.jpg",
                "photos":  [
-
+                              "img/clubs/武術-1.jpg",
+                              "img/clubs/武術-2.jpg",
+                              "img/clubs/武術-3.jpg",
+                              "img/clubs/武術-4.jpg",
+                              "img/clubs/武術-5.jpg",
+                              "img/clubs/武術-6.jpg"
                           ],
-               "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+               "introRaw":  "組別名稱武術隊中文簡介 (約100字)本校武術隊致力於傳承中華傳統文化，鍛鍊學生的意志與體魄。團隊特別聘請東亞運動會金牌冠軍親自指導，提供專業且系統化的訓練課程。學員在此不僅能學習拳術與兵器技巧，更能培養尊師重道、堅韌不拔的精神。訓練時間為逢星期六上午，歡迎對武術充滿熱情的同學加入，一同發揮潛能，展現活力與自信！負責老師郭万老師Group NameMartial Art TeamEnglish Introduction (about 80 words)Our school Martial Arts Team is dedicated to promoting traditional Chinese culture while developing students\u0027 physical strength and mental resilience. We are honored to have an East Asian Games champion as our head coach, offering professional and systematic training. Students will master fundamental stances, forms, and weaponry skills while cultivating discipline and perseverance. Practices are held every Saturday morning. We welcome all passionate students to join us and unleash their full potential!Teacher in charge",
                "folderCat":  "體育"
            },
     "校園大使":  {

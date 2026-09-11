@@ -73,7 +73,7 @@ window.ECA = {
       ],
       "s1": false,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -99,7 +99,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "女子排球校隊練習時間為逢星期四及星期六。球隊著重態度與技術的展現，致力提供展現潛能的平台。我們誠邀有熱誠、懂合作的同學加入，透過系統化訓練精進發球、接球、扣殺及防守等各項技術，攜手建立屬於我們的球隊文化，為校爭光！王麗愉Group NameGirls’ Volleyball Team",
-      "introEn": "(about 80 words)The Girls' Volleyball Team practices every Thursday and Saturday. The team emphasizes both attitude and skill, offering a dedicated platform for players to showcase their potential. We warmly invite passionate and collaborative students to join us in refining core techniques—including serving, passing, spiking, and defense—as we build our team culture together and proudly represent our school!Teacher in chargeWong Lai Yu",
+      "introEn": "The Girls' Volleyball Team practices every Thursday and Saturday. The team emphasizes both attitude and skill, offering a dedicated platform for players to showcase their potential. We warmly invite passionate and collaborative students to join us in refining core techniques—including serving, passing, spiking, and defense—as we build our team culture together and proudly represent our school!",
       "cover": "img/clubs/女子排球-1.jpg",
       "photos": [
         "img/clubs/女子排球-1.jpg",
@@ -132,7 +132,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -159,7 +159,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "img/clubs/女童軍-1.jpg",
       "photos": [
         "img/clubs/女童軍-1.jpg",
@@ -187,15 +187,15 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "辯論校隊致力培養同學的思辨能力、表達技巧及團隊合作精神。隊員平日會接受辯論訓練，學習資料搜集、論點組織、臨場反應及演說技巧，並代表學校參加不同類型的辯論比賽，擴闊視野、累積實戰經驗。此外，隊員亦會協助校內舉辦辯論比賽及相關活動，推廣辯論文化，讓更多同學認識辯論、享受辯論。萬嘉傑Group NameChinese Debate Team",
-      "introEn": "(about 80 words)The Chinese Debate Team is dedicated to developing students’ critical thinking, public speaking skills, and teamwork. Team members receive regular debate training, learning research skills, argument organization, quick response, and presentation techniques. They also represent the school in various debate competitions, broadening their horizons and gaining practical experience. In addition, members assist in organizing school debate competitions and related activities, promoting a debating culture and encouraging more students to understand and enjoy debate.Teacher in chargeMan Ka Kit Jacky",
-      "cover": "img/clubs/中文辯論-1.jpg",
+      "introEn": "The Chinese Debate Team is dedicated to developing students’ critical thinking, public speaking skills, and teamwork. Team members receive regular debate training, learning research skills, argument organization, quick response, and presentation techniques. They also represent the school in various debate competitions, broadening their horizons and gaining practical experience. In addition, members assist in organizing school debate competitions and related activities, promoting a debating culture and encouraging more students to understand and enjoy debate.",
+      "cover": "img/clubs/中文辯論_done-1.jpg",
       "photos": [
-        "img/clubs/中文辯論-1.jpg",
-        "img/clubs/中文辯論-2.jpg",
-        "img/clubs/中文辯論-3.jpg",
-        "img/clubs/中文辯論-4.jpg",
-        "img/clubs/中文辯論-5.jpg",
-        "img/clubs/中文辯論-6.jpg"
+        "img/clubs/中文辯論_done-1.jpg",
+        "img/clubs/中文辯論_done-2.jpg",
+        "img/clubs/中文辯論_done-3.jpg",
+        "img/clubs/中文辯論_done-4.jpg",
+        "img/clubs/中文辯論_done-5.jpg",
+        "img/clubs/中文辯論_done-6.jpg"
       ]
     },
     {
@@ -209,7 +209,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -230,7 +230,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "匹克球是本校新加入的課外活動，也是近年受歡迎的運動新趨勢。這項運動結合了網球、羽毛球及乒乓球的特色，容易上手，適合男、女同學參與。無論你是否有運動經驗，都歡迎一同嘗試，學習新技能，享受運動樂趣！吳華峰Group NamePickleball",
-      "introEn": "(about 80 words)Pickleball is a newly introduced ECA at our school and has become a popular new trend in sports. It combines elements of tennis, badminton and table tennis, and is easy to learn. Both boys and girls are welcome to join. Whether or not you have sports experience, come and give it a try, learn new skills and enjoy the fun of sports!Teacher in chargeNG WAH FUNG",
+      "introEn": "Pickleball is a newly introduced ECA at our school and has become a popular new trend in sports. It combines elements of tennis, badminton and table tennis, and is easy to learn. Both boys and girls are welcome to join. Whether or not you have sports experience, come and give it a try, learn new skills and enjoy the fun of sports!",
       "cover": "",
       "photos": []
     },
@@ -250,10 +250,17 @@ window.ECA = {
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
-      "cover": "",
-      "photos": []
+      "introZh": "本校升旗隊旨在培養學生的國民身份認同、紀律意識與團隊精神。隊員將接受專業的步操訓練與升旗儀式指導，學習嚴謹的儀態與莊嚴的禮儀。透過參與每週升旗禮及學校重要慶典，學員不僅能展現自信與責任感，更能深化對國家的尊重與熱愛。歡迎有志鍛鍊自我、展現團隊風采的同學踴躍加入！袁德璋老師Group NameFlag Guard",
+      "introEn": "Our school Flag Guard aims to foster national identity, discipline, and teamwork among students. Team members undergo professional parade drill training and learn the solemn protocol of flag-raising ceremonies. By taking part in weekly ceremonies and key school events, students develop strong leadership, self-confidence, and a sense of responsibility. We welcome all dedicated students who wish to challenge themselves, showcase team spirit, and take pride in representing our school!",
+      "cover": "img/clubs/升旗隊-1.jpg",
+      "photos": [
+        "img/clubs/升旗隊-1.jpg",
+        "img/clubs/升旗隊-2.jpg",
+        "img/clubs/升旗隊-3.jpg",
+        "img/clubs/升旗隊-4.jpg",
+        "img/clubs/升旗隊-5.jpg",
+        "img/clubs/升旗隊-6.jpg"
+      ]
     },
     {
       "id": "手鈴",
@@ -272,10 +279,15 @@ window.ECA = {
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
-      "cover": "",
-      "photos": []
+      "introZh": "手鈴是一項有趣的課後活動，學生們用特製的手鈴演奏音樂。每位學生負責特定的音符，大家通力合作，共同創造出美妙的旋律。這項活動有助於學生培養節奏感、時間感和聆聽能力，同時促進團隊合作、紀律和專注力。手鈴小組經常在學校活動中表演，讓學生有機會展示才華並提升自信。通過定期練習，學生們能享受合奏的樂趣，在互相支持的團隊中建立深厚的友誼。參與手鈴活動還能提升手眼協調能力，並培養對音樂和藝術的終身熱愛。郭家銘, 黃洛潼Group NameHandbell",
+      "introEn": "Handbell is a fun after-school activity where students play music with specially crafted handbells. Each student is responsible for certain notes, and by working together, the group creates melodies. This activity helps students build timing, rhythm, and listening skills while encouraging teamwork, discipline, and focus. Handbell groups often perform at school events, giving students a chance to showcase their talents and gain confidence. With regular practice, students enjoy making music together and form lasting friendships in a supportive group. Participating in handbell also improves hand-eye coordination and fosters a lifelong appreciation for music and the arts.",
+      "cover": "img/clubs/手鈴-1.jpg",
+      "photos": [
+        "img/clubs/手鈴-1.jpg",
+        "img/clubs/手鈴-2.jpg",
+        "img/clubs/手鈴-3.jpg",
+        "img/clubs/手鈴-4.jpg"
+      ]
     },
     {
       "id": "手鐘",
@@ -294,10 +306,15 @@ window.ECA = {
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
-      "cover": "",
-      "photos": []
+      "introZh": "手鐘（Handchime）是一項深受歡迎的課後活動。學生們用手持鋁鋁製方形的管演奏音樂，每位學生負責特定的音符，大家合作演奏出旋律和和聲。除了學習節奏、節拍感和聆聽等音樂技巧外，學生們還能培養團隊合作、協作和專注力。手鐘小組經常在學校活動中表演，讓學生有機會展示所學，並提升自信。通過定期練習，學生們不僅享受合奏的樂趣，還能在友善的氛圍中建立深厚的友誼。郭家銘, 黃洛潼Group NameHandchime",
+      "introEn": "Handchime is a well-liked after-school activity where students play music with hand-held chimes. Each student is responsible for certain notes, and together they create melodies and harmonies as a group. Along with learning musical skills like rhythm, timing, and listening, students also build teamwork, cooperation, and focus. Handchime groups often perform at school events, giving students a chance to show what they have learned and feel more confident. With regular practice, students enjoy making music together and form lasting friendships in a welcoming setting.",
+      "cover": "img/clubs/手鐘-1.jpg",
+      "photos": [
+        "img/clubs/手鐘-1.jpg",
+        "img/clubs/手鐘-2.jpg",
+        "img/clubs/手鐘-3.jpg",
+        "img/clubs/手鐘-4.jpg"
+      ]
     },
     {
       "id": "日文班",
@@ -315,8 +332,8 @@ window.ECA = {
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introZh": "課程專為中一學生而設，以輕鬆互動的方式教授日語基礎，包括五十音讀寫、日常問候、自我介紹及生活詞彙。透過角色扮演、語言遊戲與情境對話，融入日本動漫、節慶及飲食文化，激發學習興趣，建立說日語的信心，拓闊跨文化視野。Group NameJapanese Class",
+      "introEn": "Designed specifically for Secondary 1 students, this course introduces basic Japanese through a relaxed, interactive approach. Topics include reading and writing hiragana and katakana, everyday greetings, self-introductions, and daily vocabulary. Through role-playing, language games, and situational dialogues, students explore Japanese anime, festivals, and food culture. The course aims to spark students’ interest in learning Japanese, build their confidence in speaking the language, and broaden their cross-cultural understanding.",
       "cover": "",
       "photos": []
     },
@@ -329,7 +346,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -344,7 +361,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "釋放你的好奇心！我們將科學實驗室變成充滿驚喜的動手探索天地。你將親自嘗試各種好玩又神奇的化學實驗，例如觀察不同金屬離子產生的絢麗焰色反應、手作專屬的香皂，以及透過酸鹼反應製造繽紛的色彩變化。這是一個結交新朋友、在課本之外親身體驗化學奧秘的絕佳機會。快來走進實驗室，一起見證科學的魅力吧！陳梃浠",
-      "introEn": "(about 80 words)Unleash your curiosity here! We transform the science lab into a hands-on discovery zone where chemistry comes to life. You will dive into exciting activities, such as testing metal ions to create vivid flame tests, handcrafting your own soap, and exploring colorful acid-base reactions. It is the perfect opportunity to make new friends, ask big questions, and experience interactive science beyond the textbook. Step into the lab and see science in action!Teacher in chargeCHAN Ting Hei",
+      "introEn": "Unleash your curiosity here! We transform the science lab into a hands-on discovery zone where chemistry comes to life. You will dive into exciting activities, such as testing metal ions to create vivid flame tests, handcrafting your own soap, and exploring colorful acid-base reactions. It is the perfect opportunity to make new friends, ask big questions, and experience interactive science beyond the textbook. Step into the lab and see science in action!",
       "cover": "img/clubs/未來生活科創隊-1.jpg",
       "photos": [
         "img/clubs/未來生活科創隊-1.jpg",
@@ -367,7 +384,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -383,7 +400,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "想跳出課堂，親手解開生命的奧秘嗎？本生物科技活動帶領大家動手探索生活科學！課程涵蓋提取水果DNA、分析DNA指模、微生物觀察及植物變色等多項趣味實驗，助你掌握基礎實驗技巧，培養科學探究精神。歡迎報名，一起體驗科研樂趣！何慧欣羅祉臻Group NameBio+",
-      "introEn": "(about 80 words)Ready to step beyond the textbook and uncover the mysteries of life? Join our Biotechnology Extracurricular Activity for an exciting hands-on journey! Through engaging experiments—including extracting fruit DNA, analyzing DNA fingerprints, and observing microorganisms—you will master essential lab techniques and explore everyday biology. Sign up today and spark your passion for scientific discovery!Teacher in chargeHo Wai YanLaw Tsz Chun",
+      "introEn": "Ready to step beyond the textbook and uncover the mysteries of life? Join our Biotechnology Extracurricular Activity for an exciting hands-on journey! Through engaging experiments—including extracting fruit DNA, analyzing DNA fingerprints, and observing microorganisms—you will master essential lab techniques and explore everyday biology. Sign up today and spark your passion for scientific discovery!",
       "cover": "img/clubs/生物科技隊-1.jpg",
       "photos": [
         "img/clubs/生物科技隊-1.jpg",
@@ -426,7 +443,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "田徑隊逢星期一及星期四於運動場練習，現正招募男子及女子隊員。不論你喜歡長跑、短跑、跳遠或跳高，我們都歡迎你加入，一同訓練、突破自己，並代表學校參加元朗區學界比賽。希望大家努力練習，為校爭光！加油！黃子傑Group NameAthletics Team",
-      "introEn": "(about 80 words)The Athletics Team trains every Monday and Thursday at the sports ground. We are recruiting both boys and girls. Whether you are interested in long-distance running, sprinting, long jump or high jump, you are welcome to join us. Let’s train hard, challenge ourselves and represent the school in the Yuen Long inter-school competitions. Go for it!Teacher in chargeWONG TSZ KIT",
+      "introEn": "The Athletics Team trains every Monday and Thursday at the sports ground. We are recruiting both boys and girls. Whether you are interested in long-distance running, sprinting, long jump or high jump, you are welcome to join us. Let’s train hard, challenge ourselves and represent the school in the Yuen Long inter-school competitions. Go for it!",
       "cover": "img/clubs/田徑-1.jpg",
       "photos": [
         "img/clubs/田徑-1.jpg",
@@ -459,7 +476,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "乒乓球隊現正招募男子及女子運動員，逢星期二及星期四於學校禮堂練習。無論你已有比賽經驗，還是希望提升技術，我們都歡迎你加入。透過恆常訓練，隊員可提升反應、技術及比賽策略，並有機會代表學校參加比賽。黃子傑Group NameTable Tennis Team",
-      "introEn": "(about 80 words)The Table Tennis Team is now recruiting both male and female players. Training is held every Tuesday and Thursday in the school hall. Whether you already have competition experience or wish to improve your skills, you are welcome to join us. Through regular training, players can improve their reactions, techniques and match strategies, with opportunities to represent the school.Teacher in chargeWONG TSZ KIT",
+      "introEn": "The Table Tennis Team is now recruiting both male and female players. Training is held every Tuesday and Thursday in the school hall. Whether you already have competition experience or wish to improve your skills, you are welcome to join us. Through regular training, players can improve their reactions, techniques and match strategies, with opportunities to represent the school.",
       "cover": "",
       "photos": []
     },
@@ -487,7 +504,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "交通安全隊目的是希望透過教育，向青少年隊員灌輸交通安全的基本常識。日常訓練包括步操、學習道路、交通安全及航空相關知識，並考取專章。除了校內訓練外，本校的交通安全隊亦重視隊員的校外學習體驗，透過訓練營及歷奇活動擴闊隊員的視野，培養團隊合作能力和領導才能，鼓勵隊員從體驗及實踐中學習及成長。曹思思 范曦文 郭万Group NameHong Kong Road Safety Patrol",
-      "introEn": "(about 80 words)The Road Safety Patrol aims to equip young members with basic knowledge of road safety through education and training. Its regular activities include drill practice, learning about roads, traffic safety, and aviation-related knowledge, as well as working towards badges.Beyond school-based training, the Road Safety Patrol also values members’ learning experiences outside the classroom. Through training camps and adventure activities, students are given opportunities to broaden their horizons, strengthen their teamwork and leadership skills, and learn and grow through hands-on experience and practice.Teacher in chargeCao Si Si, Fan Hei Man, Guo Wan",
+      "introEn": "The Road Safety Patrol aims to equip young members with basic knowledge of road safety through education and training. Its regular activities include drill practice, learning about roads, traffic safety, and aviation-related knowledge, as well as working towards badges.Beyond school-based training, the Road Safety Patrol also values members’ learning experiences outside the classroom. Through training camps and adventure activities, students are given opportunities to broaden their horizons, strengthen their teamwork and leadership skills, and learn and grow through hands-on experience and practice.",
       "cover": "img/clubs/交通安全隊-1.jpg",
       "photos": [
         "img/clubs/交通安全隊-1.jpg",
@@ -515,7 +532,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "合唱團由三十多位學生組成，男女學生均會分為兩個聲部。同學不但能演唱經典合唱團歌曲，亦可演繹中英文的流行曲改編作品。合唱團經常於校內大型活動中登台表演，因此學生能夠踏上舞台的機會十分多。張允樂Group NameChoir",
-      "introEn": "(about 80 words)The choir is made up of more than 30 students. Male and female students are divided into two parts by vocal range. Students can sing classic choir repertoire, as well as perform popular songs with Chinese and English adaptations. The choir frequently takes the stage at major school events, so students have many opportunities to perform onstage.Teacher in chargeCHEUNG WAN LOK",
+      "introEn": "The choir is made up of more than 30 students. Male and female students are divided into two parts by vocal range. Students can sing classic choir repertoire, as well as perform popular songs with Chinese and English adaptations. The choir frequently takes the stage at major school events, so students have many opportunities to perform onstage.",
       "cover": "img/clubs/合唱團-1.jpg",
       "photos": [
         "img/clubs/合唱團-1.jpg",
@@ -544,7 +561,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "男子羽毛球校隊逢星期一及星期二練習。球隊近年展現卓越實力，於學界羽毛球比賽榮獲男子B組冠軍，成績斐然！我們希望有興趣及具團隊精神的同學加入，一同努力訓練，提升發球、高遠球、扣殺及步法等實戰技術，繼續傳承球隊精神，為校爭光。王麗愉Group NameBadminton Team",
-      "introEn": "(about 80 words)Our Boys' Badminton Team trains every Monday and Tuesday. Demonstrating outstanding performance, the team recently captured the Boy's B Grade Championship in the Interschool Badminton Competition! We welcome passionate students with a strong team spirit to join us, train hard to refine serving, clearing, smashing, and footwork skills, carry forward our team spirit, and bring honor to our school.Teacher in chargeWong Lai Yu",
+      "introEn": "Our Boys' Badminton Team trains every Monday and Tuesday. Demonstrating outstanding performance, the team recently captured the Boy's B Grade Championship in the Interschool Badminton Competition! We welcome passionate students with a strong team spirit to join us, train hard to refine serving, clearing, smashing, and footwork skills, carry forward our team spirit, and bring honor to our school.",
       "cover": "img/clubs/羽毛球-1.jpg",
       "photos": [
         "img/clubs/羽毛球-1.jpg",
@@ -567,7 +584,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -598,7 +615,7 @@ window.ECA = {
       ],
       "s1": false,
       "introZh": "男子手球校隊逢星期二、星期三及星期六進行訓練。球隊近年曾奪得男子組冠軍，成績令人鼓舞。我們希望招募有熱誠、有毅力的同學加入，一起提升技術、培養團隊精神，並再次挑戰精英賽，爭取佳績，延續球隊光榮傳統。黃子傑Group NameBoys’ Handball Team",
-      "introEn": "(about 80 words)The Boys’ Handball Team trains every Tuesday, Wednesday and Saturday. In recent years, the team has won the boys’ championship, which is a great achievement. We hope to recruit passionate and determined students to join us. Let’s improve our skills, build team spirit and challenge ourselves again in the elite competition.Teacher in chargeWONG TSZ KIT",
+      "introEn": "The Boys’ Handball Team trains every Tuesday, Wednesday and Saturday. In recent years, the team has won the boys’ championship, which is a great achievement. We hope to recruit passionate and determined students to join us. Let’s improve our skills, build team spirit and challenge ourselves again in the elite competition.",
       "cover": "img/clubs/男子手球-1.jpg",
       "photos": [
         "img/clubs/男子手球-1.jpg",
@@ -631,7 +648,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "男子排球校隊逢星期二、星期四及星期六練習。球隊近年於元朗區取得前三名的優異成績，表現出色。我們希望有興趣及具團隊精神的同學加入，一同努力訓練，提升發球、接球、扣殺及防守技術，繼續傳承球隊精神，為校爭光。黃子傑Group NameBoys’ Volleyball Team",
-      "introEn": "(about 80 words)The Boys’ Volleyball Team trains every Tuesday, Thursday and Saturday. In recent years, the team has achieved excellent results, finishing in the top three in Yuen Long District. We welcome students who are interested and have good team spirit to join us. Let’s train hard, improve our volleyball skills and continue the team’s proud tradition.Teacher in chargeWONG TSZ KIT",
+      "introEn": "The Boys’ Volleyball Team trains every Tuesday, Thursday and Saturday. In recent years, the team has achieved excellent results, finishing in the top three in Yuen Long District. We welcome students who are interested and have good team spirit to join us. Let’s train hard, improve our volleyball skills and continue the team’s proud tradition.",
       "cover": "img/clubs/男子排球-1.jpg",
       "photos": [
         "img/clubs/男子排球-1.jpg",
@@ -664,7 +681,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -690,7 +707,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -711,7 +728,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -726,7 +743,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -740,10 +757,17 @@ window.ECA = {
       ],
       "sessions": [],
       "s1": false,
-      "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
-      "cover": "",
-      "photos": []
+      "introZh": "本校武術隊致力於傳承中華傳統文化，鍛鍊學生的意志與體魄。團隊特別聘請東亞運動會金牌冠軍親自指導，提供專業且系統化的訓練課程。學員在此不僅能學習拳術與兵器技巧，更能培養尊師重道、堅韌不拔的精神。訓練時間為逢星期六上午，歡迎對武術充滿熱情的同學加入，一同發揮潛能，展現活力與自信！郭万老師Group NameMartial Art Team",
+      "introEn": "Our school Martial Arts Team is dedicated to promoting traditional Chinese culture while developing students' physical strength and mental resilience. We are honored to have an East Asian Games champion as our head coach, offering professional and systematic training. Students will master fundamental stances, forms, and weaponry skills while cultivating discipline and perseverance. Practices are held every Saturday morning. We welcome all passionate students to join us and unleash their full potential!",
+      "cover": "img/clubs/武術-1.jpg",
+      "photos": [
+        "img/clubs/武術-1.jpg",
+        "img/clubs/武術-2.jpg",
+        "img/clubs/武術-3.jpg",
+        "img/clubs/武術-4.jpg",
+        "img/clubs/武術-5.jpg",
+        "img/clubs/武術-6.jpg"
+      ]
     },
     {
       "id": "法文班",
@@ -763,7 +787,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -785,10 +809,17 @@ window.ECA = {
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
-      "cover": "",
-      "photos": []
+      "introZh": "社會服務團的服務多元，包括：探訪活動、義賣籌款、制作小手作等...... 在幫助社會上有需要人士的同時，你將擁有一個機會去認識自我，發揮所長。透過參與各類型的義工服務，你可以用愛心和關懷，真誠地幫弱勢社群帶來温暖。義工服務不僅能幫助他人，更能讓你變成更好的自己！馬穎嫻老師、梁子軒先生、林紀彤老師Group NameSocial Service Group",
+      "introEn": "The services of the Social Service Group are diverse, including visitation activities, charity sales for fundraising, making small handicrafts, and more...While helping those in need in society, you will have the opportunity to get to know yourself and develop your strengths.By participating in various types of Social Service, you can use love and care to sincerely bring warmth to disadvantaged communities.Social Service not only helps others, but also enables you to become a better version of yourself !",
+      "cover": "img/clubs/社會服務團-1.jpg",
+      "photos": [
+        "img/clubs/社會服務團-1.jpg",
+        "img/clubs/社會服務團-2.jpg",
+        "img/clubs/社會服務團-3.jpg",
+        "img/clubs/社會服務團-4.jpg",
+        "img/clubs/社會服務團-5.jpg",
+        "img/clubs/社會服務團-6.jpg"
+      ]
     },
     {
       "id": "英文大使",
@@ -801,7 +832,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -823,15 +854,15 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "這個學會旨在幫助您的孩子建立真正的口語自信。通過團體朗讀和表演，學生可以練習清晰的發音、生動的表達和穩定的語速，並在安全且充滿鼓勵的環境中進步。這也是一個極好的機會，讓他們學習如何團隊合作、傾聽他人並互相支持。主要目的是幫助每個學生感到舒適地站起來、大膽表達，並為自己的聲音感到自豪。我們期待這學期與您的孩子一起努力！Mr. Wayne, 韓卓穎老師Group NameChoral Speaking Club",
-      "introEn": "(about 80 words)Welcome to the Choral Speaking Club! This club helps your children build real confidence in their speaking without feeling put on the spot. By reading and performing together in a group, students practice clear pronunciation, good expression, and steady pacing in a way that feels safe and encouraging.It is also a great way for them to practice teamwork, learn to listen to each other, and support their classmates. The main goal is to help every student feel comfortable standing up, speaking out, and feeling proud of their voice. We look forward to working with your children this term!Teacher in chargeMr. Wayne, Ms. Hon Cheuk Wing",
-      "cover": "img/clubs/英文集誦-1.jpg",
+      "introEn": "Welcome to the Choral Speaking Club! This club helps your children build real confidence in their speaking without feeling put on the spot. By reading and performing together in a group, students practice clear pronunciation, good expression, and steady pacing in a way that feels safe and encouraging.It is also a great way for them to practice teamwork, learn to listen to each other, and support their classmates. The main goal is to help every student feel comfortable standing up, speaking out, and feeling proud of their voice. We look forward to working with your children this term!",
+      "cover": "img/clubs/英文集誦_done-1.jpg",
       "photos": [
-        "img/clubs/英文集誦-1.jpg",
-        "img/clubs/英文集誦-2.jpg",
-        "img/clubs/英文集誦-3.jpg",
-        "img/clubs/英文集誦-4.jpg",
-        "img/clubs/英文集誦-5.jpg",
-        "img/clubs/英文集誦-6.jpg"
+        "img/clubs/英文集誦_done-1.jpg",
+        "img/clubs/英文集誦_done-2.jpg",
+        "img/clubs/英文集誦_done-3.jpg",
+        "img/clubs/英文集誦_done-4.jpg",
+        "img/clubs/英文集誦_done-5.jpg",
+        "img/clubs/英文集誦_done-6.jpg"
       ]
     },
     {
@@ -851,7 +882,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "辯論社並不僅僅是為了那些喜歡自己聲音的人，而是為了所有曾經想過「等一下，這真的是真的嗎？」的人。在這裡，我們不僅進行辯論，還會開心地交流，並一起提升思考能力。你無需是最聰明的人，只要帶著好奇心來到這裡即可。 我們將幫助你自信地表達，堅定自己的觀點，甚至不時重新思考自己的想法。在這裡，沒有壓力，沒有批評。只有充滿活力的氛圍、更深入的對話，以及你畢業後仍能受益的能力。快來看看我們的精彩活動，一起成長吧！Ms RamanGroup NameEnglish Debate",
-      "introEn": "(about 80 words)Debate Club isn’t only for those who like the sound of their own voice. It’s for anyone who has ever wondered, “Hold on, is that really true?” Yes, we debate. But we also joke, and sharpen our thinking as a team.You don’t have to be the sharpest mind in the room. You just have to arrive ready to be curious. We’ll help you talk with confidence, stand behind your points, and maybe even rethink your views now and then.Zero stress, zero criticism. Just lively energy, smarter chats, and abilities you’ll carry after graduation. Come see what we’re about!Teacher in chargeMs Raman",
+      "introEn": "Debate Club isn’t only for those who like the sound of their own voice. It’s for anyone who has ever wondered, “Hold on, is that really true?” Yes, we debate. But we also joke, and sharpen our thinking as a team.You don’t have to be the sharpest mind in the room. You just have to arrive ready to be curious. We’ll help you talk with confidence, stand behind your points, and maybe even rethink your views now and then.Zero stress, zero criticism. Just lively energy, smarter chats, and abilities you’ll carry after graduation. Come see what we’re about!",
       "cover": "",
       "photos": []
     },
@@ -868,7 +899,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -898,11 +929,16 @@ window.ECA = {
         }
       ],
       "s1": true,
-      "introZh": "透過不同類型的桌上遊戲，讓同學在輕鬆有趣的互動過程中學習策略思考、邏輯分析及解難技巧。同學亦需與組員溝通、協商及共同制定策略，從遊戲中培養專注力、團隊合作精神及良好社交技巧，並學習以正面態度面對勝負與挑戰。",
-      "introEn": "(about 80 words)Through a variety of board games, students develop strategic thinking, logical reasoning and problem-solving skills in an enjoyable and interactive environment. They will also learn to communicate, cooperate and make decisions with their peers, while enhancing their concentration, teamwork and social skills. The activities encourage students to face challenges and winning or losing with a positive attitude.Teacher in charge",
+      "introZh": "透過不同類型的桌上遊戲，讓同學在輕鬆有趣的互動過程中學習策略思考、邏輯分析及解難技巧。同學亦需與組員溝通、協商及共同制定策略，從遊戲中培養專注力、團隊合作精神及良好社交技巧，並學習以正面態度面對勝負與挑戰。歐陽佩霞老師Group NameBoard Game",
+      "introEn": "Through a variety of board games, students develop strategic thinking, logical reasoning and problem-solving skills in an enjoyable and interactive environment. They will also learn to communicate, cooperate and make decisions with their peers, while enhancing their concentration, teamwork and social skills. The activities encourage students to face challenges and winning or losing with a positive attitude.",
       "cover": "img/clubs/桌上遊戲-1.jpg",
       "photos": [
-        "img/clubs/桌上遊戲-1.jpg"
+        "img/clubs/桌上遊戲-1.jpg",
+        "img/clubs/桌上遊戲-2.jpg",
+        "img/clubs/桌上遊戲-3.jpg",
+        "img/clubs/桌上遊戲-4.jpg",
+        "img/clubs/桌上遊戲-5.jpg",
+        "img/clubs/桌上遊戲-6.jpg"
       ]
     },
     {
@@ -916,7 +952,7 @@ window.ECA = {
       "sessions": [],
       "s1": true,
       "introZh": "以多元化桌上遊戲及趣味任務帶領同學展開不同的「桌上冒險」。活動透過合作、競技、推理及策略遊戲，鼓勵同學主動探索及嘗試不同解難方法，訓練觀察力、決策力和臨場應變能力，同時在互動中建立自信，提升表達及與人合作的能力。",
-      "introEn": "(about 80 words)Students embark on different “tabletop adventures” through a variety of board games and fun challenges. Cooperative, competitive, reasoning and strategy-based games encourage students to explore different ways of solving problems while strengthening their observation, decision-making and adaptability. Through interaction with peers, students can also build confidence and improve their communication and teamwork skills.Teacher in charge",
+      "introEn": "Students embark on different “tabletop adventures” through a variety of board games and fun challenges. Cooperative, competitive, reasoning and strategy-based games encourage students to explore different ways of solving problems while strengthening their observation, decision-making and adaptability. Through interaction with peers, students can also build confidence and improve their communication and teamwork skills.",
       "cover": "img/clubs/桌樂冒險家-1.jpg",
       "photos": [
         "img/clubs/桌樂冒險家-1.jpg"
@@ -939,7 +975,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "透過學習扭氣球的基本技巧及不同造型設計，讓同學由簡單作品逐步掌握氣球造型的製作方法，發揮創意及想像力。製作過程亦能訓練手眼協調、耐性和專注力，並透過互相欣賞、交流及合作創作，提升同學的成功感、自信心及社交能力。",
-      "introEn": "(about 80 words)Students learn basic balloon-twisting techniques and create a variety of balloon models, progressing from simple designs to more creative works. The activities help develop creativity, imagination, hand-eye coordination, patience and concentration. By sharing ideas, appreciating one another’s work and creating together, students can also strengthen their confidence, sense of achievement and interpersonal skills.Teacher in charge",
+      "introEn": "Students learn basic balloon-twisting techniques and create a variety of balloon models, progressing from simple designs to more creative works. The activities help develop creativity, imagination, hand-eye coordination, patience and concentration. By sharing ideas, appreciating one another’s work and creating together, students can also strengthen their confidence, sense of achievement and interpersonal skills.",
       "cover": "img/clubs/氣球造型班-1.jpg",
       "photos": [
         "img/clubs/氣球造型班-1.jpg"
@@ -969,7 +1005,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "香港基督少年軍第251分隊由萬鈞伯裘書院主辦，隸屬新九西區，設有中級組。分隊以基督教信仰為基礎，透過紀律訓練、品格教育及多元活動，培養隊員服從、虔誠、紀律及自愛的精神，並鼓勵隊員發展潛能、拓闊視野，促進全人成長。馬嘉雯、吳諾文Group NameThe Boys’ Brigade, Hong Kong",
-      "introEn": "(about 80 words)The 251st Company of The Boys’ Brigade, Hong Kong, is organised by Man Kwan Pak Kau College. Rooted in the Christian faith, the company promotes character development through discipline training, faith education and diverse activities. It nurtures obedience, reverence, discipline and self-respect among members. Through learning and participation, members are encouraged to develop their potential, broaden their horizons and grow as individuals. The company provides opportunities for young people to strengthen their values and pursue growth within a supportive community.Teacher in chargeMa Ka Man, Ng Lok Man",
+      "introEn": "The 251st Company of The Boys’ Brigade, Hong Kong, is organised by Man Kwan Pak Kau College. Rooted in the Christian faith, the company promotes character development through discipline training, faith education and diverse activities. It nurtures obedience, reverence, discipline and self-respect among members. Through learning and participation, members are encouraged to develop their potential, broaden their horizons and grow as individuals. The company provides opportunities for young people to strengthen their values and pursue growth within a supportive community.",
       "cover": "img/clubs/基督少年軍-1.jpg",
       "photos": [
         "img/clubs/基督少年軍-1.jpg",
@@ -998,7 +1034,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -1013,7 +1049,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -1034,7 +1070,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "單輪車活動逢星期四課外活動時段進行。隊員會學習平衡、轉彎、花式動作及團隊表演技巧。每年我們均會參加全港單輪車比賽，包括個人賽及團體表演項目，並曾在全港比賽中取得優異成績。歡迎有興趣挑戰自己的同學加入！黃子傑Group NameUnicycling Team",
-      "introEn": "(about 80 words)The Unicycling activity is held every Thursday during the ECA period. Members will learn balancing, turning, tricks and team performance skills. Every year, we take part in the Hong Kong Unicycling Competition, including individual events and group performances. Our team has achieved excellent results in Hong Kong competitions. Students who enjoy challenges are welcome to join us!Teacher in chargeWONG TSZ KIT",
+      "introEn": "The Unicycling activity is held every Thursday during the ECA period. Members will learn balancing, turning, tricks and team performance skills. Every year, we take part in the Hong Kong Unicycling Competition, including individual events and group performances. Our team has achieved excellent results in Hong Kong competitions. Students who enjoy challenges are welcome to join us!",
       "cover": "img/clubs/單輪車-1.jpg",
       "photos": [
         "img/clubs/單輪車-1.jpg",
@@ -1061,7 +1097,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "棍網球是一項刺激又充滿速度感的新興運動，講求團隊合作、反應及戰術運用。本校棍網球隊近年於全港學界比賽中表現出色，每年均能取得頭三名的佳績。歡迎喜歡挑戰、熱愛刺激運動的同學加入，一同訓練、突破自己，為校爭光！吳華峰Group NameLacrosse Team",
-      "introEn": "(about 80 words)Lacrosse is an exciting and fast-paced emerging sport that requires teamwork, quick reactions and good tactics. Our school Lacrosse Team has performed excellently in the Hong Kong inter-school competitions, consistently achieving top-three results every year. Students who enjoy challenges and exciting sports are welcome to join us, train hard and bring glory to the school!Teacher in chargeNG WAH FUNG",
+      "introEn": "Lacrosse is an exciting and fast-paced emerging sport that requires teamwork, quick reactions and good tactics. Our school Lacrosse Team has performed excellently in the Hong Kong inter-school competitions, consistently achieving top-three results every year. Students who enjoy challenges and exciting sports are welcome to join us, train hard and bring glory to the school!",
       "cover": "",
       "photos": []
     },
@@ -1076,7 +1112,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -1091,7 +1127,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "無人機學會致力於提供全方位的科技學習平台。學生在活動中不僅能掌握無人機飛行原理與編程等專業知識，更透過實操訓練精進操控技術。此外，學會亦積極帶領學生參與全香港以至全中國的無人機競速賽事，在實戰中挑戰自我、拓寬視野。黃子毅Group NameDrone Team",
-      "introEn": "(about 80 words)Drone team offers a comprehensive STEAM learning platform. Members acquire specialized drone knowledge—including flight mechanics and programming—while sharpening their piloting skills through hands-on practice. Furthermore, the club actively enters students into drone racing competitions, ranging from local Hong Kong tournaments to national events across China, allowing them to test their skills and broaden their horizons.Teacher in chargeWong Tsz Ngai",
+      "introEn": "Drone team offers a comprehensive STEAM learning platform. Members acquire specialized drone knowledge—including flight mechanics and programming—while sharpening their piloting skills through hands-on practice. Furthermore, the club actively enters students into drone racing competitions, ranging from local Hong Kong tournaments to national events across China, allowing them to test their skills and broaden their horizons.",
       "cover": "img/clubs/無人機隊-1.jpg",
       "photos": [
         "img/clubs/無人機隊-1.jpg",
@@ -1124,7 +1160,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "你喜歡唱歌、打節奏，還是想在舞台上發光？歡迎加入學校無伴奏合唱團！我們不用樂器，只用人聲創造鼓聲、低音、旋律與和聲，唱出流行歌、電影配樂和經典歌曲。這裡不只訓練音準與默契，更能結識熱愛音樂的朋友，一起排練、表演、挑戰比賽。無論你是新手還是高手，只要有熱情，就能成為我們的一部分！黃詠淇Group NameAcapella",
-      "introEn": "(about 80 words)Do you love singing, making beats, or shining on stage? Join our school’s a cappella team! Without any instruments, we use only our voices to create drums, basslines, melodies, and harmonies, performing pop songs, movie soundtracks, and classics. Here, you’ll improve your pitch and teamwork while making friends who share your passion for music. Together, we rehearse, perform, and take on competitions. Whether you’re a beginner or an expert, as long as you have enthusiasm, you can be part of us!Teacher in chargeWong Wing Ki",
+      "introEn": "Do you love singing, making beats, or shining on stage? Join our school’s a cappella team! Without any instruments, we use only our voices to create drums, basslines, melodies, and harmonies, performing pop songs, movie soundtracks, and classics. Here, you’ll improve your pitch and teamwork while making friends who share your passion for music. Together, we rehearse, perform, and take on competitions. Whether you’re a beginner or an expert, as long as you have enthusiasm, you can be part of us!",
       "cover": "img/clubs/無伴奏合唱團-1.jpg",
       "photos": [
         "img/clubs/無伴奏合唱團-1.jpg",
@@ -1158,7 +1194,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "本校童軍以培育健全公民為核心使命，全面支持學生的身心健康與精神發展。我們引導學生建立正向價值觀與社會責任感，期盼他們日後能學以致用、熱心服務，將所學轉化為回饋社會的力量，對國家與社群做出具體貢獻。 梁康姬、陳麗嫻Group NameScout",
-      "introEn": "(about 80 words)Our school's Scout group is dedicated to nurturing well-rounded citizens by supporting students' physical, mental, and spiritual well-being. We guide students in developing positive values and a sense of social responsibility, inspiring them to apply their knowledge in service to others and actively contribute to the community and society.Teacher in chargeLeung hong kei、Chan lai han",
+      "introEn": "Our school's Scout group is dedicated to nurturing well-rounded citizens by supporting students' physical, mental, and spiritual well-being. We guide students in developing positive values and a sense of social responsibility, inspiring them to apply their knowledge in service to others and actively contribute to the community and society.",
       "cover": "img/clubs/童軍-1.jpg",
       "photos": [
         "img/clubs/童軍-1.jpg",
@@ -1177,7 +1213,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "以鏡頭為眼、光影為輯，當我們帶著探索世界的心捕捉眼前的風景，即使身在日常之處，也能透過定格萬物之美，體會到如外遊般的驚喜與悸動。程敬恒Group NameFilm photography",
-      "introEn": "(about 80 words)Using the lens as our eyes and light and shadow as our story, when we capture the scenery before us with a sense of wonder, even the everyday yields moments of beauty that evoke the quiet thrill of travel.Teacher in chargeAndy Ching king hang",
+      "introEn": "Using the lens as our eyes and light and shadow as our story, when we capture the scenery before us with a sense of wonder, even the everyday yields moments of beauty that evoke the quiet thrill of travel.",
       "cover": "img/clubs/菲林小組-1.jpg",
       "photos": [
         "img/clubs/菲林小組-1.jpg",
@@ -1199,7 +1235,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -1220,7 +1256,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "滑板活動於課外活動時段進行，適合喜歡挑戰、追求刺激及希望提升平衡力的同學參加。透過訓練，同學可學習基本滑行、轉向、煞停及不同花式動作。滑板不但考驗膽量，亦能培養專注力及堅持精神，歡迎各位同學踴躍參與！黃子傑Group NameSkateboarding",
-      "introEn": "(about 80 words)Skateboarding is held during the ECA period. It is suitable for students who enjoy challenges, excitement and improving their balance. Through training, students will learn basic riding, turning, stopping and different tricks. Skateboarding tests your courage and helps develop focus and perseverance. All students are welcome to join and enjoy the fun!Teacher in chargeWONG TSZ KIT",
+      "introEn": "Skateboarding is held during the ECA period. It is suitable for students who enjoy challenges, excitement and improving their balance. Through training, students will learn basic riding, turning, stopping and different tricks. Skateboarding tests your courage and helps develop focus and perseverance. All students are welcome to join and enjoy the fun!",
       "cover": "img/clubs/滑板-1.jpg",
       "photos": [
         "img/clubs/滑板-1.jpg",
@@ -1242,7 +1278,7 @@ window.ECA = {
       "sessions": [],
       "s1": true,
       "introZh": "透過富策略性、推理性及互動性的桌上遊戲，讓同學在輕鬆的競賽氣氛中展開一場場「腦力攻防」。活動著重訓練邏輯思維、觀察分析、策略部署及即時決策能力，同時鼓勵同學與不同伙伴交流及互動，提升溝通技巧、抗逆力及正面面對勝負的態度。",
-      "introEn": "(about 80 words)Through strategic, reasoning-based and interactive games, students take part in a series of engaging “battles of wits”. The activities develop logical thinking, observation, analytical skills, strategic planning and quick decision-making. Students are also encouraged to interact with different peers, strengthening their communication skills and resilience while learning to handle competition and results positively.Teacher in charge",
+      "introEn": "Through strategic, reasoning-based and interactive games, students take part in a series of engaging “battles of wits”. The activities develop logical thinking, observation, analytical skills, strategic planning and quick decision-making. Students are also encouraged to interact with different peers, strengthening their communication skills and resilience while learning to handle competition and results positively.",
       "cover": "img/clubs/腦力攻防戰-1.jpg",
       "photos": [
         "img/clubs/腦力攻防戰-1.jpg"
@@ -1265,7 +1301,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "跳繩是一種高效率的全身性運動，只要一條繩子就能在短時間內帶來強健心肺、燃脂瘦身與鍛鍊肌肉。而本校跳繩小組由合資格經驗跳繩教練教授，課程除了跳躍動作、體能訓練，更會教授花式技巧及體操，並著重組員之間的溝通及團隊合作。謝頴雯Group NameJump Rope Team",
-      "introEn": "(about 80 words)Jump roping is a highly efficient full-body workout that can strengthen cardiopulmonary function, burn fat, and build muscle in a short period of time with just a single rope. Our school’s Jump Rope Team is taught by qualified and experienced jump rope coaches. In addition to jumping techniques and physical conditioning, the curriculum covers freestyle skills and gymnastics, with a strong emphasis on communication and teamwork among members.Teacher in chargeTSE WING MAN",
+      "introEn": "Jump roping is a highly efficient full-body workout that can strengthen cardiopulmonary function, burn fat, and build muscle in a short period of time with just a single rope. Our school’s Jump Rope Team is taught by qualified and experienced jump rope coaches. In addition to jumping techniques and physical conditioning, the curriculum covers freestyle skills and gymnastics, with a strong emphasis on communication and teamwork among members.",
       "cover": "img/clubs/跳繩-1.jpg",
       "photos": [
         "img/clubs/跳繩-1.jpg",
@@ -1288,7 +1324,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "本館專為中一至中五學生設立「喜閱大使」一職，委派學生參與圖書館的營運與推廣。職責包括處理圖書借還、書籍上架等日常館務，並協助籌辦各類閱讀活動，藉此培養學生的責任感，共同推廣校園閱讀風氣。陳麗嫻Group Namelibrarian",
-      "introEn": "(about 80 words)The library has established the role of &quot;librarian&quot; for Form 1 to Form 5 students, appointing them to participate in library operations and promotion. Responsibilities include handling book loans and returns, shelving, and assisting in organizing various reading activities—fostering students' sense of responsibility while jointly promoting a reading culture on campus.Teacher in chargeChan Lai Han",
+      "introEn": "The library has established the role of &quot;librarian&quot; for Form 1 to Form 5 students, appointing them to participate in library operations and promotion. Responsibilities include handling book loans and returns, shelving, and assisting in organizing various reading activities—fostering students' sense of responsibility while jointly promoting a reading culture on campus.",
       "cover": "img/clubs/圖書館管理隊-1.jpg",
       "photos": [
         "img/clubs/圖書館管理隊-1.jpg",
@@ -1339,7 +1375,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "本樂器班設有小提琴班、大提琴班、長笛班、單簧管班及銅管樂班，讓學生依興趣選擇合適的樂器。學校亦鼓勵同學發掘並培養音樂天賦，並定期提供演出場地，讓學生能夠上台實踐與展示所學。張允樂, Mr. MirzaGroup NameWestern Instruments Class",
-      "introEn": "(about 80 words)The music program offers classes in violin, cello, flute, clarinet, and brass, allowing students to choose the instrument that suits their interests. The school also encourages students to discover and develop their musical talents, and regularly provides performance venues so that they can take the stage to practice and showcase what they have learned.Teacher in chargeCHEUNG WAN LOK, Mr. MIRZA",
+      "introEn": "The music program offers classes in violin, cello, flute, clarinet, and brass, allowing students to choose the instrument that suits their interests. The school also encourages students to discover and develop their musical talents, and regularly provides performance venues so that they can take the stage to practice and showcase what they have learned.",
       "cover": "img/clubs/管弦樂班-1.jpg",
       "photos": [
         "img/clubs/管弦樂班-1.jpg",
@@ -1368,7 +1404,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "資深履歷：導師JJ Leung擁有 15 年以上教學經驗，身兼專業舞者、排舞師及瑜伽導師，曾任教多間大中學且屢獲獎項。多元舞種：精通 Hip Hop、Dancehall 等街舞，著重舞技提升與即興創作（Freestyle）。教學理念：堅持因材施教，期望透過音樂與舞蹈帶領同學放鬆身心、建立自信並發掘個人風格。歡迎同學踴躍報名，一起體驗舞蹈樂趣！劉倩慈老師Group NameDance Team (Hip Hop)",
-      "introEn": "(about 80 words)Extensive Experience: With over 15 years of teaching experience, JJ Leung is a professional dancer, choreographer, and yoga instructor who has taught at various secondary schools and universities, winning numerous dance awards.Diverse Dance Styles: Specializing in street dance styles such as Hip Hop and Dancehall, the classes focus on both skill enhancement and freestyle creation.Teaching Philosophy: Committed to tailoring lessons to individual needs, the course aims to help students relax, build self-confidence, and discover their personal style through music and dance.All students are welcome to join and experience the joy of dance!Teacher in chargeMs. S.C. Lau",
+      "introEn": "Extensive Experience: With over 15 years of teaching experience, JJ Leung is a professional dancer, choreographer, and yoga instructor who has taught at various secondary schools and universities, winning numerous dance awards.Diverse Dance Styles: Specializing in street dance styles such as Hip Hop and Dancehall, the classes focus on both skill enhancement and freestyle creation.Teaching Philosophy: Committed to tailoring lessons to individual needs, the course aims to help students relax, build self-confidence, and discover their personal style through music and dance.All students are welcome to join and experience the joy of dance!",
       "cover": "img/clubs/舞蹈組-1.jpg",
       "photos": [
         "img/clubs/舞蹈組-1.jpg",
@@ -1396,8 +1432,8 @@ window.ECA = {
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introZh": "萬鈞伯裘書院銀樂隊，成立在於培養學生對音樂的興趣及各種樂器的演奏能力。隊員要求嚴謹的編排和排練，整體表現力求協調，表演出純熟技術。從樂器的演奏到花式步操動作均培訓指導，展示隊員堅苦的練習和專業的音樂素養。校內校外大小的活動都能見到銀樂隊的蹤影，擔當開幕演奏或活動的重要角色。銀樂隊表演不僅是一種音樂藝術的展現，同時也是隊員成長和技能提升的機會，在過程中收穫了與音樂、團隊合作和自我挑戰相關的深刻經驗。",
+      "introEn": "The Man Kwan Pak Kau College Marching Band was established to cultivate students’ interest in music and develop their ability to play a variety of musical instruments. Band members undergo disciplined rehearsals and carefully structured training, with a strong emphasis on coordination, teamwork, and performance quality. From instrumental performance to marching formations and routines, members receive comprehensive training and guidance, demonstrating the results of their hard work, dedication, and musical competence.The Marching Band plays an active role in both school and external events, often performing at opening ceremonies and other important occasions. Its performances are not only a showcase of musical artistry but also valuable opportunities for members to grow and develop their skills. Through their participation, students gain meaningful experience in music, teamwork, discipline, and overcoming personal challenges.",
       "cover": "",
       "photos": []
     },
@@ -1412,7 +1448,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -1427,7 +1463,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -1448,7 +1484,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -1468,8 +1504,8 @@ window.ECA = {
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introZh": "課程專為中一學生而設，透過輕鬆互動的學習方式，教授德語字母、發音規則、日常問候、自我介紹、數字及顏色等基礎知識。結合德國傳統節慶、聖誕市集、特色美食與格林童話，讓學生認識德國文化，培養語言興趣，學習簡單日常交流。Group NameGerman Class",
+      "introEn": "Designed specifically for Secondary 1 students, this course introduces basic German through a relaxed, interactive approach. Topics include the German alphabet, pronunciation rules, everyday greetings, self-introductions, numbers, and colours. By incorporating traditional German festivals, Christmas markets, local specialities, and Grimms’ fairy tales, the course helps students explore German culture, develop an interest in the language, and learn to communicate in simple everyday situations.",
       "cover": "",
       "photos": []
     },
@@ -1490,7 +1526,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "樂團活動旨在幫助學生深入了解音樂理論與樂隊合作。活動內容包括節奏、旋律、和聲、和弦進行、速度與力度等基礎知識，並透過合奏練習學習如何聆聽隊友、配合指揮、保持節拍和控制音量。學生將體驗不同樂器在樂隊中的作用，培養溝通能力、責任感與團隊精神。參加者需具備基本音樂知識或樂器演奏經驗，能閱讀簡單樂譜或掌握基本節奏，以便順利參與排練與合作表演。丘健老師Group NameBand",
-      "introEn": "(about 80 words)This band activity helps students learn more about music theory and teamwork in an ensemble setting. Students will explore rhythm, melody, harmony, chords, tempo, and dynamics through group practice and lessons. They will learn how to listen to others, follow cues, keep time, and balance their sound with different instruments. The activity also builds communication, responsibility, and cooperation. Participants should already have basic music knowledge or instrument-playing experience so they can actively join rehearsals and contribute to a band.Teacher in chargeMr. Yau Kin",
+      "introEn": "This band activity helps students learn more about music theory and teamwork in an ensemble setting. Students will explore rhythm, melody, harmony, chords, tempo, and dynamics through group practice and lessons. They will learn how to listen to others, follow cues, keep time, and balance their sound with different instruments. The activity also builds communication, responsibility, and cooperation. Participants should already have basic music knowledge or instrument-playing experience so they can actively join rehearsals and contribute to a band.",
       "cover": "img/clubs/樂團-1.jpg",
       "photos": [
         "img/clubs/樂團-1.jpg",
@@ -1513,7 +1549,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -1529,7 +1565,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "UGOT機械人組裝與編程活動。同學親手搭建多形態AI機械人，學習圖形化編程，應用感測器與AI視覺，並出戰校際邀請賽及WRC世界機器人大賽，培養創科精神、團隊協作與解難能力。黃守宏Group NameRobot team",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -1550,10 +1586,12 @@ window.ECA = {
         }
       ],
       "s1": true,
-      "introZh": "Group NameKorean ECA",
-      "introEn": "(about 80 words)- designed for complete beginners who are interested in learning Korean language “hangul”- objective: students will be able to recognize “hangul” consonants and vowels, read Korean words, and create Korean characters on their own based on what Korean they listenClass will focus on reading Korean words and being able to write themStudents will learn words from wide range of pool, including countries / places, food, academics, ho ching, sports, as well as common phrases that are used in daily life. Some Korean words students learn will have “Chinese” origin, as they are pronounced quite similar (in Canto & Korean), making the students to easier those words as they can remember the Cantonese counterpartFun activity: as students are first exposed to Korean language through Kpop or Kdrama, we may use Kpop lyrics (for example) as a learning material, we will go over what the lyrics truly meansTeacher in chargeWang Heumil",
-      "cover": "",
-      "photos": []
+      "introZh": "Group NameKorean Class (한국어 수업)",
+      "introEn": "Designed for beginners, this course offers a clear guide to the Korean alphabet, Hangul. Students will learn to recognize consonants and vowels, read Korean words, and spell out what they hear.The focus is on building practical reading and writing skills through everyday themes, such as geography, academic terms, and honorifics. To make learning easier, lessons will point out words that sound similar in Cantonese and Korean due to shared roots. Additionally, students will study authentic texts, like K-pop lyrics, to understand the real meaning behind popular cultural phrases. 다같이 한국어 공부를 해요!",
+      "cover": "img/clubs/韓文班-1.jpg",
+      "photos": [
+        "img/clubs/韓文班-1.jpg"
+      ]
     },
     {
       "id": "欖球",
@@ -1577,7 +1615,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -1591,10 +1629,17 @@ window.ECA = {
       ],
       "sessions": [],
       "s1": false,
-      "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
-      "cover": "",
-      "photos": []
+      "introZh": "本活動旨在引領同學深入學習各類科學檢測方法，透過動手實驗與探究，發掘生活中隱藏的科學奧秘。同學將就社會各項環境及民生議題展開深度研究，培養以科學思維分析問題及提出解決方案的能力，立志成為具備社會責任感的新生代科學家。此外，課程特設海洋生態探索環節，帶領同學認識珊瑚的生態價值，學習珊瑚保育的科學知識，從而提升對海洋環境保護的關注與承擔。張思華Group NameAI research Team",
+      "introEn": "This activity guides students in exploring various scientific investigation methods, uncovering the wonders of everyday life through hands-on experiments and inquiry-based learning. Students will research environmental and social issues, developing critical thinking skills to propose evidence-based solutions, nurturing them into socially responsible young scientists. The programme also features a marine ecology component, where students will discover the ecological importance of coral reefs and learn about coral conservation, deepening their commitment to protecting our marine environment.",
+      "cover": "img/clubs/AI科學研究隊-1.jpg",
+      "photos": [
+        "img/clubs/AI科學研究隊-1.jpg",
+        "img/clubs/AI科學研究隊-2.jpg",
+        "img/clubs/AI科學研究隊-3.jpg",
+        "img/clubs/AI科學研究隊-4.jpg",
+        "img/clubs/AI科學研究隊-5.jpg",
+        "img/clubs/AI科學研究隊-6.jpg"
+      ]
     },
     {
       "id": "AI編程隊",
@@ -1607,7 +1652,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "本活動教授學生基礎 Python 語法，並運用 AI 生成平台，親自動手製作專屬 Web App。課程鼓勵同學發揮創意，針對「可持續發展目標（SDGs）」構思科技解決方案，從中掌握編程與 AI 技能，提升解難能力！黃俊偉Group NameAI Innovators",
-      "introEn": "(about 80 words)This activity teaches basic Python and utilizes AI platforms for students to build their own Web Apps. It encourages creativity by guiding them to design tech solutions for the Sustainable Development Goals (SDGs), helping them master AI and coding skills while enhancing problem-solving abilities!Teacher in chargeWong Chun Wai",
+      "introEn": "This activity teaches basic Python and utilizes AI platforms for students to build their own Web Apps. It encourages creativity by guiding them to design tech solutions for the Sustainable Development Goals (SDGs), helping them master AI and coding skills while enhancing problem-solving abilities!",
       "cover": "img/clubs/AI編程隊-1.jpg",
       "photos": [
         "img/clubs/AI編程隊-1.jpg",
@@ -1634,7 +1679,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "",
-      "introEn": "(about 80 words)Teacher in charge",
+      "introEn": "",
       "cover": "",
       "photos": []
     },
@@ -1650,7 +1695,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "想體驗當YouTuber或掌握專業幕後製作嗎？加入IT Prefect團隊，實戰學習攝影、剪輯、直播、燈光及音響技巧！成員除了支援校園日常IT運作，更會負責大型活動的拍攝與舞台效果，全方位提升溝通、團隊合作及領導才能。歡迎熱愛科技與影音創作的你加入！何慧欣陳浩云Group NameIT Prefect",
-      "introEn": "(about 80 words)Ever dreamed of becoming a YouTuber or mastering professional behind-the-scenes production? Join the IT Prefect Team! You will gain hands-on skills in filming, video editing, live streaming, lighting, and sound engineering. Beyond supporting daily campus tech needs, members lead multimedia operations and stage production for major school events—all while building vital communication, teamwork, and leadership skills. Sign up today and unleash your digital creativity!Teacher in chargeHo Wai Yan",
+      "introEn": "Ever dreamed of becoming a YouTuber or mastering professional behind-the-scenes production? Join the IT Prefect Team! You will gain hands-on skills in filming, video editing, live streaming, lighting, and sound engineering. Beyond supporting daily campus tech needs, members lead multimedia operations and stage production for major school events—all while building vital communication, teamwork, and leadership skills. Sign up today and unleash your digital creativity!",
       "cover": "",
       "photos": []
     },
@@ -1672,15 +1717,15 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "準備好讓你的聲音傳遍校園了嗎？歡迎加入 MKPC on Air！這裡是你主持節目、發揮創意、分享想法的專屬廣播平台！由 Mr. Johan 帶領，這不只是一項課外活動（ECA），更像是一個屬於同學們的校園電台。無論你想寫廣播稿、主持現場訪問、討論本地及國際熱門話題、分享喜愛的音樂，還是為朋友點歌送祝福，這裡都有一支Mic等著你。活動時間： 由 10月5日 起，逢星期一下午 4:00 – 5:30快來踏出第一步，拿起Mic，建立自信，讓全校聽見你的聲音！歡迎到我們的攤位了解詳情，今天就加入我們的MKPC on Air團隊吧！Group NameMKPC on Air",
-      "introEn": "(about 80 words)Ready to make your voice heard across the school? Welcome to MKPC on Air, your ultimate platform to host, create, and broadcast!Led by Mr. Johan, this isn't just an ECA—it’s your very own radio station. Whether you want to write scripts, host live interviews, debate viral local and international topics, share your favorite music, or send out song dedications, there’s a mic waiting for you.When: Every Monday starting October 5th | 4:00 PM – 5:30 PMStep up to the mic, gain confidence, and go live. Drop by our booth and join the crew today!Teacher in chargeMr Johan, Miss Liu Shuk Kwan",
-      "cover": "img/clubs/MKPC On Air-1.jpg",
+      "introEn": "Ready to make your voice heard across the school? Welcome to MKPC on Air, your ultimate platform to host, create, and broadcast!Led by Mr. Johan, this isn't just an ECA—it’s your very own radio station. Whether you want to write scripts, host live interviews, debate viral local and international topics, share your favorite music, or send out song dedications, there’s a mic waiting for you.When: Every Monday starting October 5th | 4:00 PM – 5:30 PMStep up to the mic, gain confidence, and go live. Drop by our booth and join the crew today!",
+      "cover": "img/clubs/MKPC On Air_done-1.jpg",
       "photos": [
-        "img/clubs/MKPC On Air-1.jpg",
-        "img/clubs/MKPC On Air-2.jpg",
-        "img/clubs/MKPC On Air-3.jpg",
-        "img/clubs/MKPC On Air-4.jpg",
-        "img/clubs/MKPC On Air-5.jpg",
-        "img/clubs/MKPC On Air-6.jpg"
+        "img/clubs/MKPC On Air_done-1.jpg",
+        "img/clubs/MKPC On Air_done-2.jpg",
+        "img/clubs/MKPC On Air_done-3.jpg",
+        "img/clubs/MKPC On Air_done-4.jpg",
+        "img/clubs/MKPC On Air_done-5.jpg",
+        "img/clubs/MKPC On Air_done-6.jpg"
       ]
     },
     {
@@ -1700,7 +1745,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "你是否對講故事和挖掘真相充滿熱情？校報社是你展示才華的最佳場所！我們邀請學生探索新聞學的世界，從撰寫和編輯文章到進行訪談和報導校內活動。我們的社團促進創造力、團隊合作和批判性思維，讓我們一起打造專屬的校報。無論你是有志於成為作家、攝影師還是編輯，這裡都有你的舞台。加入我們，提升技能，結交新朋友，並將你的聲音傳遞給校園社區。讓我們一起講述故事吧！Mr ScottGroup NameNewspaper Club",
-      "introEn": "(about 80 words)Are you passionate about storytelling and uncovering the truth? The Newspaper Club is the perfect place for you! We invite students to explore the world of journalism, from writing and editing articles to conducting interviews and reporting on school events. Our club fosters creativity, teamwork, and critical thinking as we work together to produce our very own school newspaper. Whether you’re an aspiring writer, photographer, or editor, there’s a place for you here. Join us to sharpen your skills, make new friends, and share your voice with the school community. Let’s tell our stories together!Teacher in chargeMr Scott",
+      "introEn": "Are you passionate about storytelling and uncovering the truth? The Newspaper Club is the perfect place for you! We invite students to explore the world of journalism, from writing and editing articles to conducting interviews and reporting on school events. Our club fosters creativity, teamwork, and critical thinking as we work together to produce our very own school newspaper. Whether you’re an aspiring writer, photographer, or editor, there’s a place for you here. Join us to sharpen your skills, make new friends, and share your voice with the school community. Let’s tell our stories together!",
       "cover": "",
       "photos": []
     },
@@ -1716,7 +1761,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "本活動以國情教育與STEAM創新科技人才培育為核心，透過「AI × Design Thinking」學習模式，引導學生由研究、設想、解難到展示，逐步完成作品原型、方案報告及公開匯報。課程涵蓋設計思維、Micro:bit、3D建模、物聯網、數據分析、生成式AI及航天探究，並配合國內交流和比賽活動，培養學生的家國情懷、科技素養、協作能力、創意思維及解難能力。盧澤境Group NameSTEAM CLUB",
-      "introEn": "(about 80 words)This group focuses on national education and STEAM innovation. Through “AI × Design Thinking”, students learn to research problems, create ideas, solve real-life issues and present their projects. The course includes Design Thinking, Micro:bit, 3D modelling, IoT, data analysis, generative AI and space exploration. Students will build prototypes, prepare project reports and join presentations, competitions and exchange activities. The group helps students develop creativity, teamwork, problem-solving skills, technology literacy and a better understanding of national technology development.Teacher in chargeLU ZEJING",
+      "introEn": "This group focuses on national education and STEAM innovation. Through “AI × Design Thinking”, students learn to research problems, create ideas, solve real-life issues and present their projects. The course includes Design Thinking, Micro:bit, 3D modelling, IoT, data analysis, generative AI and space exploration. Students will build prototypes, prepare project reports and join presentations, competitions and exchange activities. The group helps students develop creativity, teamwork, problem-solving skills, technology literacy and a better understanding of national technology development.",
       "cover": "img/clubs/Steam Club-1.jpg",
       "photos": [
         "img/clubs/Steam Club-1.jpg",
