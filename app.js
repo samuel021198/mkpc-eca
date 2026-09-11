@@ -142,7 +142,7 @@ const I18N = {
     whenWhere: "時間及地點",
     noSession: "時間地點待總表更新。",
     photos: "相片",
-    noPhoto: "各組專屬相片尚未繳交，封面暫用校園精選照片。",
+    noPhoto: "各組專屬相片尚未繳交，封面顯示即將推出。",
     s1Badge: "中一可選",
     back: "返回目錄",
     source: "時間表由總表自動產生，請勿另存一份清單。",
@@ -199,7 +199,7 @@ const I18N = {
     whenWhere: "Time & venue",
     noSession: "Schedule not yet on the master sheet.",
     photos: "Photos",
-    noPhoto: "Club photo folders are still empty; category covers use school archive photos.",
+    noPhoto: "Club photo folders are still empty; covers show Coming Soon.",
     s1Badge: "Open to S1",
     back: "Back to directory",
     source: "This timetable is generated from the master sheet. Do not keep a second copy.",
@@ -351,9 +351,11 @@ function nav(page) {
   </nav>`;
 }
 
-function cover(c) {
-  const bg = c.cover ? ` style="background-image:url('${encodeURI(c.cover)}')"` : "";
-  return `<div class="cover ${escapeHtml(c.category)}"${bg} aria-hidden="true"></div>`;
+function cover(c, extra) {
+  if (c.cover) {
+    return `<div class="cover ${escapeHtml(c.category)}${extra ? " " + extra : ""}" style="background-image:url('${encodeURI(c.cover)}')" aria-hidden="true"></div>`;
+  }
+  return `<div class="cover soon${extra ? " " + extra : ""}" aria-hidden="true"></div>`;
 }
 
 function sessionTime(c, s) {
@@ -500,7 +502,7 @@ function clubPage(id) {
   const intro = cleanIntro(lang() === "en" ? c.introEn || c.introZh : c.introZh || c.introEn);
   const coverHtml = c.cover
     ? `<div class="cover ${escapeHtml(c.category)} hero zoom" data-full="${encodeURI(c.cover)}" style="background-image:url('${encodeURI(c.cover)}')"></div>`
-    : `<div class="cover ${escapeHtml(c.category)} hero" aria-hidden="true"></div>`;
+    : cover(c, "hero");
   const gallery = (c.photos || [])
     .map((p) => `<img src="${encodeURI(p)}" alt="${escapeHtml(clubName(c))}" data-full="${encodeURI(p)}" />`)
     .join("");
@@ -997,17 +999,7 @@ function paperDate(iso) {
 }
 
 function newsImg(club) {
-  const cat = {
-    sports: "img/sports.jpg",
-    academic: "img/service.jpg",
-    arts: "img/arts.jpg",
-    steam: "img/academic.jpg",
-    service: "img/service.jpg",
-    team: "img/team.jpg",
-    interest: "img/arts.jpg",
-    other: "img/hero.jpg",
-  };
-  return club?.cover || (club?.photos && club.photos[0]) || cat[club?.category] || "img/hero.jpg";
+  return club?.cover || (club?.photos && club.photos[0]) || "img/coming-soon.jpg";
 }
 
 function newsItems() {

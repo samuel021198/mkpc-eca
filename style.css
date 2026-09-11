@@ -243,6 +243,10 @@ h1 { font-size: 1.7rem; margin: 0 0 8px; }
 .cover.interest { background-image: url("img/arts.jpg"); }
 .cover.other { background-image: url("img/hero.jpg"); }
 .cover.hero { height: 240px; border-radius: 14px; background-image: url("img/hero.jpg"); }
+.cover.soon {
+  background: #5d328e url("img/coming-soon.jpg") center/cover no-repeat;
+}
+.cover.soon::after { display: none; }
 .card .body { padding: 12px 14px 16px; }
 .card h3 { margin: 0 0 4px; font-size: 1.05rem; }
 .meta { font-size: 13px; color: var(--muted); }
