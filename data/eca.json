@@ -72,10 +72,16 @@
         }
       ],
       "s1": false,
-      "introZh": "",
-      "introEn": "",
-      "cover": "",
-      "photos": []
+      "introZh": "女子籃球隊致力培養同學的團隊精神與籃球技巧，球隊於逢星期一及星期五放學後進行常規訓練，內容涵蓋體能鍛鍊、基本功練習及戰術配合，並好好準備校際比賽。此外，女子籃球隊會舉辦籃球訓練營，透過密集式訓練與團隊活動，快速提升球員的能力，並建立深厚的隊友默契。歡迎所有熱愛運動的女同學加入!黃栢君老師Group NameGirls Basketball Team",
+      "introEn": "Girls' Basketball Team is dedicated to cultivating teamwork and basketball skills, welcoming all sports-loving female students to join. The team conducts regular training sessions after school every Monday and Friday, covering physical conditioning, basic fundamentals, and tactical coordination to prepare for inter-school competitions. Additionally, the team organizes a basketball training camp to rapidly enhance players' abilities and build deep camaraderie through intensive training and team-building activities.",
+      "cover": "img/clubs/女子手球-1.jpg",
+      "photos": [
+        "img/clubs/女子手球-1.jpg",
+        "img/clubs/女子手球-2.jpg",
+        "img/clubs/女子手球-3.jpg",
+        "img/clubs/女子手球-4.jpg",
+        "img/clubs/女子手球-5.jpg"
+      ]
     },
     {
       "id": "女子排球",
@@ -131,10 +137,17 @@
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "",
-      "cover": "",
-      "photos": []
+      "introZh": "女子籃球隊致力培養同學的團隊精神與籃球技巧，球隊於逢星期一及星期五放學後進行常規訓練，內容涵蓋體能鍛鍊、基本功練習及戰術配合，並好好準備校際比賽。此外，女子籃球隊會舉辦籃球訓練營，透過密集式訓練與團隊活動，快速提升球員的能力，並建立深厚的隊友默契。歡迎所有熱愛運動的女同學加入!黃栢君老師Group NameGirls Basketball Team",
+      "introEn": "Girls' Basketball Team is dedicated to cultivating teamwork and basketball skills, welcoming all sports-loving female students to join. The team conducts regular training sessions after school every Monday and Friday, covering physical conditioning, basic fundamentals, and tactical coordination to prepare for inter-school competitions. Additionally, the team organizes a basketball training camp to rapidly enhance players' abilities and build deep camaraderie through intensive training and team-building activities.",
+      "cover": "img/clubs/女子籃球-1.jpg",
+      "photos": [
+        "img/clubs/女子籃球-1.jpg",
+        "img/clubs/女子籃球-2.jpg",
+        "img/clubs/女子籃球-3.jpg",
+        "img/clubs/女子籃球-4.jpg",
+        "img/clubs/女子籃球-5.jpg",
+        "img/clubs/女子籃球-6.jpg"
+      ]
     },
     {
       "id": "女童軍",
@@ -158,8 +171,8 @@
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "",
+      "introZh": "本校女童軍致力培育學生成為自信、獨立且富責任感的良好公民。透過恆常訓練、戶外活動及社區服務，隊員可學習實用技能、急救知識與團隊合作，並培養堅毅、自律及關愛他人的品格。我們鼓勵學生在活動中結交朋友、發掘潛能、建立自信，並秉持「日行一善」的精神，回饋校園與社會，更希望她們在愉快的環境中健康成長，全面發展。黃轉鳳老師、黃麗娜老師Group NameGirl Guides",
+      "introEn": "Our school's Girl Guides is dedicated to nurturing students into confident, independent, and responsible good citizens. Through regular training, outdoor activities, and community service, members can learn practical skills, first aid knowledge, and teamwork, while cultivating perseverance, self-discipline, and a caring character towards others. We encourage students to make friends, discover their potential, and build self-confidence through our activities, and to uphold the spirit of &quot;Do a Good Turn Daily&quot; by giving back to the school and society. Furthermore, we hope they will grow up healthily and develop holistically in a joyful environment.",
       "cover": "img/clubs/女童軍-1.jpg",
       "photos": [
         "img/clubs/女童軍-1.jpg",
@@ -412,6 +425,19 @@
         "img/clubs/生物科技隊-5.jpg",
         "img/clubs/生物科技隊-6.jpg"
       ]
+    },
+    {
+      "id": "生涯規劃小導師",
+      "nameZh": "生涯規劃小導師",
+      "nameEn": "生涯規劃小導師",
+      "category": "service",
+      "teachers": [],
+      "sessions": [],
+      "s1": false,
+      "introZh": "",
+      "introEn": "",
+      "cover": "",
+      "photos": []
     },
     {
       "id": "田徑",
@@ -708,8 +734,8 @@
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "",
+      "introZh": "男子足球校隊逢星期一、星期五進行訓練。球隊去年曾奪得男子組亞軍，代表元朗區參與全港精英賽。我們希望招募有熱誠、有毅力的同學加入，一起提升技術、培養團隊精神，並再次挑戰精英賽，爭取佳績，延續球隊光榮傳統。陸平中Group NameMKPC Football Team",
+      "introEn": "MKPC Football Team trains every Monday and Friday. Iast years, the team has won the boys’ 1st runner up, which is a great achievement. We hope to recruit passionate and determined students to join us. Let’s improve our skills, build team spirit and challenge ourselves again in the elite competition.",
       "cover": "img/clubs/足球-1.jpg",
       "photos": [
         "img/clubs/足球-1.jpg",
@@ -1058,8 +1084,15 @@
       "s1": false,
       "introZh": "",
       "introEn": "",
-      "cover": "",
-      "photos": []
+      "cover": "img/clubs/單車-1.jpg",
+      "photos": [
+        "img/clubs/單車-1.jpg",
+        "img/clubs/單車-2.jpg",
+        "img/clubs/單車-3.jpg",
+        "img/clubs/單車-4.jpg",
+        "img/clubs/單車-5.jpg",
+        "img/clubs/單車-6.jpg"
+      ]
     },
     {
       "id": "單輪車",
@@ -1119,10 +1152,15 @@
       ],
       "sessions": [],
       "s1": false,
-      "introZh": "",
-      "introEn": "",
-      "cover": "",
-      "photos": []
+      "introZh": "游泳校隊於9-10月進行訓練。泳隊過去多次奪得學界團體獎項。我們希望招募有熱誠、有毅力的同學加入，一起提升技術、培養團隊精神，挑戰自己，爭取佳績，延續光榮傳統。陸平中Group NameMKPC Swimimg Team",
+      "introEn": "The School Swimming Team will hold training sessions from September to October. Having won multiple team awards in inter-school competitions in past years, we are looking for passionate and persevering students to join us. Together, we will hone our techniques, build team spirit, challenge ourselves, strive for excellent results, and carry on our proud tradition.",
+      "cover": "img/clubs/游泳隊-1.jpg",
+      "photos": [
+        "img/clubs/游泳隊-1.jpg",
+        "img/clubs/游泳隊-2.jpg",
+        "img/clubs/游泳隊-3.jpg",
+        "img/clubs/游泳隊-4.jpg"
+      ]
     },
     {
       "id": "無人機隊",
@@ -1464,8 +1502,12 @@
       "s1": false,
       "introZh": "學校領袖生是維護校園秩序和學校形象的重要角色。作為領袖生，他們具備嚴謹和公正的處事態度，並且要能夠與學生建立良好的關係。學校領袖生的付出不僅能夠維護學校的形象和安全，也能夠提高學生的紀律觀念和社會責任感。感謝這些學校領袖生為學校的付出，也為我們提供了一個安全和諧的學習環境。林子華老師何靜妍主任Group NameSchool prefect",
       "introEn": "School prefects play an important role in maintaining order and the image of the school. As prefects, they possess a strict and fair approach to handling situations, and are able to establish good relationships with students. The efforts of school prefects not only help to uphold the school's image and safety, but also promote discipline and a sense of social responsibility among students. We are grateful for the contributions of these school prefects, who provide us with a safe and harmonious learning environment.",
-      "cover": "",
-      "photos": []
+      "cover": "img/clubs/領袖生-1.jpg",
+      "photos": [
+        "img/clubs/領袖生-1.jpg",
+        "img/clubs/領袖生-2.jpg",
+        "img/clubs/領袖生-3.jpg"
+      ]
     },
     {
       "id": "劇社",
@@ -1583,8 +1625,15 @@
       "s1": false,
       "introZh": "UGOT機械人組裝與編程活動。同學親手搭建多形態AI機械人，學習圖形化編程，應用感測器與AI視覺，並出戰校際邀請賽及WRC世界機器人大賽，培養創科精神、團隊協作與解難能力。黃守宏Group NameRobot team",
       "introEn": "",
-      "cover": "",
-      "photos": []
+      "cover": "img/clubs/機械人隊-1.jpg",
+      "photos": [
+        "img/clubs/機械人隊-1.jpg",
+        "img/clubs/機械人隊-2.jpg",
+        "img/clubs/機械人隊-3.jpg",
+        "img/clubs/機械人隊-4.jpg",
+        "img/clubs/機械人隊-5.jpg",
+        "img/clubs/機械人隊-6.jpg"
+      ]
     },
     {
       "id": "韓文班",
@@ -1631,10 +1680,15 @@
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "",
-      "cover": "",
-      "photos": []
+      "introZh": "欖球校隊逢星期二、星期三進行訓練。球隊近年多次奪得男子組非撞式冠軍，成績令人鼓舞。我們希望招募有熱誠、有毅力的同學加入，一起提升技術、培養團隊精神，並再次挑戰精英賽，爭取佳績，延續球隊光榮傳統。陸平中Group NameMKPC Rugby Team",
+      "introEn": "MKPC Rugby Team trains every Tuesday and Wednesday. In recent years, the team has won 4 times touch champions, which is a great achievement. We hope to recruit passionate and determined students to join us. Let’s improve our skills, build team spirit and challenge ourselves again in the elite competition.",
+      "cover": "img/clubs/欖球-1.jpg",
+      "photos": [
+        "img/clubs/欖球-1.jpg",
+        "img/clubs/欖球-2.jpg",
+        "img/clubs/欖球-3.jpg",
+        "img/clubs/欖球-4.jpg"
+      ]
     },
     {
       "id": "AI科學研究隊",

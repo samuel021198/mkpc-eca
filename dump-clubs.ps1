@@ -41,7 +41,26 @@ function Get-DocxText([string]$path) {
   }
 }
 
-function Save-Cover([string]$src, [string]$dest) {
+function Get-PhotoAspect([string]$path) {
+  $fs = $null
+  $img = $null
+  try {
+    $fs = [IO.File]::Open($path, [IO.FileMode]::Open, [IO.FileAccess]::Read, [IO.FileShare]::ReadWrite)
+    $img = [Drawing.Image]::FromStream($fs)
+    $o = 1
+    try { $o = $img.GetPropertyItem(0x0112).Value[0] } catch {}
+    $w = [double]$img.Width
+    $h = [double]$img.Height
+    if ($o -ge 5 -and $o -le 8) { return $h / $w }
+    return $w / $h
+  } catch { return 1 }
+  finally {
+    if ($img) { $img.Dispose() }
+    if ($fs) { $fs.Dispose() }
+  }
+}
+
+function Save-Cover([string]$src, [string]$dest, [bool]$wide = $false) {
   $img = $null
   $bmp = $null
   $g = $null
@@ -60,17 +79,35 @@ function Save-Cover([string]$src, [string]$dest) {
       7 { $img.RotateFlip([Drawing.RotateFlipType]::Rotate270FlipX) }
       8 { $img.RotateFlip([Drawing.RotateFlipType]::Rotate270FlipNone) }
     }
-    $maxW = 1000
-    $scale = [Math]::Min(1.0, $maxW / [double]$img.Width)
-    $w = [Math]::Max(1, [int]($img.Width * $scale))
-    $h = [Math]::Max(1, [int]($img.Height * $scale))
-    $bmp = New-Object Drawing.Bitmap $w, $h
-    $g = [Drawing.Graphics]::FromImage($bmp)
-    $g.InterpolationMode = [Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
-    $g.DrawImage($img, 0, 0, $w, $h)
+    if ($wide) {
+      $w = 1000
+      $h = 625
+      $scale = [Math]::Max($w / [double]$img.Width, $h / [double]$img.Height)
+      $sw = $w / $scale
+      $sh = $h / $scale
+      $sx = ($img.Width - $sw) / 2.0
+      $sy = [Math]::Max(0.0, ($img.Height - $sh) * 0.18)
+      $bmp = New-Object Drawing.Bitmap $w, $h
+      $g = [Drawing.Graphics]::FromImage($bmp)
+      $g.InterpolationMode = [Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
+      $g.PixelOffsetMode = [Drawing.Drawing2D.PixelOffsetMode]::HighQuality
+      $srcR = New-Object Drawing.Rectangle ([int]$sx), ([int]$sy), ([int]$sw), ([int]$sh)
+      $dstR = New-Object Drawing.Rectangle 0, 0, $w, $h
+      $g.DrawImage($img, $dstR, $srcR, [Drawing.GraphicsUnit]::Pixel)
+    } else {
+      $maxW = 1000
+      $scale = [Math]::Min(1.0, $maxW / [double]$img.Width)
+      $w = [Math]::Max(1, [int]($img.Width * $scale))
+      $h = [Math]::Max(1, [int]($img.Height * $scale))
+      $bmp = New-Object Drawing.Bitmap $w, $h
+      $g = [Drawing.Graphics]::FromImage($bmp)
+      $g.InterpolationMode = [Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
+      $g.PixelOffsetMode = [Drawing.Drawing2D.PixelOffsetMode]::HighQuality
+      $g.DrawImage($img, 0, 0, $w, $h)
+    }
     $codec = [Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() | Where-Object { $_.MimeType -eq "image/jpeg" }
     $ep = New-Object Drawing.Imaging.EncoderParameters 1
-    $ep.Param[0] = New-Object Drawing.Imaging.EncoderParameter ([Drawing.Imaging.Encoder]::Quality, [long]74)
+    $ep.Param[0] = New-Object Drawing.Imaging.EncoderParameter ([Drawing.Imaging.Encoder]::Quality, [long]78)
     $bmp.Save($dest, $codec, $ep)
   } finally {
     if ($g) { $g.Dispose() }
@@ -136,7 +173,9 @@ Get-ChildItem -LiteralPath $clubRoot -Directory | ForEach-Object {
   if ($photosDir) {
     $all = @(Get-ChildItem -LiteralPath $photosDir.FullName -File | Where-Object { $_.Extension -match '\.(jpg|jpeg|png|webp)$' })
     $pick = $all | Where-Object { $_.BaseName -eq "cover" } | Select-Object -First 1
-    if (-not $pick) { $pick = $all | Select-Object -First 1 }
+    if (-not $pick) {
+      $pick = $all | Sort-Object @{ Expression = { Get-PhotoAspect $_.FullName }; Descending = $true }, @{ Expression = "Length"; Descending = $true } | Select-Object -First 1
+    }
     $rest = @($all | Where-Object { $pick -and $_.FullName -ne $pick.FullName } | Select-Object -First 5)
     $files = @($pick) + $rest | Where-Object { $_ }
     $i = 0
@@ -144,7 +183,7 @@ Get-ChildItem -LiteralPath $clubRoot -Directory | ForEach-Object {
       $i++
       $destName = ($name + "-" + $i + ".jpg")
       try {
-        Save-Cover $f.FullName (Join-Path $outImg $destName)
+        Save-Cover $f.FullName (Join-Path $outImg $destName) ($i -eq 1)
         $rel = "img/clubs/" + $destName
         $photoRels.Add($rel)
         if (-not $coverRel) { $coverRel = $rel }

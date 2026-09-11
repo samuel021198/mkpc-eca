@@ -3,6 +3,90 @@ if (window.ECA?.clubs) {
   ECA.clubs = ECA.clubs.filter((c) => !hide.has(c.id) && !hide.has(c.nameZh) && !hide.has(c.nameEn));
 }
 
+const TEACHER_EN = {
+  王麗愉: "Wong Lai Yu",
+  丘健: "Yau Kin",
+  伍卓鍵: "Ng Cheuk Kin",
+  朱會強: "Chu Wui Keung",
+  何慧欣: "Ho Wai Yan",
+  何靜妍: "Ho Ching Yin",
+  吳華峰: "Ng Wah Fung",
+  吳燕萍: "Ng Yin Ping",
+  吳諾文: "Ng Lok Man",
+  呂詩恩: "Lui Sze Yan",
+  李日東: "Lee Yat Tung",
+  李麗娟: "Li Lai Kuen",
+  周柏言: "Chow Pak Yin",
+  林子華: "Lam Chi Wah",
+  林至泰: "Lam Chi Tai",
+  林紀彤: "Lam Kei Tung",
+  姚嘉宏: "Iu Ka Wang",
+  范嘉楊: "Fan Ka Yeung Nicholas",
+  范㬢文: "Fan Hei Man",
+  范曦文: "Fan Hei Man",
+  徐治文: "Hsu Chi Man",
+  袁德璋: "Yuen Tak Cheung",
+  馬嘉雯: "Ma Ka Man",
+  馬穎嫻: "Ma Wing Han",
+  張允樂: "Cheung Wan Lok",
+  張永泰: "Cheung Wing Tai",
+  張思華: "Cheung Sze Wa",
+  張敬才: "Cheung King Choi",
+  曹思思: "Cao Sisi",
+  梁國龍: "Leung Kwok Lung",
+  梁康姬: "Leung Hong Kei",
+  莫菁兒: "Mok Ching Yee",
+  郭家銘: "Kwok Ka Ming",
+  郭鳳萍: "Kwok Fung Ping",
+  陳秋雲: "Chan Chau Wan",
+  陳紀筠: "Chan Kei Kwan",
+  陳家仁: "Chan Ka Yan",
+  陳振華: "Chan Chun Wa",
+  陳浩云: "Howard Chan",
+  陳珮儀: "Chan Pui Yee",
+  陳曼湖: "Chan Man Wu",
+  陳梃浠: "Chan Ting Hei",
+  陳淑真: "Chen Shu Zhen",
+  陳麗嫻: "Chan Lai Han",
+  陳艷芬: "Chan Yim Fun",
+  陸平中: "Felix Luk",
+  馮耀强: "Fung Yiu Keung",
+  黃子傑: "Wong Tsz Kit",
+  黃子毅: "Wong Tsz Ngai",
+  黃天異: "Wong Tin Yee",
+  黃守宏: "Wong Max Sau Wang",
+  黃俊偉: "Wong Chun Wai",
+  黃栢君: "Wong Pak Kwan",
+  黃詠淇: "Wong Wing Ki",
+  黃轉鳳: "Wong Chuen Fung",
+  黃麗娜: "Wong Lai Na",
+  萬嘉傑: "Man Ka Kit",
+  雷俊曜: "Lui Chun Yiu",
+  廖淑君: "Liu Shuk Kwan",
+  劉以皓: "Lau Yee Ho",
+  劉倩慈: "Lau Sin Chi",
+  劉麗芳: "Lau Lai Fong",
+  歐陽佩霞: "Au Yeung Pui Ha",
+  鄧嶧碖: "Tang Yik Lun",
+  鄧鵠耀: "Tang Kuk Yiu",
+  鄭敬宏: "Cheng King Wang",
+  盧澤境: "Lu ZeJing",
+  蕭潤貞: "Siu Yun Ching",
+  謝頴雯: "Tse Wing Man",
+  韓卓穎: "Hon Cheuk Wing",
+  羅祉臻: "Law Tsz Chun Ethan",
+  Wayne: "Wayne van der Merwe",
+  Roisin: "Roisin Marie Flynn",
+  Raman: "Ramandeep Kaur",
+  Ramen: "Ramandeep Kaur",
+  Wang: "Heumil Wang",
+  Mirza: "Mirza Muhammad Faran Ashraf Baig",
+  Scott: "Scott Robert Wildgen",
+  Scot: "Scott Robert Wildgen",
+  Dari: "Mustafa Dari",
+  Johan: "Johan Herman Kamper",
+};
+
 const DAY = {
   mon: { zh: "星期一", en: "Mon" },
   tue: { zh: "星期二", en: "Tue" },
@@ -144,11 +228,21 @@ function clubName(c) {
   return lang() === "en" ? c.nameEn : c.nameZh;
 }
 function teacherLabel(name) {
-  const n = String(name).trim();
-  return /老師$/.test(n) ? n : n + "老師";
+  const ta = /\(TA\)/i.test(name);
+  const n = String(name)
+    .replace(/老師$/, "")
+    .replace(/\s*\(TA\)\s*/gi, "")
+    .replace(/\s*\([^)]*\)\s*/g, "")
+    .trim();
+  if (lang() === "en") {
+    const en = TEACHER_EN[n] || n;
+    return ta ? en + " (TA)" : en;
+  }
+  if (/老師$|主任$|先生$/.test(String(name).trim())) return String(name).trim();
+  return n + "老師";
 }
 function teachersText(c) {
-  return (c.teachers || []).map(teacherLabel).join("、");
+  return (c.teachers || []).map(teacherLabel).join(lang() === "en" ? ", " : "、");
 }
 function clubSessions(c) {
   let ss = c.sessions || [];
