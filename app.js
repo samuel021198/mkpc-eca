@@ -58,6 +58,8 @@ const TEACHER_EN = {
   黃俊偉: "Wong Chun Wai",
   黃栢君: "Wong Pak Kwan",
   黃詠淇: "Wong Wing Ki",
+  黃洛童: "Wong Lok Tung",
+  黃洛潼: "Wong Lok Tung",
   黃轉鳳: "Wong Chuen Fung",
   黃麗娜: "Wong Lai Na",
   萬嘉傑: "Man Ka Kit",
@@ -127,7 +129,7 @@ const I18N = {
     tabTime: "時間表",
     tabS1: "中一安排",
     lang: "English",
-    homeLead: "發掘潛能、團隊、溝通與協作。2026–2027 課外活動總覽。",
+    homeLead: "發掘潛能，培養團隊、溝通與協作。2026–2027 課外活動總覽。",
     cats: "活動類別",
     week: "本週重點",
     noticeLabel: "通告",
@@ -142,7 +144,7 @@ const I18N = {
     whenWhere: "時間及地點",
     noSession: "時間地點待總表更新。",
     photos: "相片",
-    noPhoto: "各組專屬相片尚未繳交，封面顯示即將推出。",
+    noPhoto: "該組相片尚未繳交，封面顯示即將推出。",
     s1Badge: "中一可選",
     back: "返回目錄",
     source: "時間表由總表自動產生，請勿另存一份清單。",
@@ -167,9 +169,9 @@ const I18N = {
     paperMore: "More stories",
     paperTick: "Headlines",
     timetable: "Timetable",
-    s1zone: "S1 area",
+    s1zone: "S1 information",
     s1guide: "ECA notes",
-    apply: "ECA sign-up",
+    apply: "ECA application",
     contact: "Contact",
     teams: "School teams",
     calTitle: "Match calendar",
@@ -184,7 +186,7 @@ const I18N = {
     tabTime: "Times",
     tabS1: "S1 plan",
     lang: "中文",
-    homeLead: "Discover potential, teamwork, and collaboration. 2026–2027 ECA overview.",
+    homeLead: "Discover potential, and develop teamwork, communication and collaboration. 2026–2027 ECA overview.",
     cats: "Categories",
     week: "This week",
     noticeLabel: "Notice",
@@ -199,7 +201,7 @@ const I18N = {
     whenWhere: "Time & venue",
     noSession: "Schedule not yet on the master sheet.",
     photos: "Photos",
-    noPhoto: "Club photo folders are still empty; covers show Coming Soon.",
+    noPhoto: "Club photos have not yet been submitted; the cover shows Coming Soon.",
     s1Badge: "Open to S1",
     back: "Back to directory",
     source: "This timetable is generated from the master sheet. Do not keep a second copy.",
@@ -800,7 +802,8 @@ function s1Page(params) {
 
 function applyPage() {
   const zh = `<div class="prose">
-    <p>中一級課外活動報名，須以學校 <strong>MKPC Google 帳戶</strong>登入系統提交：<a href="https://attendance-of-ex.web.app/eca-registration/?lang=zh" rel="noopener" target="_blank">https://attendance-of-ex.web.app/eca-registration/?lang=zh</a>。每個帳戶只可遞交一份表格；報名期內可修改後再儲存。本網頁僅供說明，並不收集個人資料。</p>
+    <p>中一級同學須以學校 <strong>MKPC Google 帳戶</strong>登入，於報名期內提交課外活動志願。每個帳戶只可遞交一份表格；期內可修改後再儲存。本網頁僅供說明，並不收集個人資料。</p>
+    <p><a class="superlink" href="https://attendance-of-ex.web.app/eca-registration/?lang=zh" rel="noopener" target="_blank">前往課外活動報名系統</a></p>
     <h2>步驟</h2>
     <ol>
       <li>請先細閱「<a href="#/s1">課外活動須知</a>」，並核對班別、學號及姓名。各組時間及地點載於「<a href="#/clubs">課外活動</a>」。</li>
@@ -815,7 +818,8 @@ function applyPage() {
     <p>學生發展部（課外活動）。學校網站：<a href="https://www.mkpc.edu.hk/">mkpc.edu.hk</a>。</p>
   </div>`;
   const en = `<div class="prose">
-    <p>Secondary 1 students shall submit their extracurricular activity applications, using a school <strong>MKPC Google account</strong>, at <a href="https://attendance-of-ex.web.app/eca-registration/?lang=en" rel="noopener" target="_blank">https://attendance-of-ex.web.app/eca-registration/?lang=en</a>. Each account may submit one form only. Amendments may be saved during the application period. This webpage is for information only and does not collect personal data.</p>
+    <p>Secondary 1 students shall sign in with a school <strong>MKPC Google account</strong> and submit their extracurricular activity preferences during the application period. Each account may submit one form only. Amendments may be saved before the closing date. This webpage is for information only and does not collect personal data.</p>
+    <p><a class="superlink" href="https://attendance-of-ex.web.app/eca-registration/?lang=en" rel="noopener" target="_blank">Open the ECA application form</a></p>
     <h2>Procedure</h2>
     <ol>
       <li>Students shall first read the <a href="#/s1">ECA notes</a> and verify their class, student number and name. Times and venues are set out under <a href="#/clubs">clubs</a>.</li>
@@ -977,7 +981,7 @@ function contactPage() {
   </div>`;
   const en = `<div class="prose">
     <h2>Department of Student Affairs (ECA)</h2>
-    <p>Ask the teacher-in-charge about a club. General enquiries go through the General Office.</p>
+    <p>Please ask the teacher-in-charge about a particular group. General enquiries may be referred to the Department of Student Affairs through the General Office.</p>
     <h2>School</h2>
     <p>Man Kwan Pak Kau College<br>51 Tin Wah Road, Tin Shui Wai, Yuen Long, N.T.</p>
     <p>Tel: <a href="tel:+85224482960">2448 2960</a><br>
