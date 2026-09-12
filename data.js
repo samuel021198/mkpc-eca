@@ -172,7 +172,7 @@ window.ECA = {
       ],
       "s1": true,
       "introZh": "本校女童軍致力培育學生成為自信、獨立且富責任感的良好公民。透過恆常訓練、戶外活動及社區服務，隊員可學習實用技能、急救知識與團隊合作，並培養堅毅、自律及關愛他人的品格。我們鼓勵學生在活動中結交朋友、發掘潛能、建立自信，並秉持「日行一善」的精神，回饋校園與社會，更希望她們在愉快的環境中健康成長，全面發展。",
-      "introEn": "Our school's Girl Guides is dedicated to nurturing students into confident, independent, and responsible good citizens. Through regular training, outdoor activities, and community service, members can learn practical skills, first aid knowledge, and teamwork, while cultivating perseverance, self-discipline, and a caring character towards others. We encourage students to make friends, discover their potential, and build self-confidence through our activities, and to uphold the spirit of &quot;Do a Good Turn Daily&quot; by giving back to the school and society. Furthermore, we hope they will grow up healthily and develop holistically in a joyful environment.",
+      "introEn": "Our school's Girl Guides is dedicated to nurturing students into confident, independent, and responsible good citizens. Through regular training, outdoor activities, and community service, members can learn practical skills, first aid knowledge, and teamwork, while cultivating perseverance, self-discipline, and a caring character towards others. We encourage students to make friends, discover their potential, and build self-confidence through our activities, and to uphold the spirit of \"Do a Good Deed Every Day\" by giving back to the school and society. Furthermore, we hope they will grow up healthily and develop holistically in a joyful environment.",
       "cover": "img/clubs/女童軍-1.jpg",
       "photos": [
         "img/clubs/女童軍-1.jpg",
@@ -1425,7 +1425,7 @@ window.ECA = {
       "sessions": [],
       "s1": false,
       "introZh": "本館專為中一至中五學生設立「喜閱大使」一職，委派學生參與圖書館的營運與推廣。職責包括處理圖書借還、書籍上架等日常館務，並協助籌辦各類閱讀活動，藉此培養學生的責任感，共同推廣校園閱讀風氣。",
-      "introEn": "The library has established the role of &quot;librarian&quot; for Form 1 to Form 5 students, appointing them to participate in library operations and promotion. Responsibilities include handling book loans and returns, shelving, and assisting in organizing various reading activities—fostering students' sense of responsibility while jointly promoting a reading culture on campus.",
+      "introEn": "The library has established the role of \"librarian\" for Form 1 to Form 5 students, appointing them to participate in library operations and promotion. Responsibilities include handling book loans and returns, shelving, and assisting in organizing various reading activities—fostering students' sense of responsibility while jointly promoting a reading culture on campus.",
       "cover": "img/clubs/圖書館管理隊-1.jpg",
       "photos": [
         "img/clubs/圖書館管理隊-1.jpg",

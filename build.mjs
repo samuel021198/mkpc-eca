@@ -327,6 +327,12 @@ function parseIntro(raw) {
 
 function tidyIntro(raw) {
   let s = String(raw || "")
+    .replace(/&quot;/gi, '"')
+    .replace(/&apos;|&#39;/gi, "'")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&amp;/gi, "&")
+    .replace(/Do a Good Turn Daily/gi, "Do a Good Deed Every Day")
     .replace(/\(about 80 words\)/gi, "")
     .replace(/Teacher in charge[\s\S]*$/gi, "")
     .replace(/\(約100字\)/g, "")
