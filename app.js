@@ -246,6 +246,24 @@ function teacherLabel(name) {
 function teachersText(c) {
   return (c.teachers || []).map(teacherLabel).join(lang() === "en" ? ", " : "、");
 }
+const VENUE_EN = {
+  禮堂: "School Hall",
+  地下籃球場: "G/F basketball court",
+  "4樓籃球場": "4/F basketball court",
+  租借場地: "Hired venue",
+  音樂室: "Music Room",
+  活動室: "Activity Room",
+};
+function venueLabel(v) {
+  v = String(v || "").trim();
+  if (lang() !== "en" || !v) return v;
+  if (VENUE_EN[v]) return VENUE_EN[v];
+  const room = v.match(/^(\d+)室$/);
+  if (room) return "Room " + room[1];
+  const tagged = v.match(/^(\d+)\s*\((.+)\)$/);
+  if (tagged) return "Room " + tagged[1] + " (" + (VENUE_EN[tagged[2]] || tagged[2]) + ")";
+  return v;
+}
 function clubSessions(c) {
   let ss = c.sessions || [];
   if (c.id === "桌上遊戲" || c.nameZh === "桌上遊戲") return ss.filter((s) => s.day === "mon");
@@ -503,7 +521,7 @@ function clubPage(id) {
   let sess = clubSessions(c)
     .map((s) => {
       const extra = s.label && s.label !== c.nameZh ? ` · ${escapeHtml(s.label)}` : "";
-      return `<li>${DAY[s.day][lang()]} · ${escapeHtml(s.venue)}${extra} · ${sessionTime(c, s)}</li>`;
+      return `<li>${DAY[s.day][lang()]} · ${escapeHtml(venueLabel(s.venue))}${extra} · ${sessionTime(c, s)}</li>`;
     })
     .join("");
   if (c.category === "steam" && !clubSessions(c).some((s) => s.day === "tue")) {
@@ -547,7 +565,7 @@ function sessionBits(c, s) {
     !c.nameZh.includes(lab) &&
     !/^男女/.test(lab);
   const clock = sessionTime(c, s);
-  return [s.venue, show ? lab : "", clock === "16:00–17:30" ? "" : clock].filter(Boolean).join(" · ");
+  return [venueLabel(s.venue), show ? lab : "", clock === "16:00–17:30" ? "" : clock].filter(Boolean).join(" · ");
 }
 
 function dayEntries(day, cat, onlyS1) {
@@ -913,7 +931,7 @@ function teamsPage(params) {
       const name = club ? clubName(club) : e.team;
       const tt = lang() === "en" ? e.titleEn || e.titleZh : e.titleZh || e.titleEn;
       const href = club ? `#/club/${encodeId(club.id)}` : "#/teams";
-      return `<a class="hl" href="${href}"><time>${escapeHtml(e.date)}</time><span>${escapeHtml(name)}${tt ? ` · ${escapeHtml(tt)}` : ""}${e.venue ? `<span class="meta">${escapeHtml(e.venue)}</span>` : ""}</span></a>`;
+      return `<a class="hl" href="${href}"><time>${escapeHtml(e.date)}</time><span>${escapeHtml(name)}${tt ? ` · ${escapeHtml(tt)}` : ""}${e.venue ? `<span class="meta">${escapeHtml(venueLabel(e.venue))}</span>` : ""}</span></a>`;
     })
     .join("");
   const sports = ECA.clubs.filter((c) => c.category === "sports");
