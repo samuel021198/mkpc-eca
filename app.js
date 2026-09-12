@@ -364,13 +364,21 @@ function sessionTime(c, s) {
 }
 
 function cleanIntro(raw) {
-  raw = String(raw || "")
+  let s = String(raw || "")
     .replace(/\(about 80 words\)/gi, "")
-    .replace(/Teacher in charge/gi, "")
+    .replace(/Teacher in charge[\s\S]*$/gi, "")
     .replace(/\(約100字\)/g, "")
     .replace(/負責老師/g, "")
+    .replace(/組別名稱/g, "")
+    .replace(/\s*Group Name[\s\S]*$/i, "")
+    .replace(/鋁鋁/g, "鋁")
+    .replace(/劍擊對/g, "劍擊隊")
+    .replace(/\s+/g, " ")
     .trim();
-  return raw.length < 8 ? "" : raw;
+  s = s.replace(/(https?:\/\/\S+?)[\u4e00-\u9fff].*$/, "$1");
+  s = s.replace(/([。！？!])\s*(?:(?:Ms\.?|Mr\.?|Mrs\.?)\s+[A-Za-z.\-]+[\s,、]*)+$/i, "$1");
+  s = s.replace(/([。！？!])\s*[\u4e00-\u9fffA-Za-z.\-'\s、，,]{1,48}$/, "$1");
+  return s.length < 8 ? "" : s;
 }
 
 function blurb(c) {

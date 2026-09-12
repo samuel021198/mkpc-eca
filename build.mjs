@@ -318,11 +318,29 @@ function parseIntro(raw) {
       zh = zh.slice(0, split + 1).trim();
     }
   }
-  zh = zh.replace(/組別名稱\s*\/\s*Group Name/g, "").replace(/\(約100字\)/g, "").replace(/負責老師/g, "").replace(/\bGroup Name\b/g, "").trim();
-  en = en.replace(/Please write[^\n]*/gi, "").replace(/^\(about 80 words\)/i, "").replace(/Teacher in charge.*$/i, "").trim();
+  zh = tidyIntro(zh);
+  en = tidyIntro(en.replace(/Please write[^\n]*/gi, ""));
   if (/請在此填寫|請填寫/.test(zh) || zh.length < 8) zh = "";
   if (/Please write/i.test(en) || en.length < 40) en = "";
   return { introZh: zh, introEn: en };
+}
+
+function tidyIntro(raw) {
+  let s = String(raw || "")
+    .replace(/\(about 80 words\)/gi, "")
+    .replace(/Teacher in charge[\s\S]*$/gi, "")
+    .replace(/\(約100字\)/g, "")
+    .replace(/負責老師/g, "")
+    .replace(/組別名稱/g, "")
+    .replace(/\s*Group Name[\s\S]*$/i, "")
+    .replace(/鋁鋁/g, "鋁")
+    .replace(/劍擊對/g, "劍擊隊")
+    .replace(/\s+/g, " ")
+    .trim();
+  s = s.replace(/(https?:\/\/\S+?)[\u4e00-\u9fff].*$/, "$1");
+  s = s.replace(/([。！？!])\s*(?:(?:Ms\.?|Mr\.?|Mrs\.?)\s+[A-Za-z.\-]+[\s,、]*)+$/i, "$1");
+  s = s.replace(/([。！？!])\s*[\u4e00-\u9fffA-Za-z.\-'\s、，,]{1,48}$/, "$1");
+  return s.length < 8 ? "" : s;
 }
 
 if (fs.existsSync(foldersPath)) {
@@ -343,6 +361,10 @@ if (fs.existsSync(foldersPath)) {
 const list = [...clubs.values()]
   .filter((c) => c.nameZh !== "籃球")
   .sort((a, b) => a.nameZh.localeCompare(b.nameZh, "zh-Hant"));
+for (const c of list) {
+  c.introZh = tidyIntro(c.introZh);
+  c.introEn = tidyIntro(c.introEn);
+}
 
 if (list.length < 40) throw new Error(`expected 40+ clubs, got ${list.length}`);
 
