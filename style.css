@@ -185,14 +185,14 @@ h1 { font-size: 1.7rem; margin: 0 0 8px; }
 }
 .cat span, .cat small { position: relative; z-index: 1; }
 .cat small { display: block; font-weight: 400; opacity: .9; font-size: 13px; margin-top: 6px; }
-.cat.sports { background-image: url("img/sports.jpg"); }
-.cat.academic { background-image: url("img/service.jpg"); }
-.cat.arts { background-image: url("img/arts.jpg"); }
-.cat.steam { background-image: url("img/academic.jpg"); }
-.cat.service { background-image: url("img/service.jpg"); }
-.cat.team { background-image: url("img/team.jpg"); }
-.cat.interest { background-image: url("img/arts.jpg"); }
-.cat.other { background-image: url("img/hero.jpg"); }
+.cat.academic { background-image: url("img/cat-academic.jpg"); }
+.cat.arts { background-image: url("img/cat-arts.jpg"); }
+.cat.steam { background-image: url("img/cat-steam.jpg"); }
+.cat.sports { background-image: url("img/cat-sports.jpg"); }
+.cat.team { background-image: url("img/cat-team.jpg"); }
+.cat.service { background-image: url("img/cat-service.jpg"); }
+.cat.interest { background-image: url("img/cat-interest.jpg"); }
+.cat.other { background-image: url("img/cat-other.jpg"); }
 .list { display: grid; gap: 10px; }
 .hl {
   background: var(--card);
