@@ -286,7 +286,7 @@ window.ECA = {
       ],
       "sessions": [
         {
-          "day": "mon",
+          "day": "fri",
           "venue": "LT",
           "label": "手鈴"
         }

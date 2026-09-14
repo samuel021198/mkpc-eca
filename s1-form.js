@@ -45,7 +45,6 @@ window.ECA_S1_FORM = {
     mon: [
       ["女子籃球", "Girls Basketball", "體育"],
       ["男子籃球", "Boys Basketball", "體育"],
-      ["手鈴", "Handbell", "藝術"],
       ["羽毛球", "Badminton", "體育"],
       ["視覺藝術小組", "Visual Arts Group", "藝術"],
       ["Debate Team", "Debate Team", "學術"],
@@ -92,6 +91,7 @@ window.ECA_S1_FORM = {
       ["女子籃球", "Girls Basketball", "體育"],
       ["男子籃球", "Boys Basketball", "體育"],
       ["樂團", "School Band", "藝術"],
+      ["手鈴", "Handbell", "藝術"],
       ["匹克球", "Pickleball", "體育"],
       ["Newspaper Club", "Newspaper Club", "學術"],
       ["氣球造型班", "Balloon Twisting", "藝術"],
