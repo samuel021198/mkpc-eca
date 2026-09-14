@@ -115,6 +115,7 @@ const I18N = {
     paperTick: "頭條",
     timetable: "時間表",
     s1zone: "中一同學專區",
+    s1Portal: "報名及須知",
     s1guide: "課外活動須知",
     apply: "課外活動報名",
     contact: "聯絡我們",
@@ -148,10 +149,11 @@ const I18N = {
     photos: "相片",
     noPhoto: "該組相片尚未繳交，封面顯示即將推出。",
     s1Badge: "中一可選",
+    recruitBadge: "個別招募",
     back: "返回目錄",
     source: "時間表由總表自動產生，請勿另存一份清單。",
     weekTable: "一週總表",
-    s1Remark: "標「中一可選」者與中一報名表該日可選活動相同。星期二為科創，不標中一可選。",
+    s1Remark: "紫標「中一可選」與中一報名表該日可選活動相同。其餘為個別招募。星期二為科創，不標中一可選。",
     s1tt: "中一級報名時間表",
     s1ttLead: "下表與報名系統可選活動相同。星期一、三、四、五每日填三個志願。星期二為科創活動，稍後由老師安排，無須選報。標「面試」者僅已獲選拔同學可選。一般時間 16:00–17:30。",
     s1ttInterview: "面試",
@@ -172,6 +174,7 @@ const I18N = {
     paperTick: "Headlines",
     timetable: "Timetable",
     s1zone: "S1 information",
+    s1Portal: "Notes & apply",
     s1guide: "ECA notes",
     apply: "ECA application",
     contact: "Contact",
@@ -205,10 +208,11 @@ const I18N = {
     photos: "Photos",
     noPhoto: "Club photos have not yet been submitted; the cover shows Coming Soon.",
     s1Badge: "Open to S1",
+    recruitBadge: "Separate intake",
     back: "Back to directory",
     source: "This timetable is generated from the master sheet. Do not keep a second copy.",
     weekTable: "Week overview",
-    s1Remark: "“Open to S1” matches that day’s options on the application form. Tuesday is InnoTech and is not marked Open to S1.",
+    s1Remark: "Purple “Open to S1” matches that day’s options on the application form. Others are separate intake. Tuesday is InnoTech and is not marked Open to S1.",
     s1tt: "S1 application timetable",
     s1ttLead: "This table matches the activities on the application form. Enter three preferences for Monday, Wednesday, Thursday and Friday. Tuesday is InnoTech, to be arranged by teachers later; students need not choose a Tuesday activity. Items marked Trial are only for students already selected. Usual time is 16:00–17:30.",
     s1ttInterview: "Trial",
@@ -463,6 +467,7 @@ function home() {
           return `<a class="cat ${c.id}" href="#/clubs?cat=${c.id}"><span>${lang() === "en" ? c.en : c.zh}</span><small>${L.count(n)}</small></a>`;
         })
         .join("")}
+      <a class="cat s1zone" href="#/s1"><span>${L.s1zone}</span><small>${L.s1Portal}</small></a>
     </div>
     <h2 style="margin-top:36px">${L.week}</h2>
     ${
@@ -478,8 +483,12 @@ function home() {
   </main>`;
 }
 
-function clubCard(c) {
+function intakeBadge(open) {
   const L = t();
+  return `<span class="badge ${open ? "s1" : "recruit"}">${open ? L.s1Badge : L.recruitBadge}</span>`;
+}
+
+function clubCard(c, day) {
   return `<a class="card" href="#/club/${encodeId(c.id)}">
     ${cover(c)}
     <div class="body">
@@ -487,7 +496,7 @@ function clubCard(c) {
       <div class="meta">
         <span class="badge">${escapeHtml(catLabel(c.category))}</span>
         ${daysText(c)}
-        ${isS1Open(c) ? ` · ${L.s1Badge}` : ""}
+        ${intakeBadge(day ? isS1OpenOnDay(c, day) : isS1Open(c))}
       </div>
       ${blurb(c) ? `<p class="meta">${escapeHtml(blurb(c))}</p>` : ""}
     </div>
@@ -522,7 +531,7 @@ function clubsPage(params) {
         .map((d) => `<option value="${d}" ${day === d ? "selected" : ""}>${d ? DAY[d][lang()] : L.allDay}</option>`)
         .join("")}</select>
     </div>
-    <div class="cards">${rows.map(clubCard).join("") || `<p class="empty">${L.noResult}</p>`}</div>
+    <div class="cards">${rows.map((c) => clubCard(c, day)).join("") || `<p class="empty">${L.noResult}</p>`}</div>
   </main>`;
 }
 
@@ -533,11 +542,11 @@ function clubPage(id) {
   let sess = clubSessions(c)
     .map((s) => {
       const extra = s.label && s.label !== c.nameZh ? escapeHtml(s.label) : "";
-      return `<li>${[DAY[s.day][lang()], escapeHtml(venueLabel(s.venue)), extra, sessionTime(c, s)].filter(Boolean).join(" · ")}</li>`;
+      return `<li>${[DAY[s.day][lang()], escapeHtml(venueLabel(s.venue)), extra, sessionTime(c, s)].filter(Boolean).join(" · ")} ${intakeBadge(isS1OpenOnDay(c, s.day))}</li>`;
     })
     .join("");
   if (c.category === "steam" && !clubSessions(c).some((s) => s.day === "tue")) {
-    sess += `<li>${DAY.tue[lang()]} · ${L.tueSteam}</li>`;
+    sess += `<li>${DAY.tue[lang()]} · ${L.tueSteam} ${intakeBadge(false)}</li>`;
   }
   const intro = cleanIntro(lang() === "en" ? c.introEn || c.introZh : c.introZh || c.introEn);
   const coverHtml = c.cover
@@ -549,7 +558,7 @@ function clubPage(id) {
   return `${nav("clubs")}<main>
     <a class="back" href="#/clubs">${L.back}</a>
     <h1>${escapeHtml(clubName(c))}</h1>
-    <p class="lead">${escapeHtml(lang() === "en" ? c.nameZh : c.nameEn)} · ${escapeHtml(catLabel(c.category))}${isS1Open(c) ? " · " + L.s1Badge : ""}</p>
+    <p class="lead">${escapeHtml(lang() === "en" ? c.nameZh : c.nameEn)} · ${escapeHtml(catLabel(c.category))} ${intakeBadge(isS1Open(c))}</p>
     ${coverHtml}
     <div class="prose">
       <h2>${L.whenWhere}</h2>
@@ -617,7 +626,7 @@ function timetablePage(params) {
   const list = rows
     .map(({ c, where }) => {
       const head = c.category !== last ? ((last = c.category), `<h3 class="tt-cat">${escapeHtml(catLabel(c.category))}</h3>`) : "";
-      return `${head}<a class="tt-row" href="#/club/${encodeId(c.id)}"><span><strong>${escapeHtml(clubName(c))}</strong><span class="meta">${escapeHtml(where)}</span></span>${isS1OpenOnDay(c, day) ? `<span class="badge">${L.s1Badge}</span>` : ""}</a>`;
+      return `${head}<a class="tt-row" href="#/club/${encodeId(c.id)}"><span><strong>${escapeHtml(clubName(c))}</strong><span class="meta">${escapeHtml(where)}</span></span>${intakeBadge(isS1OpenOnDay(c, day))}</a>`;
     })
     .join("");
   return `${nav("timetable")}<main>
@@ -638,7 +647,7 @@ function timetablePage(params) {
           const cell = dayEntries(d, cat)
             .map(
               ({ c, where }) =>
-                `<a href="#/club/${encodeId(c.id)}">${escapeHtml(clubName(c))}${isS1OpenOnDay(c, d) ? ` <span class="badge">${L.s1Badge}</span>` : ""}<span class="meta">${escapeHtml(where)}</span></a>`
+                `<a href="#/club/${encodeId(c.id)}">${escapeHtml(clubName(c))} ${intakeBadge(isS1OpenOnDay(c, d))}<span class="meta">${escapeHtml(where)}</span></a>`
             )
             .join("");
           return `<td>${cell || "—"}</td>`;

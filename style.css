@@ -193,6 +193,7 @@ h1 { font-size: 1.7rem; margin: 0 0 8px; }
 .cat.service { background-image: url("img/cat-service.jpg"); }
 .cat.interest { background-image: url("img/cat-interest.jpg"); }
 .cat.other { background-image: url("img/cat-other.jpg"); }
+.cat.s1zone { background-image: url("img/cat-other.jpg"); }
 .list { display: grid; gap: 10px; }
 .hl {
   background: var(--card);
@@ -251,6 +252,8 @@ h1 { font-size: 1.7rem; margin: 0 0 8px; }
 .card h3 { margin: 0 0 4px; font-size: 1.05rem; }
 .meta { font-size: 13px; color: var(--muted); }
 .badge { display: inline-block; background: #f0f0f0; color: var(--purple); border-radius: 999px; padding: 2px 8px; font-size: 12px; margin-right: 4px; }
+.badge.s1 { background: var(--purple); color: #fff; }
+.badge.recruit { background: var(--ink); color: #fff; }
 table { width: 100%; border-collapse: collapse; background: #fff; font-size: 14px; border-radius: 12px; overflow: hidden; }
 th, td { border: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; }
 th { background: #2a2a2a; color: #fff; }
