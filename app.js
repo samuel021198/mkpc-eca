@@ -647,7 +647,7 @@ function timetablePage(params) {
           const cell = dayEntries(d, cat)
             .map(
               ({ c, where }) =>
-                `<a href="#/club/${encodeId(c.id)}">${escapeHtml(clubName(c))} ${intakeBadge(isS1OpenOnDay(c, d))}<span class="meta">${escapeHtml(where)}</span></a>`
+                `<a href="#/club/${encodeId(c.id)}"><strong>${escapeHtml(clubName(c))}</strong>${intakeBadge(isS1OpenOnDay(c, d))}<span class="meta">${escapeHtml(where)}</span></a>`
             )
             .join("");
           return `<td>${cell || "—"}</td>`;

@@ -324,10 +324,19 @@ footer span, footer a { position: relative; color: #eee; }
 }
 .tt-wide th { white-space: nowrap; padding: 12px 10px; }
 .tt-wide td { width: 16.66%; padding: 12px 10px; }
-.tt-wide td a { display: block; margin: 0 0 8px; text-decoration: none; font-weight: 600; color: inherit; }
+.tt-wide td a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  column-gap: 6px;
+  margin: 0 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
+}
 .tt-wide td a:hover { color: var(--purple); }
-.tt-wide td a .meta { display: block; font-weight: 400; font-size: 12px; color: var(--muted); }
-.tt-wide .badge { font-size: 11px; padding: 1px 6px; margin-left: 4px; }
+.tt-wide td a .meta { grid-column: 1 / -1; display: block; font-weight: 400; font-size: 12px; color: var(--muted); }
+.tt-wide .badge { font-size: 11px; padding: 1px 6px; margin: 0; white-space: nowrap; }
 .s1-tt-wide { overflow: auto; margin: 8px 0 16px; }
 .s1-tt-wide table {
   width: 100%;
