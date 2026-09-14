@@ -347,7 +347,7 @@ function nav(page) {
       <a class="brand" href="#/">
         <img src="img/logo.png" alt="" />
         <span class="brand-text">
-          <span class="brand-zh">萬鈞伯裘書院</span>
+          <span class="brand-zh">萬鈞伯裘書院 課外活動</span>
           <span class="brand-en">MAN KWAN PAK KAU COLLEGE</span>
         </span>
       </a>
