@@ -389,8 +389,8 @@
     },
     {
       "id": "生成式AI隊",
-      "nameZh": "生成式AI隊",
-      "nameEn": "Generative AI Team",
+      "nameZh": "AIoT 造物者",
+      "nameEn": "AIoT Inno Maker",
       "category": "steam",
       "teachers": [
         "姚嘉宏",
@@ -398,10 +398,15 @@
       ],
       "sessions": [],
       "s1": false,
-      "introZh": "",
-      "introEn": "",
-      "cover": "",
-      "photos": []
+      "introZh": "結合 AI、Arduino 編程、電子元件及 IoT 物聯網概念。學生將學習如何運用 AI 協助生成及修改程式，控制 LED、感測器、蜂鳴器及網絡裝置，製作智能燈、警報器及環境監測器等作品。課程強調動手實作、問題解決及創意設計，讓學生不只學會「用 AI 寫 Code」，更能理解智能裝置如何感知、連接及回應世界。",
+      "introEn": "Combining AI, Arduino coding, electronic components, and IoT concepts, students will learn how to use AI to generate and modify code to control LEDs, sensors, buzzers, and connected devices. Through hands-on projects such as smart lights, alarm systems, and environmental monitors, students will not only learn how to “code with AI” but also understand how smart devices sense, connect, and respond to the real world.",
+      "cover": "img/clubs/生成式AI隊-1.jpg",
+      "photos": [
+        "img/clubs/生成式AI隊-1.jpg",
+        "img/clubs/生成式AI隊-2.jpg",
+        "img/clubs/生成式AI隊-3.jpg",
+        "img/clubs/生成式AI隊-4.jpg"
+      ]
     },
     {
       "id": "生物科技隊",
@@ -605,8 +610,8 @@
     },
     {
       "id": "沉浸式科技隊",
-      "nameZh": "沉浸式科技隊",
-      "nameEn": "Immersive Tech Team",
+      "nameZh": "AI 遊戲大師",
+      "nameEn": "AI Game Master",
       "category": "steam",
       "teachers": [
         "周柏言",
@@ -614,10 +619,14 @@
       ],
       "sessions": [],
       "s1": false,
-      "introZh": "",
-      "introEn": "",
-      "cover": "",
-      "photos": []
+      "introZh": "學生將運用 AI製作自己的網頁遊戲。課程不只是讓 AI 生成程式，而是學習遊戲設計、角色控制、碰撞偵測、分數系統、關卡設計、UI 及 Debug 技巧。由體驗課到完整作品，學生將成為小小 Game Director，指揮 AI，創造屬於自己的遊戲世界。",
+      "introEn": "Students will use AI to create their own web games. This course is not just about letting AI generate code; students will also learn game design, character controls, collision detection, scoring systems, level design, UI, and debugging skills. From a trial lesson to a complete final project, students will become young Game Directors, guiding AI to create their very own game world.",
+      "cover": "img/clubs/沉浸式科技隊-1.jpg",
+      "photos": [
+        "img/clubs/沉浸式科技隊-1.jpg",
+        "img/clubs/沉浸式科技隊-4.jpg",
+        "img/clubs/沉浸式科技隊-6.jpg"
+      ]
     },
     {
       "id": "男子手球",
@@ -711,8 +720,8 @@
         }
       ],
       "s1": true,
-      "introZh": "",
-      "introEn": "",
+      "introZh": "我們致力提升同學的籃球技巧與體能極限，更重視培養堅毅不屈的團隊精神。無論你是經驗豐富的球員，還是熱血滿懷的新手，這裡都是你揮灑汗水、追求卓越的舞台。球隊於逢星期一及星期五放學後進行常規訓練，內容涵蓋體能鍛鍊、基本功練習及戰術配合，並好好準備校際比賽。",
+      "introEn": "We are dedicated to enhancing students' basketball skills and physical limits, while placing a strong emphasis on fostering unyielding team spirit. Whether you are an experienced player or an enthusiastic beginner, this is the stage for you to give your all and pursue excellence. Regular training sessions are held after school every Monday and Friday, covering physical conditioning, fundamental skills practice, and tactical execution to fully prepare for inter-school competitions.",
       "cover": "img/clubs/男子籃球-1.jpg",
       "photos": [
         "img/clubs/男子籃球-1.jpg",

@@ -25,19 +25,6 @@
                             "introRaw":  "組別名稱Drama  Club中文簡介 (約100字)本校戲劇學會是一個歡迎所有對表演和戲劇感興趣的學生參加的社團。透過有趣的活動，學生可以深入認識戲劇、練習表演技巧、提升英語口語能力，以及探索不同的角色和故事。學會會員亦有機會在老師、同學和家長面前登臺演出。這些演出能幫助學生克服害羞，更有自信地表達自己。透過團隊合作，學生亦能培養創意、溝通技巧和合作精神。最重要的是，戲劇學會能提升學生的自信心和自尊感，同時令英語學習變得有趣而有意義。負責老師Mr Muji, Mr DariGroup NameDrama  ClubEnglish Introduction (about 80 words)Our school Drama Club is a welcoming place for students who are interested in acting and theatre. Through fun activities, students can learn more about drama, practise acting skills, improve their spoken English, and explore different characters and stories. Club members also have opportunities to perform on stage in front of teachers, classmates, and parents. These performances help students overcome shyness and express themselves with confidence. By working together, students develop creativity, communication skills, and teamwork. Most importantly, the Drama Club builds students’ confidence and self-esteem while making English learning enjoyable and meaningful.Teacher in charge",
                             "folderCat":  "學術"
                         },
-    "中文辯論_done":  {
-                      "cover":  "img/clubs/中文辯論_done-1.jpg",
-                      "photos":  [
-                                     "img/clubs/中文辯論_done-1.jpg",
-                                     "img/clubs/中文辯論_done-2.jpg",
-                                     "img/clubs/中文辯論_done-3.jpg",
-                                     "img/clubs/中文辯論_done-4.jpg",
-                                     "img/clubs/中文辯論_done-5.jpg",
-                                     "img/clubs/中文辯論_done-6.jpg"
-                                 ],
-                      "introRaw":  "組別名稱中文辯論中文簡介 (約100字)辯論校隊致力培養同學的思辨能力、表達技巧及團隊合作精神。隊員平日會接受辯論訓練，學習資料搜集、論點組織、臨場反應及演說技巧，並代表學校參加不同類型的辯論比賽，擴闊視野、累積實戰經驗。此外，隊員亦會協助校內舉辦辯論比賽及相關活動，推廣辯論文化，讓更多同學認識辯論、享受辯論。負責老師萬嘉傑Group NameChinese Debate TeamEnglish Introduction (about 80 words)The Chinese Debate Team is dedicated to developing students’ critical thinking, public speaking skills, and teamwork. Team members receive regular debate training, learning research skills, argument organization, quick response, and presentation techniques. They also represent the school in various debate competitions, broadening their horizons and gaining practical experience. In addition, members assist in organizing school debate competitions and related activities, promoting a debating culture and encouraging more students to understand and enjoy debate.Teacher in chargeMan Ka Kit Jacky",
-                      "folderCat":  "學術"
-                  },
     "腦力攻防戰":  {
                   "cover":  "img/clubs/腦力攻防戰-1.jpg",
                   "photos":  [
@@ -103,6 +90,19 @@
                    "introRaw":  "組別名稱喜閱大使中文簡介 (約100字)本館專為中一至中五學生設立「喜閱大使」一職，委派學生參與圖書館的營運與推廣。職責包括處理圖書借還、書籍上架等日常館務，並協助籌辦各類閱讀活動，藉此培養學生的責任感，共同推廣校園閱讀風氣。負責老師陳麗嫻Group NamelibrarianEnglish Introduction (about 80 words)The library has established the role of \u0026quot;librarian\u0026quot; for Form 1 to Form 5 students, appointing them to participate in library operations and promotion. Responsibilities include handling book loans and returns, shelving, and assisting in organizing various reading activities—fostering students\u0027 sense of responsibility while jointly promoting a reading culture on campus.Teacher in chargeChan Lai Han",
                    "folderCat":  "服務隊伍"
                },
+    "武術":  {
+               "cover":  "img/clubs/武術-1.jpg",
+               "photos":  [
+                              "img/clubs/武術-1.jpg",
+                              "img/clubs/武術-2.jpg",
+                              "img/clubs/武術-3.jpg",
+                              "img/clubs/武術-4.jpg",
+                              "img/clubs/武術-5.jpg",
+                              "img/clubs/武術-6.jpg"
+                          ],
+               "introRaw":  "組別名稱武術隊中文簡介 (約100字)本校武術隊致力於傳承中華傳統文化，鍛鍊學生的意志與體魄。團隊特別聘請東亞運動會金牌冠軍親自指導，提供專業且系統化的訓練課程。學員在此不僅能學習拳術與兵器技巧，更能培養尊師重道、堅韌不拔的精神。訓練時間為逢星期六上午，歡迎對武術充滿熱情的同學加入，一同發揮潛能，展現活力與自信！負責老師郭万老師Group NameMartial Art TeamEnglish Introduction (about 80 words)Our school Martial Arts Team is dedicated to promoting traditional Chinese culture while developing students\u0027 physical strength and mental resilience. We are honored to have an East Asian Games champion as our head coach, offering professional and systematic training. Students will master fundamental stances, forms, and weaponry skills while cultivating discipline and perseverance. Practices are held every Saturday morning. We welcome all passionate students to join us and unleash their full potential!Teacher in charge",
+               "folderCat":  "體育"
+           },
     "跳繩":  {
                "cover":  "img/clubs/跳繩-1.jpg",
                "photos":  [
@@ -185,11 +185,13 @@
                     "folderCat":  "服務隊伍"
                 },
     "沉浸式科技隊":  {
-                   "cover":  "",
+                   "cover":  "img/clubs/沉浸式科技隊-1.jpg",
                    "photos":  [
-
+                                  "img/clubs/沉浸式科技隊-1.jpg",
+                                  "img/clubs/沉浸式科技隊-4.jpg",
+                                  "img/clubs/沉浸式科技隊-6.jpg"
                               ],
-                   "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                   "introRaw":  "組別名稱AI Game MasterAI 遊戲大師中文簡介 (約100字)學生將運用 AI製作自己的網頁遊戲。課程不只是讓 AI 生成程式，而是學習遊戲設計、角色控制、碰撞偵測、分數系統、關卡設計、UI 及 Debug 技巧。由體驗課到完整作品，學生將成為小小 Game Director，指揮 AI，創造屬於自己的遊戲世界。負責老師周柏言Group NameAI Game MasterEnglish Introduction (about 80 words)Students will use AI to create their own web games. This course is not just about letting AI generate code; students will also learn game design, character controls, collision detection, scoring systems, level design, UI, and debugging skills. From a trial lesson to a complete final project, students will become young Game Directors, guiding AI to create their very own game world.Teacher in chargeCHOW PAK YIN",
                    "folderCat":  "科創"
                },
     "拍攝小組":  {
@@ -627,11 +629,14 @@
                   "folderCat":  "科創"
               },
     "生成式AI隊":  {
-                   "cover":  "",
+                   "cover":  "img/clubs/生成式AI隊-1.jpg",
                    "photos":  [
-
+                                  "img/clubs/生成式AI隊-1.jpg",
+                                  "img/clubs/生成式AI隊-2.jpg",
+                                  "img/clubs/生成式AI隊-3.jpg",
+                                  "img/clubs/生成式AI隊-4.jpg"
                               ],
-                   "introRaw":  "組別名稱中文簡介 (約100字)負責老師Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                   "introRaw":  "組別名稱AIoT 造物者中文簡介 (約100字)結合 AI、Arduino 編程、電子元件及 IoT 物聯網概念。學生將學習如何運用 AI 協助生成及修改程式，控制 LED、感測器、蜂鳴器及網絡裝置，製作智能燈、警報器及環境監測器等作品。課程強調動手實作、問題解決及創意設計，讓學生不只學會「用 AI 寫 Code」，更能理解智能裝置如何感知、連接及回應世界。負責老師雷俊曜、姚嘉宏Group NameAIoT Inno MakerEnglish Introduction (about 80 words)Combining AI, Arduino coding, electronic components, and IoT concepts, students will learn how to use AI to generate and modify code to control LEDs, sensors, buzzers, and connected devices. Through hands-on projects such as smart lights, alarm systems, and environmental monitors, students will not only learn how to “code with AI” but also understand how smart devices sense, connect, and respond to the real world.Teacher in chargeLui Chun Yiu Michael, Iu Ka Wang",
                    "folderCat":  "科創"
                },
     "匹克球":  {
@@ -658,6 +663,14 @@
                        "introRaw":  "組別名稱科技創新隊中文簡介 (約100字)本活動以國情教育與STEAM創新科技人才培育為核心，透過「AI × Design Thinking」學習模式，引導學生由研究、設想、解難到展示，逐步完成作品原型、方案報告及公開匯報。課程涵蓋設計思維、Micro:bit、3D建模、物聯網、數據分析、生成式AI及航天探究，並配合國內交流和比賽活動，培養學生的家國情懷、科技素養、協作能力、創意思維及解難能力。負責老師盧澤境Group NameSTEAM CLUBEnglish Introduction (about 80 words)This group focuses on national education and STEAM innovation. Through “AI × Design Thinking”, students learn to research problems, create ideas, solve real-life issues and present their projects. The course includes Design Thinking, Micro:bit, 3D modelling, IoT, data analysis, generative AI and space exploration. Students will build prototypes, prepare project reports and join presentations, competitions and exchange activities. The group helps students develop creativity, teamwork, problem-solving skills, technology literacy and a better understanding of national technology development.Teacher in chargeLU ZEJING",
                        "folderCat":  "科創"
                    },
+    "龜情隊":  {
+                "cover":  "",
+                "photos":  [
+
+                           ],
+                "introRaw":  "",
+                "folderCat":  "興趣學會"
+            },
     "女子排球":  {
                  "cover":  "img/clubs/女子排球-1.jpg",
                  "photos":  [
@@ -681,7 +694,7 @@
                                 "img/clubs/男子籃球-5.jpg",
                                 "img/clubs/男子籃球-6.jpg"
                             ],
-                 "introRaw":  "組別名稱男子籃球中文簡介 (約100字)負責老師吳華峰Group NameEnglish Introduction (about 80 words)Teacher in charge",
+                 "introRaw":  "組別名稱男子籃球中文簡介 (約100字)我們致力提升同學的籃球技巧與體能極限，更重視培養堅毅不屈的團隊精神。無論你是經驗豐富的球員，還是熱血滿懷的新手，這裡都是你揮灑汗水、追求卓越的舞台。球隊於逢星期一及星期五放學後進行常規訓練，內容涵蓋體能鍛鍊、基本功練習及戰術配合，並好好準備校際比賽。負責老師吳華峰Group NameBoys Basketball TeamEnglish Introduction (about 80 words)We are dedicated to enhancing students\u0027 basketball skills and physical limits, while placing a strong emphasis on fostering unyielding team spirit. Whether you are an experienced player or an enthusiastic beginner, this is the stage for you to give your all and pursue excellence. Regular training sessions are held after school every Monday and Friday, covering physical conditioning, fundamental skills practice, and tactical execution to fully prepare for inter-school competitions.Teacher in chargeNG WAH FUNG",
                  "folderCat":  "體育"
              },
     "桌樂冒險家":  {
@@ -775,19 +788,19 @@
                  "introRaw":  "組別名稱桌上遊戲中文簡介 (約100字)透過不同類型的桌上遊戲，讓同學在輕鬆有趣的互動過程中學習策略思考、邏輯分析及解難技巧。同學亦需與組員溝通、協商及共同制定策略，從遊戲中培養專注力、團隊合作精神及良好社交技巧，並學習以正面態度面對勝負與挑戰。負責老師歐陽佩霞老師Group NameBoard GameEnglish Introduction (about 80 words)Through a variety of board games, students develop strategic thinking, logical reasoning and problem-solving skills in an enjoyable and interactive environment. They will also learn to communicate, cooperate and make decisions with their peers, while enhancing their concentration, teamwork and social skills. The activities encourage students to face challenges and winning or losing with a positive attitude.Teacher in chargeMs Au Yeung",
                  "folderCat":  "其他"
              },
-    "武術":  {
-               "cover":  "img/clubs/武術-1.jpg",
-               "photos":  [
-                              "img/clubs/武術-1.jpg",
-                              "img/clubs/武術-2.jpg",
-                              "img/clubs/武術-3.jpg",
-                              "img/clubs/武術-4.jpg",
-                              "img/clubs/武術-5.jpg",
-                              "img/clubs/武術-6.jpg"
-                          ],
-               "introRaw":  "組別名稱武術隊中文簡介 (約100字)本校武術隊致力於傳承中華傳統文化，鍛鍊學生的意志與體魄。團隊特別聘請東亞運動會金牌冠軍親自指導，提供專業且系統化的訓練課程。學員在此不僅能學習拳術與兵器技巧，更能培養尊師重道、堅韌不拔的精神。訓練時間為逢星期六上午，歡迎對武術充滿熱情的同學加入，一同發揮潛能，展現活力與自信！負責老師郭万老師Group NameMartial Art TeamEnglish Introduction (about 80 words)Our school Martial Arts Team is dedicated to promoting traditional Chinese culture while developing students\u0027 physical strength and mental resilience. We are honored to have an East Asian Games champion as our head coach, offering professional and systematic training. Students will master fundamental stances, forms, and weaponry skills while cultivating discipline and perseverance. Practices are held every Saturday morning. We welcome all passionate students to join us and unleash their full potential!Teacher in charge",
-               "folderCat":  "體育"
-           },
+    "中文辯論_done":  {
+                      "cover":  "img/clubs/中文辯論_done-1.jpg",
+                      "photos":  [
+                                     "img/clubs/中文辯論_done-1.jpg",
+                                     "img/clubs/中文辯論_done-2.jpg",
+                                     "img/clubs/中文辯論_done-3.jpg",
+                                     "img/clubs/中文辯論_done-4.jpg",
+                                     "img/clubs/中文辯論_done-5.jpg",
+                                     "img/clubs/中文辯論_done-6.jpg"
+                                 ],
+                      "introRaw":  "組別名稱中文辯論中文簡介 (約100字)辯論校隊致力培養同學的思辨能力、表達技巧及團隊合作精神。隊員平日會接受辯論訓練，學習資料搜集、論點組織、臨場反應及演說技巧，並代表學校參加不同類型的辯論比賽，擴闊視野、累積實戰經驗。此外，隊員亦會協助校內舉辦辯論比賽及相關活動，推廣辯論文化，讓更多同學認識辯論、享受辯論。負責老師萬嘉傑Group NameChinese Debate TeamEnglish Introduction (about 80 words)The Chinese Debate Team is dedicated to developing students’ critical thinking, public speaking skills, and teamwork. Team members receive regular debate training, learning research skills, argument organization, quick response, and presentation techniques. They also represent the school in various debate competitions, broadening their horizons and gaining practical experience. In addition, members assist in organizing school debate competitions and related activities, promoting a debating culture and encouraging more students to understand and enjoy debate.Teacher in chargeMan Ka Kit Jacky",
+                      "folderCat":  "學術"
+                  },
     "校園大使":  {
                  "cover":  "",
                  "photos":  [

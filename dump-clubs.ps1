@@ -162,7 +162,7 @@ Get-ChildItem -LiteralPath $clubRoot -Directory | ForEach-Object {
     return
   }
   $script:changed++
-  $docx = Get-ChildItem -LiteralPath $_.FullName -Filter "*.docx" -File | Where-Object { $_.Name -notlike "~*" } | Select-Object -First 1
+  $docx = Get-ChildItem -LiteralPath $_.FullName -Filter "*.docx" -File | Where-Object { $_.Name -notlike "~*" } | Sort-Object LastWriteTime -Descending | Select-Object -First 1
   $raw = ""
   if ($docx) { $raw = Get-DocxText $docx.FullName }
   $photosDir = Get-ChildItem -LiteralPath $_.FullName -Directory -ErrorAction SilentlyContinue |

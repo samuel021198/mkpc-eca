@@ -56,13 +56,13 @@ const EN = {
   欖球: "Rugby",
   武術: "Martial Arts",
   氣球造型班: "Balloon Modelling",
-  沉浸式科技隊: "Immersive Tech Team",
+  沉浸式科技隊: "AI Game Master",
   法文班: "French",
   游泳隊: "Swimming",
   滑板: "Skateboarding",
   無人機隊: "Drone Team",
   無伴奏合唱團: "A Cappella",
-  生成式AI隊: "Generative AI Team",
+  生成式AI隊: "AIoT Inno Maker",
   生物科技隊: "Biotechnology Team",
   田徑: "Track and Field",
   男子手球: "Boys' Handball",
@@ -122,6 +122,7 @@ const SKIP = new Set([
   "藝術及音樂",
   "增益班",
   "WebSems",
+  "龜情隊",
 ]);
 
 const CAT_HEADER = {
@@ -371,6 +372,14 @@ for (const c of list) {
   c.introZh = tidyIntro(c.introZh);
   c.introEn = tidyIntro(c.introEn);
   if (c.category === "other") c.category = "interest";
+  if (c.id === "沉浸式科技隊") {
+    c.nameZh = "AI 遊戲大師";
+    c.nameEn = "AI Game Master";
+  }
+  if (c.id === "生成式AI隊") {
+    c.nameZh = "AIoT 造物者";
+    c.nameEn = "AIoT Inno Maker";
+  }
 }
 
 if (list.length < 40) throw new Error(`expected 40+ clubs, got ${list.length}`);
