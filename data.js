@@ -1,5 +1,5 @@
 window.ECA = {
-  "generated": "2026-09-12",
+  "generated": "2026-09-14",
   "source": "2627_課外活動總表 V5.xlsx",
   "timeNoteZh": "一般課外活動為 16:00–17:30。校隊或會至最遲 19:00，以負責老師為準。",
   "timeNoteEn": "Usual ECA is 16:00–17:30. School teams may run until 19:00 as the teacher directs.",
@@ -36,13 +36,8 @@ window.ECA = {
     },
     {
       "id": "interest",
-      "zh": "興趣學會",
+      "zh": "興趣小組",
       "en": "Interest Clubs"
-    },
-    {
-      "id": "other",
-      "zh": "其他",
-      "en": "Others"
     }
   ],
   "clubs": [
@@ -982,7 +977,7 @@ window.ECA = {
       "id": "桌上遊戲",
       "nameZh": "桌上遊戲",
       "nameEn": "Board Games",
-      "category": "other",
+      "category": "interest",
       "teachers": [
         "歐陽佩霞"
       ],
@@ -1020,7 +1015,7 @@ window.ECA = {
       "id": "桌樂冒險家",
       "nameZh": "桌樂冒險家",
       "nameEn": "Tabletop Adventurers",
-      "category": "other",
+      "category": "interest",
       "teachers": [
         "何靜妍"
       ],
@@ -1037,7 +1032,7 @@ window.ECA = {
       "id": "氣球造型班",
       "nameZh": "氣球造型班",
       "nameEn": "Balloon Modelling",
-      "category": "other",
+      "category": "interest",
       "teachers": [
         "陳珮儀"
       ],
@@ -1372,7 +1367,7 @@ window.ECA = {
       "id": "腦力攻防戰",
       "nameZh": "腦力攻防戰",
       "nameEn": "Mind Challenge",
-      "category": "other",
+      "category": "interest",
       "teachers": [
         "徐治文"
       ],

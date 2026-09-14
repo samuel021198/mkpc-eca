@@ -1,7 +1,9 @@
 if (window.ECA?.clubs) {
   const hide = new Set(["增益班", "WebSems", "日本文化研究", "公益少年團", "生成式AI隊", "生成式AI", "沉浸式科技隊", "拍攝小組", "生涯規劃小導師", "校園大使", "學生會", "園藝大使", "IT Prefect"]);
   ECA.clubs = ECA.clubs.filter((c) => !hide.has(c.id) && !hide.has(c.nameZh) && !hide.has(c.nameEn));
+  for (const c of ECA.clubs) if (c.category === "other") c.category = "interest";
 }
+if (window.ECA?.categories) ECA.categories = ECA.categories.filter((c) => c.id !== "other");
 
 const TEACHER_EN = {
   王麗愉: "Wong Lai Yu",
@@ -276,6 +278,9 @@ function clubSessions(c) {
     const extra = (board?.sessions || []).filter((s) => s.day === "thu").map((s) => ({ ...s, label: c.nameZh }));
     return ss.concat(extra);
   }
+  if ((c.id === "武術" || c.nameZh === "武術") && !ss.some((s) => s.day === "sat")) {
+    return ss.concat([{ day: "sat", venue: "", time: "上午", label: "武術" }]);
+  }
   return ss;
 }
 
@@ -380,6 +385,7 @@ function cover(c, extra) {
 
 function sessionTime(c, s) {
   if ((c.id === "女子排球" || c.nameZh === "女子排球") && s.day === "sat") return "10:00–13:00";
+  if ((c.id === "武術" || c.nameZh === "武術") && s.day === "sat") return s.time || "上午";
   return s.time || "16:00–17:30";
 }
 
@@ -526,8 +532,8 @@ function clubPage(id) {
   if (!c) return `${nav("clubs")}<main><p>${L.noResult}</p></main>`;
   let sess = clubSessions(c)
     .map((s) => {
-      const extra = s.label && s.label !== c.nameZh ? ` · ${escapeHtml(s.label)}` : "";
-      return `<li>${DAY[s.day][lang()]} · ${escapeHtml(venueLabel(s.venue))}${extra} · ${sessionTime(c, s)}</li>`;
+      const extra = s.label && s.label !== c.nameZh ? escapeHtml(s.label) : "";
+      return `<li>${[DAY[s.day][lang()], escapeHtml(venueLabel(s.venue)), extra, sessionTime(c, s)].filter(Boolean).join(" · ")}</li>`;
     })
     .join("");
   if (c.category === "steam" && !clubSessions(c).some((s) => s.day === "tue")) {

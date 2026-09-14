@@ -126,7 +126,7 @@ const SKIP = new Set([
 
 const CAT_HEADER = {
   學術: "academic",
-  其他: "other",
+  其他: "interest",
   興趣學會: "interest",
   體育: "sports",
   "藝術 / 音樂": "arts",
@@ -167,7 +167,7 @@ function ensure(name, cat, overwrite = false) {
       id: name,
       nameZh: name,
       nameEn: EN[name] || name,
-      category: cat || "other",
+      category: cat || "interest",
       teachers: [],
       sessions: [],
       s1: false,
@@ -249,8 +249,8 @@ if (clubs.has("籃球")) {
 const guessRe = [
   [/籃球|足球|排球|乒乓|跳繩|劍擊|棍網|手球|欖球|單輪|游泳|滑板|匹克|田徑|單車|武術/, "sports"],
   [/AI|Steam|機械|無人|生物|科創|沉浸|生成式/, "steam"],
-  [/日本文化|菲林/, "interest"],
-  [/桌上|桌樂|腦力|氣球/, "other"],
+  [/日本文化/, "interest"],
+  [/桌上|桌樂|腦力|氣球|菲林/, "interest"],
   [/辯論|日文|德文|法文|韓文|Newspaper|Drama|集誦|On Air|增益/, "academic"],
   [/合唱|舞|手鈴|手鐘|樂團|視覺|拉丁|劇社|管弦/, "arts"],
   [/學生會|領袖|圖書館|校園|園藝|公益|拍攝|IT Prefect|WebSems|英文大使/, "service"],
@@ -294,7 +294,7 @@ const FOLDER_CAT = {
   體育: "sports",
   制服團隊: "team",
   服務隊伍: "service",
-  其他: "other",
+  其他: "interest",
   興趣學會: "interest",
 };
 function parseIntro(raw) {
@@ -370,6 +370,7 @@ const list = [...clubs.values()]
 for (const c of list) {
   c.introZh = tidyIntro(c.introZh);
   c.introEn = tidyIntro(c.introEn);
+  if (c.category === "other") c.category = "interest";
 }
 
 if (list.length < 40) throw new Error(`expected 40+ clubs, got ${list.length}`);
@@ -386,8 +387,7 @@ const data = {
     { id: "sports", zh: "體育", en: "Sports" },
     { id: "team", zh: "制服團隊", en: "Uniformed Groups" },
     { id: "service", zh: "服務隊伍", en: "Service Teams" },
-    { id: "interest", zh: "興趣學會", en: "Interest Clubs" },
-    { id: "other", zh: "其他", en: "Others" },
+    { id: "interest", zh: "興趣小組", en: "Interest Clubs" },
   ],
   clubs: list,
   highlights,
